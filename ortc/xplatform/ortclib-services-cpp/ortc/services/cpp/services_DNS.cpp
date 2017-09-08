@@ -2165,15 +2165,15 @@ namespace ortc
 
           IAsyncOperation< IVectorView<EndpointPair^> ^> ^lookupResult = nullptr;
 
-#ifdef HAVE_STREAMSOCKET_GETENDPOINTPAIRSASYNC
+//#ifdef HAVE_STREAMSOCKET_GETENDPOINTPAIRSASYNC
           if ("tcp" == mProtocol) {
             lookupResult = StreamSocket::GetEndpointPairsAsync(hostname, serviceNameStr);
           } else {
-#endif //HAVE_STREAMSOCKET_GETENDPOINTPAIRSASYNC
+//#endif //HAVE_STREAMSOCKET_GETENDPOINTPAIRSASYNC
             lookupResult = DatagramSocket::GetEndpointPairsAsync(hostname, serviceNameStr);
-#ifdef HAVE_STREAMSOCKET_GETENDPOINTPAIRSASYNC
+//#ifdef HAVE_STREAMSOCKET_GETENDPOINTPAIRSASYNC
           }
-#endif //HAVE_STREAMSOCKET_GETENDPOINTPAIRSASYNC
+//#endif //HAVE_STREAMSOCKET_GETENDPOINTPAIRSASYNC
 
           create_task(lookupResult, mCancellationTokenSource.get_token())
             .then([id, thisWeak](task<IVectorView<EndpointPair^>^> previousTask)
