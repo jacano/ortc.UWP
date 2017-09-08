@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <convert_asm_For_WPDependsOn Condition="'$(ConfigurationType)' != 'Makefile'">_SelectedFiles;$(convert_asm_For_WPDependsOn)</convert_asm_For_WPDependsOn>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <convert_asm_For_WP>
+      <CommandLineTemplate>call cmd \c pushd source\libvpx\..\..\ &amp;&amp; type source\libvpx\build\make\ads2armasm_ms.pl &gt; ads2armasm_ms.pl &amp;&amp; type source\libvpx\build\make\thumb.pm &gt; thumb.pm &amp;&amp; type %(Identity) | perl ads2armasm_ms.pl -chromium &gt; $(OutDir)obj\global_intermediate\third_party\libvpx\%(Filename).S &amp;&amp; popd &amp; exit 0</CommandLineTemplate>
+      <Outputs>$(OutDir)obj\global_intermediate\third_party\libvpx\%(Filename).S</Outputs>
+      <ExecutionDescription>Convert libvpx asm file for WP ARM %(Identity)</ExecutionDescription>
+      <AdditionalDependencies></AdditionalDependencies>
+    </convert_asm_For_WP>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(convert_asm_For_WPBeforeTargets)' == '' and '$(convert_asm_For_WPAfterTargets)' == '' and '$(ConfigurationType)' != 'Makefile'">
+    <convert_asm_For_WPBeforeTargets>CustomBuild</convert_asm_For_WPBeforeTargets>
+    <convert_asm_For_WPAfterTargets>Midl</convert_asm_For_WPAfterTargets>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="cryptopp" InternalType="Library">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="cryptopp">
+    <File Name="../../../../rsa.cpp"/>
+    <File Name="../../../../files.h"/>
+    <File Name="../../../../socketft.h"/>
+    <File Name="../../../../ec2n.h"/>
+    <File Name="../../../../tiger.h"/>
+    <File Name="../../../../rsa.h"/>
+    <File Name="../../../../wait.cpp"/>
+    <File Name="../../../../allocatorwithnul.h"/>
+    <File Name="../../../../modarith.h"/>
+    <File Name="../../../../oids.h"/>
+    <File Name="../../../../ttmac.h"/>
+    <File Name="../../../../base32.cpp"/>
+    <File Name="../../../../panama.cpp"/>
+    <File Name="../../../../ecp.h"/>
+    <File Name="../../../../stdcpp.h"/>
+    <File Name="../../../../sha.cpp"/>
+    <File Name="../../../../rc5.h"/>
+    <File Name="../../../../square.cpp"/>
+    <File Name="../../../../gf2_32.h"/>
+    <File Name="../../../../cpu.h"/>
+    <File Name="../../../../misc.cpp"/>
+    <File Name="../../../../winpipes.cpp"/>
+    <File Name="../../../../oaep.cpp"/>
+    <File Name="../../../../polynomi.cpp"/>
+    <File Name="../../../../strciphr.h"/>
+    <File Name="../../../../cryptlib.h"/>
+    <File Name="../../../../hex.h"/>
+    <File Name="../../../../hkdf.h"/>
+    <File Name="../../../../queue.cpp"/>
+    <File Name="../../../../elgamal.cpp"/>
+    <File Name="../../../../seal.cpp"/>
+    <File Name="../../../../oaep.h"/>
+    <File Name="../../../../sha.h"/>
+    <File Name="../../../../network.cpp"/>
+    <File Name="../../../../sharkbox.cpp"/>
+    <File Name="../../../../words.h"/>
+    <File Name="../../../../xtrcrypt.cpp"/>
+    <File Name="../../../../arc4.h"/>
+    <File Name="../../../../seed.h"/>
+    <File Name="../../../../nr.h"/>
+    <File Name="../../../../ccm.h"/>
+    <File Name="../../../../zdeflate.h"/>
+    <File Name="../../../../gfpcrypt.cpp"/>
+    <File Name="../../../../blake2.cpp"/>
+    <File Name="../../../../algparam.cpp"/>
+    <File Name="../../../../socketft.cpp"/>
+    <File Name="../../../../rng.cpp"/>
+    <File Name="../../../../validate.h"/>
+    <File Name="../../../../blumshub.h"/>
+    <File Name="../../../../osrng.h"/>
+    <File Name="../../../../randpool.cpp"/>
+    <File Name="../../../../smartptr.h"/>
+    <File Name="../../../../shacal2.cpp"/>
+    <File Name="../../../../channels.cpp"/>
+    <File Name="../../../../pubkey.cpp"/>
+    <File Name="../../../../blowfish.cpp"/>
+    <File Name="../../../../modexppc.h"/>
+    <File Name="../../../../rijndael.cpp"/>
+    <File Name="../../../../xtrcrypt.h"/>
+    <File Name="../../../../hmac.cpp"/>
+    <File Name="../../../../authenc.cpp"/>
+    <File Name="../../../../emsa2.cpp"/>
+    <File Name="../../../../adler32.h"/>
+    <File Name="../../../../cryptlib.cpp"/>
+    <File Name="../../../../xtr.cpp"/>
+    <File Name="../../../../zdeflate.cpp"/>
+    <File Name="../../../../cbcmac.h"/>
+    <File Name="../../../../integer.h"/>
+    <File Name="../../../../rc5.cpp"/>
+    <File Name="../../../../integer.cpp"/>
+    <File Name="../../../../default.cpp"/>
+    <File Name="../../../../md5.cpp"/>
+    <File Name="../../../../wake.cpp"/>
+    <File Name="../../../../asn.h"/>
+    <File Name="../../../../twofish.cpp"/>
+    <File Name="../../../../md2.cpp"/>
+    <File Name="../../../../fltrimpl.h"/>
+    <File Name="../../../../datatest.cpp" ExcludeProjConfig="Debug;Release"/>
+    <File Name="../../../../xtr.h"/>
+    <File Name="../../../../aes.h"/>
+    <File Name="../../../../square.h"/>
+    <File Name="../../../../shark.h"/>
+    <File Name="../../../../rng.h"/>
+    <File Name="../../../../ida.h"/>
+    <File Name="../../../../algebra.cpp"/>
+    <File Name="../../../../panama.h"/>
+    <File Name="../../../../tiger.cpp"/>
+    <File Name="../../../../des.cpp"/>
+    <File Name="../../../../iterhash.cpp"/>
+    <File Name="../../../../filters.cpp"/>
+    <File Name="../../../../bench1.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="../../../../lubyrack.h"/>
+    <File Name="../../../../gzip.cpp"/>
+    <File Name="../../../../pwdbased.h"/>
+    <File Name="../../../../idea.cpp"/>
+    <File Name="../../../../zinflate.h"/>
+    <File Name="../../../../dlltest.cpp" ExcludeProjConfig="Debug;Release"/>
+    <File Name="../../../../trap.h"/>
+    <File Name="../../../../mqueue.h"/>
+    <File Name="../../../../trdlocal.h"/>
+    <File Name="../../../../gcm.h"/>
+    <File Name="../../../../eprecomp.h"/>
+    <File Name="../../../../crc.cpp"/>
+    <File Name="../../../../base32.h"/>
+    <File Name="../../../../eccrypto.h"/>
+    <File Name="../../../../gfpcrypt.h"/>
+    <File Name="../../../../pkcspad.h"/>
+    <File Name="../../../../mars.h"/>
+    <File Name="../../../../basecode.cpp"/>
+    <File Name="../../../../base64.h"/>
+    <File Name="../../../../mdc.h"/>
+    <File Name="../../../../dsa.h"/>
+    <File Name="../../../../default.h"/>
+    <File Name="../../../../vmac.cpp"/>
+    <File Name="../../../../md5.h"/>
+    <File Name="../../../../pkcspad.cpp"/>
+    <File Name="../../../../casts.cpp"/>
+    <File Name="../../../../strciphr.cpp"/>
+    <File Name="../../../../pch.cpp"/>
+    <File Name="../../../../validat1.cpp" ExcludeProjConfig="Debug;Release"/>
+    <File Name="../../../../whrlpool.cpp"/>
+    <File Name="../../../../salsa.h"/>
+    <File Name="../../../../ccm.cpp"/>
+    <File Name="../../../../3way.cpp"/>
+    <File Name="../../../../zlib.cpp"/>
+    <File Name="../../../../secblock.h"/>
+    <File Name="../../../../dll.cpp"/>
+    <File Name="../../../../tea.cpp"/>
+    <File Name="../../../../blumshub.cpp"/>
+    <File Name="../../../../algebra.h"/>
+    <File Name="../../../../keccak.h"/>
+    <File Name="../../../../cmac.h"/>
+    <File Name="../../../../arc4.cpp"/>
+    <File Name="../../../../fipsalgt.cpp" ExcludeProjConfig="Debug;Release"/>
+    <File Name="../../../../hmac.h"/>
+    <File Name="../../../../hrtimer.h"/>
+    <File Name="../../../../ripemd.cpp"/>
+    <File Name="../../../../mars.cpp"/>
+    <File Name="../../../../filters.h"/>
+    <File Name="../../../../nbtheory.cpp"/>
+    <File Name="../../../../trdlocal.cpp"/>
+    <File Name="../../../../seckey.h"/>
+    <File Name="../../../../mqueue.cpp"/>
+    <File Name="../../../../dsa.cpp"/>
+    <File Name="../../../../cpu.cpp"/>
+    <File Name="../../../../mqv.h"/>
+    <File Name="../../../../dmac.h"/>
+    <File Name="../../../../hrtimer.cpp"/>
+    <File Name="../../../../esign.cpp"/>
+    <File Name="../../../../elgamal.h"/>
+    <File Name="../../../../rc6.h"/>
+    <File Name="../../../../gf2n.h"/>
+    <File Name="../../../../dh.h"/>
+    <File Name="../../../../sha3.cpp"/>
+    <File Name="../../../../cbcmac.cpp"/>
+    <File Name="../../../../basecode.h"/>
+    <File Name="../../../../squaretb.cpp"/>
+    <File Name="../../../../gf2n.cpp"/>
+    <File Name="../../../../rc2.cpp"/>
+    <File Name="../../../../rabin.cpp"/>
+    <File Name="../../../../algparam.h"/>
+    <File Name="../../../../adler32.cpp"/>
+    <File Name="../../../../fips140.cpp"/>
+    <File Name="../../../../ida.cpp"/>
+    <File Name="../../../../files.cpp"/>
+    <File Name="../../../../gost.h"/>
+    <File Name="../../../../rdtables.cpp"/>
+    <File Name="../../../../rc6.cpp"/>
+    <File Name="../../../../modes.cpp"/>
+    <File Name="../../../../eax.h"/>
+    <File Name="../../../../seed.cpp"/>
+    <File Name="../../../../winpipes.h"/>
+    <File Name="../../../../queue.h"/>
+    <File Name="../../../../rdrand.h"/>
+    <File Name="../../../../wake.h"/>
+    <File Name="../../../../modes.h"/>
+    <File Name="../../../../mqv.cpp"/>
+    <File Name="../../../../shacal2.h"/>
+    <File Name="../../../../mersenne.h"/>
+    <File Name="../../../../chacha.h"/>
+    <File Name="../../../../blake2.h"/>
+    <File Name="../../../../base64.cpp"/>
+    <File Name="../../../../polynomi.h"/>
+    <File Name="../../../../skipjack.h"/>
+    <File Name="../../../../factory.h"/>
+    <File Name="../../../../pubkey.h"/>
+    <File Name="../../../../zlib.h"/>
+    <File Name="../../../../bench2.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="../../../../trunhash.h"/>
+    <File Name="../../../../ecp.cpp"/>
+    <File Name="../../../../marss.cpp"/>
+    <File Name="../../../../cast.h"/>
+    <File Name="../../../../wait.h"/>
+    <File Name="../../../../sosemanuk.cpp"/>
+    <File Name="../../../../fips140.h"/>
+    <File Name="../../../../gcm.cpp"/>
+    <File Name="../../../../config.h"/>
+    <File Name="../../../../tigertab.cpp"/>
+    <File Name="../../../../blowfish.h"/>
+    <File Name="../../../../dessp.cpp"/>
+    <File Name="../../../../fhmqv.h"/>
+    <File Name="../../../../network.h"/>
+    <File Name="../../../../cast.cpp"/>
+    <File Name="../../../../md4.cpp"/>
+    <File Name="../../../../gf256.cpp"/>
+    <File Name="../../../../iterhash.h"/>
+    <File Name="../../../../rc2.h"/>
+    <File Name="../../../../validat3.cpp" ExcludeProjConfig="Debug;Release"/>
+    <File Name="../../../../salsa.cpp"/>
+    <File Name="../../../../hmqv.h"/>
+    <File Name="../../../../serpent.h"/>
+    <File Name="../../../../eprecomp.cpp"/>
+    <File Name="../../../../rw.cpp"/>
+    <File Name="../../../../hex.cpp"/>
+    <File Name="../../../../3way.h"/>
+    <File Name="../../../../luc.h"/>
+    <File Name="../../../../misc.h"/>
+    <File Name="../../../../cmac.cpp"/>
+    <File Name="../../../../gf2_32.cpp"/>
+    <File Name="../../../../skipjack.cpp"/>
+    <File Name="../../../../ttmac.cpp"/>
+    <File Name="../../../../camellia.cpp"/>
+    <File Name="../../../../argnames.h"/>
+    <File Name="../../../../idea.h"/>
+    <File Name="../../../../tea.h"/>
+    <File Name="../../../../ec2n.cpp"/>
+    <File Name="../../../../dll.h"/>
+    <File Name="../../../../regtest.cpp" ExcludeProjConfig="Debug;Release"/>
+    <File Name="../../../../chacha.cpp"/>
+    <File Name="../../../../gzip.h"/>
+    <File Name="../../../../md2.h"/>
+    <File Name="../../../../simple.cpp"/>
+    <File Name="../../../../serpentp.h"/>
+    <File Name="../../../../sha3.h"/>
+    <File Name="../../../../safer.h"/>
+    <File Name="../../../../nbtheory.h"/>
+    <File Name="../../../../whrlpool.h"/>
+    <File Name="../../../../safer.cpp"/>
+    <File Name="../../../../dh.cpp"/>
+    <File Name="../../../../emsa2.h"/>
+    <File Name="../../../../keccak.cpp"/>
+    <File Name="../../../../pch.h"/>
+    <File Name="../../../../twofish.h"/>
+    <File Name="../../../../vmac.h"/>
+    <File Name="../../../../fipstest.cpp" ExcludeProjConfig="Debug;Release"/>
+    <File Name="../../../../gost.cpp"/>
+    <File Name="../../../../ripemd.h"/>
+    <File Name="../../../../bench.h"/>
+    <File Name="../../../../seal.h"/>
+    <File Name="../../../../simple.h"/>
+    <File Name="../../../../rw.h"/>
+    <File Name="../../../../shark.cpp"/>
+    <File Name="../../../../gf256.h"/>
+    <File Name="../../../../zinflate.cpp"/>
+    <File Name="../../../../test.cpp" ExcludeProjConfig="Release"/>
+    <File Name="../../../../des.h"/>
+    <File Name="../../../../crc.h"/>
+    <File Name="../../../../camellia.h"/>
+    <File Name="../../../../pssr.cpp"/>
+    <File Name="../../../../serpent.cpp"/>
+    <File Name="../../../../randpool.h"/>
+    <File Name="../../../../rijndael.h"/>
+    <File Name="../../../../rdrand.cpp"/>
+    <File Name="../../../../dh2.h"/>
+    <File Name="../../../../authenc.h"/>
+    <File Name="../../../../validat2.cpp" ExcludeProjConfig="Debug;Release"/>
+    <File Name="../../../../channels.h"/>
+    <File Name="../../../../dh2.cpp"/>
+    <File Name="../../../../eccrypto.cpp"/>
+    <File Name="../../../../pssr.h"/>
+    <File Name="../../../../esign.h"/>
+    <File Name="../../../../resource.h"/>
+    <File Name="../../../../asn.cpp"/>
+    <File Name="../../../../eax.cpp"/>
+    <File Name="../../../../rabin.h"/>
+    <File Name="../../../../md4.h"/>
+    <File Name="../../../../luc.cpp"/>
+    <File Name="../../../../bfinit.cpp"/>
+    <File Name="../../../../sosemanuk.h"/>
+    <File Name="../../../../tftables.cpp"/>
+    <File Name="../../../../osrng.cpp"/>
+    <File Name="../../../../x64dll.asm"/>
+    <File Name="../../../../x64masm.asm"/>
+  </VirtualDirectory>
+  <Settings Type="Static Library">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Static Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g;-std=c++11;-march=native;-Wno-pragmas" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/lib$(ProjectName).a" IntermediateDirectory="./Debug" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Static Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-std=c++11;-march=native;-Wno-pragmas" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+        <Preprocessor Value="NDEBUG=1"/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/lib$(ProjectName).a" IntermediateDirectory="./Release" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="yes">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>

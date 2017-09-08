@@ -1,0 +1,88 @@
+{
+  "provider": {
+    "id": "180fc32e-8acd-43ff-82e7-ea06d0c5eb7f",
+    "name": "zsLib",
+    "symbol": "zsLib",
+    "description": "Cross platform asychronous threading, socket, and timer API",
+    "resourceName": "zsLib.events",
+    "aliases": {
+      "alias": [
+        {
+          "in": "i",
+          "out": "Info"
+        },
+        {
+          "in": "w",
+          "out": "Warning"
+        },
+        {
+          "in": "e",
+          "out": "Error"
+        },
+        {
+          "in": "f",
+          "out": "Fatal"
+        }
+      ]
+    },
+    "typedefs": {
+      "typedef": [
+        {
+          "name": "boolean",
+          "type": "bool"
+        },
+        {
+          "name": "puid",
+          "type": "size_t"
+        },
+        {
+          "name": "size_t",
+          "type": "uint64"
+        },
+        {
+          "name": "ssize_t",
+          "type": "int64"
+        },
+        {
+          "name": "this",
+          "type": "pointer"
+        },
+        {
+          "name": "socket",
+          "type": "uint64"
+        },
+        {
+          "name": "enum",
+          "type": "int64"
+        },
+        {
+          "name": "duration",
+          "type": "longlong"
+        },
+        {
+          "name": "buffer",
+          "type": "binary"
+        }
+      ]
+    }
+    "sources": {
+      "source": [
+        "zsLib.cpp",
+        "zsLib_Exception.cpp",
+        "zsLib_MessageQueue.cpp",
+        "zsLib_Settings.cpp",
+        "zsLib_Socket.cpp",
+        "zsLib_Timer.cpp"
+      ]
+    },
+    "channels": {
+      "channel": [
+        {
+          "id": "zs",
+          "name": "zsLib",
+          "type": "Debug"
+        }
+      ]
+    }
+  }
+}

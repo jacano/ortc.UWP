@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="audio">
+      <UniqueIdentifier>{D4AF4849-65C6-75FE-2B6E-F6BD18C08214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio">
+      <UniqueIdentifier>{D4AF4849-65C6-75FE-2B6E-F6BD18C08214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio">
+      <UniqueIdentifier>{D4AF4849-65C6-75FE-2B6E-F6BD18C08214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="call">
+      <UniqueIdentifier>{4194A5F5-EAC8-84D3-5A1B-2FE5680BDC83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="call">
+      <UniqueIdentifier>{4194A5F5-EAC8-84D3-5A1B-2FE5680BDC83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="call">
+      <UniqueIdentifier>{4194A5F5-EAC8-84D3-5A1B-2FE5680BDC83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="call">
+      <UniqueIdentifier>{4194A5F5-EAC8-84D3-5A1B-2FE5680BDC83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="call">
+      <UniqueIdentifier>{4194A5F5-EAC8-84D3-5A1B-2FE5680BDC83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="call">
+      <UniqueIdentifier>{4194A5F5-EAC8-84D3-5A1B-2FE5680BDC83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="call">
+      <UniqueIdentifier>{4194A5F5-EAC8-84D3-5A1B-2FE5680BDC83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="audio\audio_receive_stream_unittest.cc">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\audio_send_stream_unittest.cc">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\audio_state_unittest.cc">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="call\bitrate_allocator_unittest.cc">
+      <Filter>call</Filter>
+    </ClCompile>
+    <ClCompile Include="call\bitrate_estimator_tests.cc">
+      <Filter>call</Filter>
+    </ClCompile>
+    <ClCompile Include="call\call_unittest.cc">
+      <Filter>call</Filter>
+    </ClCompile>
+    <ClCompile Include="call\packet_injection_tests.cc">
+      <Filter>call</Filter>
+    </ClCompile>
+    <ClCompile Include="call\ringbuffer_unittest.cc">
+      <Filter>call</Filter>
+    </ClCompile>
+    <ClCompile Include="video\call_stats_unittest.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\encoder_state_feedback_unittest.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\end_to_end_tests.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\overuse_frame_detector_unittest.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\payload_router_unittest.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\report_block_stats_unittest.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\send_delay_stats_unittest.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\send_statistics_proxy_unittest.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\stats_counter_unittest.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\stream_synchronization_unittest.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\video_decoder_unittest.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\video_encoder_unittest.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\video_send_stream_tests.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\vie_encoder_unittest.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\vie_remb_unittest.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="call\rtc_event_log_unittest.cc">
+      <Filter>call</Filter>
+    </ClCompile>
+    <ClCompile Include="call\rtc_event_log_unittest_helper.cc">
+      <Filter>call</Filter>
+    </ClCompile>
+    <None Include="webrtc.gyp"/>
+  </ItemGroup>
+</Project>

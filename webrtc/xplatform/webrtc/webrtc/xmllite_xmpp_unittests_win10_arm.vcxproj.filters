@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmllite">
+      <UniqueIdentifier>{BB4AF9D4-02E7-FCEB-F000-2EA7745196B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmllite">
+      <UniqueIdentifier>{BB4AF9D4-02E7-FCEB-F000-2EA7745196B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmllite">
+      <UniqueIdentifier>{BB4AF9D4-02E7-FCEB-F000-2EA7745196B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmllite">
+      <UniqueIdentifier>{BB4AF9D4-02E7-FCEB-F000-2EA7745196B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmllite">
+      <UniqueIdentifier>{BB4AF9D4-02E7-FCEB-F000-2EA7745196B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmllite">
+      <UniqueIdentifier>{BB4AF9D4-02E7-FCEB-F000-2EA7745196B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{B134D3EF-0B0E-45CB-B8F7-8B574B4419CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{B134D3EF-0B0E-45CB-B8F7-8B574B4419CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{B134D3EF-0B0E-45CB-B8F7-8B574B4419CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{B134D3EF-0B0E-45CB-B8F7-8B574B4419CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{B134D3EF-0B0E-45CB-B8F7-8B574B4419CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{B134D3EF-0B0E-45CB-B8F7-8B574B4419CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{B134D3EF-0B0E-45CB-B8F7-8B574B4419CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{B134D3EF-0B0E-45CB-B8F7-8B574B4419CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{B134D3EF-0B0E-45CB-B8F7-8B574B4419CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{B134D3EF-0B0E-45CB-B8F7-8B574B4419CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{B134D3EF-0B0E-45CB-B8F7-8B574B4419CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{B134D3EF-0B0E-45CB-B8F7-8B574B4419CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{B134D3EF-0B0E-45CB-B8F7-8B574B4419CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{B134D3EF-0B0E-45CB-B8F7-8B574B4419CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle">
+      <UniqueIdentifier>{5D9BF7B8-0730-2DB3-F452-C128FCF78905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjingle\xmpp">
+      <UniqueIdentifier>{B134D3EF-0B0E-45CB-B8F7-8B574B4419CF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libjingle\xmllite\qname_unittest.cc">
+      <Filter>libjingle\xmllite</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmllite\xmlbuilder_unittest.cc">
+      <Filter>libjingle\xmllite</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmllite\xmlelement_unittest.cc">
+      <Filter>libjingle\xmllite</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmllite\xmlnsstack_unittest.cc">
+      <Filter>libjingle\xmllite</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmllite\xmlparser_unittest.cc">
+      <Filter>libjingle\xmllite</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmllite\xmlprinter_unittest.cc">
+      <Filter>libjingle\xmllite</Filter>
+    </ClCompile>
+    <ClInclude Include="libjingle\xmpp\fakexmppclient.h">
+      <Filter>libjingle\xmpp</Filter>
+    </ClInclude>
+    <ClCompile Include="libjingle\xmpp\hangoutpubsubclient_unittest.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmpp\jid_unittest.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmpp\mucroomconfigtask_unittest.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmpp\mucroomdiscoverytask_unittest.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmpp\mucroomlookuptask_unittest.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmpp\mucroomuniquehangoutidtask_unittest.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmpp\pingtask_unittest.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmpp\pubsubclient_unittest.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmpp\pubsubtasks_unittest.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmpp\util_unittest.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClInclude Include="libjingle\xmpp\util_unittest.h">
+      <Filter>libjingle\xmpp</Filter>
+    </ClInclude>
+    <ClCompile Include="libjingle\xmpp\xmppengine_unittest.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmpp\xmpplogintask_unittest.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <ClCompile Include="libjingle\xmpp\xmppstanzaparser_unittest.cc">
+      <Filter>libjingle\xmpp</Filter>
+    </ClCompile>
+    <None Include="webrtc.gyp"/>
+  </ItemGroup>
+</Project>

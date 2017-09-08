@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2EE2FB47-5856-F374-C6EE-F50D413070EA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>boringssl_nacl_win64_win10_arm</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationTypeRevision>8.1</ApplicationTypeRevision>
+    <ApplicationType>Windows Phone</ApplicationType>
+    <WindowsSDKDesktopARMSupport>true</WindowsSDKDesktopARMSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v120_wp81</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
+  <ImportGroup Label="ExtensionSettings"/>
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\.\bin\;$(MSBuildProjectDirectory)\.\bin\</ExecutablePath>
+    <OutDir>$(ProjectDir)..\..\build_win10_arm\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)obj\boringssl_nacl_win64\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)lib\$(ProjectName)$(TargetExt)</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /d2FastFail /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4267;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_NO_ASM;OPENSSL_SMALL;USE_LIBPCI=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /safeseh /dynamicbase /ignore:4199 /ignore:4221 /nxcompat /largeaddressaware %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_NO_ASM;OPENSSL_SMALL;USE_LIBPCI=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /d2FastFail /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4267;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_NO_ASM;OPENSSL_SMALL;USE_LIBPCI=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_NO_ASM;OPENSSL_SMALL;USE_LIBPCI=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /d2FastFail /d2Zi+ /Zc:inline /Oy- /Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4267;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_NO_ASM;OPENSSL_SMALL;USE_LIBPCI=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /safeseh /dynamicbase /ignore:4199 /ignore:4221 /nxcompat /largeaddressaware %(AdditionalOptions)</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_NO_ASM;OPENSSL_SMALL;USE_LIBPCI=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /d2FastFail /d2Zi+ /Zc:inline /Oy- /Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4267;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_NO_ASM;OPENSSL_SMALL;USE_LIBPCI=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail %(AdditionalOptions)</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_NO_ASM;OPENSSL_SMALL;USE_LIBPCI=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="boringssl.gyp">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\crypto\aes\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\asn1\asn1_locl.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\bio\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\bn\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\bn\rsaz_exp.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\bytestring\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\cipher\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\conf\conf_def.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\conf\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\curve25519\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\des\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\digest\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\digest\md32_common.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\ec\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\ec\p256-x86_64-table.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\evp\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\modes\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\newhope\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\obj\obj_dat.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\obj\obj_xref.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\pkcs8\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\poly1305\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\rand\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\rsa\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\x509\charmap.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\x509\internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\x509\vpm_int.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\x509v3\ext_dat.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\crypto\x509v3\pcy_int.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\aead.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\aes.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\arm_arch.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\asn1.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\asn1_mac.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\asn1t.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\base.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\base64.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\bio.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\blowfish.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\bn.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\buf.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\buffer.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\bytestring.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\c++\aead.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\c++\bytestring.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\c++\cipher.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\c++\digest.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\c++\hmac.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\c++\scoped_helpers.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\cast.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\chacha.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\cipher.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\cmac.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\conf.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\cpu.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\crypto.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\curve25519.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\des.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\dh.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\digest.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\dsa.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\ec.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\ec_key.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\ecdh.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\ecdsa.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\engine.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\err.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\evp.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\ex_data.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\hkdf.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\hmac.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\lhash.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\lhash_macros.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\md4.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\md5.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\mem.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\newhope.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\nid.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\obj.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\obj_mac.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\objects.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\opensslconf.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\opensslv.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\ossl_typ.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\pem.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\pkcs12.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\pkcs7.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\pkcs8.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\poly1305.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\rand.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\rc4.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\ripemd.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\rsa.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\safestack.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\sha.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\srtp.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\stack.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\stack_macros.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\thread.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\time_support.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\type_check.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\x509.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\x509_vfy.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="src\include\openssl\x509v3.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="err_data.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\aes\aes.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\aes\mode_wrappers.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_bitstr.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_bool.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_d2i_fp.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_dup.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_enum.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_gentm.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_i2d_fp.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_int.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_mbstr.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_object.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_octet.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_print.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_strnid.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_time.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_type.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_utctm.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\a_utf8.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\asn1_lib.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\asn1_par.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\asn_pack.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\f_enum.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\f_int.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\f_string.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\t_bitst.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\tasn_dec.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\tasn_enc.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\tasn_fre.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\tasn_new.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\tasn_typ.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\tasn_utl.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\x_bignum.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\asn1\x_long.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\base64\base64.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bio\bio.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bio\bio_mem.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bio\buffer.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bio\connect.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bio\fd.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bio\file.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bio\hexdump.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bio\pair.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bio\printf.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bio\socket.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bio\socket_helper.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\add.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\asm\x86_64-gcc.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\bn.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\bn_asn1.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\cmp.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\convert.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\ctx.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\div.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\exponentiation.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\gcd.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\generic.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\kronecker.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\montgomery.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\montgomery_inv.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\mul.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\prime.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\random.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\rsaz_exp.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\shift.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bn\sqrt.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\buf\buf.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bytestring\asn1_compat.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bytestring\ber.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bytestring\cbb.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\bytestring\cbs.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\chacha\chacha.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cipher\aead.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cipher\cipher.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cipher\derive_key.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cipher\e_aes.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cipher\e_chacha20poly1305.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cipher\e_des.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cipher\e_null.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cipher\e_rc2.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cipher\e_rc4.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cipher\e_ssl3.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cipher\e_tls.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cipher\tls_cbc.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cmac\cmac.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\conf\conf.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cpu-aarch64-linux.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cpu-arm-linux.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cpu-arm.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\cpu-intel.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\crypto.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\curve25519\curve25519.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\curve25519\spake25519.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\curve25519\x25519-x86_64.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\des\des.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\dh\check.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\dh\dh.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\dh\dh_asn1.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\dh\params.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\digest\digest.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\digest\digests.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\dsa\dsa.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\dsa\dsa_asn1.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\ec\ec.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\ec\ec_asn1.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\ec\ec_key.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\ec\ec_montgomery.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\ec\oct.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\ec\p224-64.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\ec\p256-64.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\ec\p256-x86_64.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\ec\simple.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\ec\util-64.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\ec\wnaf.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\ecdh\ecdh.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\ecdsa\ecdsa.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\ecdsa\ecdsa_asn1.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\engine\engine.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\err\err.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\evp\digestsign.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\evp\evp.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\evp\evp_asn1.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\evp\evp_ctx.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\evp\p_dsa_asn1.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\evp\p_ec.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\evp\p_ec_asn1.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\evp\p_rsa.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\evp\p_rsa_asn1.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\evp\pbkdf.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\evp\print.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\evp\sign.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\ex_data.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\hkdf\hkdf.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\hmac\hmac.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\lhash\lhash.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\md4\md4.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\md5\md5.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\mem.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\modes\cbc.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\modes\cfb.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\modes\ctr.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\modes\gcm.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\modes\ofb.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\newhope\error_correction.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\newhope\newhope.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\newhope\ntt.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\newhope\poly.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\newhope\precomp.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\newhope\reduce.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\obj\obj.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\obj\obj_xref.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\pem\pem_all.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\pem\pem_info.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\pem\pem_lib.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\pem\pem_oth.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\pem\pem_pk8.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\pem\pem_pkey.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\pem\pem_x509.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\pem\pem_xaux.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\pkcs8\p5_pbe.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\pkcs8\p5_pbev2.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\pkcs8\p8_pkey.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\pkcs8\pkcs8.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\poly1305\poly1305.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\poly1305\poly1305_arm.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\poly1305\poly1305_vec.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\rand\deterministic.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\rand\rand.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\rand\urandom.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\rand\windows.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\rc4\rc4.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\refcount_c11.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\refcount_lock.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\rsa\blinding.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\rsa\padding.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\rsa\rsa.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\rsa\rsa_asn1.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\rsa\rsa_impl.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\sha\sha1.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\sha\sha256.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\sha\sha512.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\stack\stack.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\thread.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\thread_none.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\thread_pthread.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\thread_win.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\time_support.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\a_digest.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\a_sign.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\a_strex.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\a_verify.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\algorithm.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\asn1_gen.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\by_dir.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\by_file.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\i2d_pr.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\pkcs7.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\rsa_pss.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\t_crl.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\t_req.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\t_x509.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\t_x509a.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509_att.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509_cmp.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509_d2.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509_def.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509_ext.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509_lu.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509_obj.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509_r2x.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509_req.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509_set.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509_trs.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509_txt.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509_v3.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509_vfy.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509_vpm.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509cset.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509name.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509rset.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509spki.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x509type.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x_algor.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x_all.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x_attrib.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x_crl.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x_exten.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x_info.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x_name.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x_pkey.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x_pubkey.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x_req.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x_sig.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x_spki.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x_val.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x_x509.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509\x_x509a.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\pcy_cache.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\pcy_data.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\pcy_lib.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\pcy_map.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\pcy_node.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\pcy_tree.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_akey.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_akeya.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_alt.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_bcons.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_bitst.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_conf.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_cpols.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_crld.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_enum.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_extku.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_genn.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_ia5.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_info.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_int.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_lib.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_ncons.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_pci.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_pcia.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_pcons.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_pku.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_pmaps.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_prn.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_purp.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_skey.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_sxnet.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="src\crypto\x509v3\v3_utl.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
+  <ImportGroup Label="ExtensionTargets"/>
+</Project>

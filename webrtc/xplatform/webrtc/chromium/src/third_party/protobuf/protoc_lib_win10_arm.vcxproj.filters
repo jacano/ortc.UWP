@@ -1,0 +1,3284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\csharp">
+      <UniqueIdentifier>{FE68C22F-350B-B437-2DFD-43D0DBCF45E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\java">
+      <UniqueIdentifier>{4E663CF6-CD22-68E0-B08F-06E24C51407E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\javanano">
+      <UniqueIdentifier>{986EEED4-D29C-3AFF-6CB8-8D984517DDAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\js">
+      <UniqueIdentifier>{AFF4C650-55EE-4B49-D17B-E3562B397D81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\js">
+      <UniqueIdentifier>{AFF4C650-55EE-4B49-D17B-E3562B397D81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\objectivec">
+      <UniqueIdentifier>{4D234216-E9D3-FF78-C752-80EFB36CD0BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\python">
+      <UniqueIdentifier>{990FB27D-DC8A-452F-7BD9-A3CA2935E957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\python">
+      <UniqueIdentifier>{990FB27D-DC8A-452F-7BD9-A3CA2935E957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\ruby">
+      <UniqueIdentifier>{962135FA-12D1-29F7-48F6-2357FC586B8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler\ruby">
+      <UniqueIdentifier>{962135FA-12D1-29F7-48F6-2357FC586B8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google">
+      <UniqueIdentifier>{8FA81D33-CFDF-CD07-7670-CB8C30BA9132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf">
+      <UniqueIdentifier>{C23158C8-7778-4068-9B3D-947E711DBC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\google\protobuf\compiler">
+      <UniqueIdentifier>{041FFD28-E4BD-ABC0-5AF7-A6D1560FAC0E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\google\protobuf\compiler\code_generator.cc">
+      <Filter>src\google\protobuf\compiler</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\code_generator.h">
+      <Filter>src\google\protobuf\compiler</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\command_line_interface.cc">
+      <Filter>src\google\protobuf\compiler</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\command_line_interface.h">
+      <Filter>src\google\protobuf\compiler</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\cpp\cpp_enum.cc">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\cpp\cpp_enum.h">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\cpp\cpp_enum_field.cc">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\cpp\cpp_enum_field.h">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\cpp\cpp_extension.cc">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\cpp\cpp_extension.h">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\cpp\cpp_field.cc">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\cpp\cpp_field.h">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\cpp\cpp_file.cc">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\cpp\cpp_file.h">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\cpp\cpp_generator.cc">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\cpp\cpp_generator.h">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\cpp\cpp_helpers.cc">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\cpp\cpp_helpers.h">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\cpp\cpp_map_field.cc">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\cpp\cpp_map_field.h">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\cpp\cpp_message.cc">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\cpp\cpp_message.h">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\cpp\cpp_message_field.cc">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\cpp\cpp_message_field.h">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\google\protobuf\compiler\cpp\cpp_options.h">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\cpp\cpp_primitive_field.cc">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\cpp\cpp_primitive_field.h">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\cpp\cpp_service.cc">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\cpp\cpp_service.h">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\cpp\cpp_string_field.cc">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\cpp\cpp_string_field.h">
+      <Filter>src\google\protobuf\compiler\cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_doc_comment.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_doc_comment.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_enum.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_enum.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_enum_field.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_enum_field.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_field_base.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_field_base.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_generator.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_generator.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_helpers.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_helpers.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_map_field.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_map_field.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_message.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_message.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_message_field.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_message_field.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_options.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_primitive_field.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_primitive_field.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_reflection_class.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_reflection_class.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_repeated_enum_field.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_repeated_enum_field.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_repeated_message_field.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_repeated_message_field.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_repeated_primitive_field.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_repeated_primitive_field.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_source_generator_base.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_source_generator_base.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\csharp\csharp_wrapper_field.cc">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\csharp\csharp_wrapper_field.h">
+      <Filter>src\google\protobuf\compiler\csharp</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_context.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_context.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_doc_comment.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_doc_comment.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_enum.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_enum.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_enum_field.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_enum_field.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_enum_field_lite.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_enum_field_lite.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_enum_lite.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_enum_lite.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_extension.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_extension.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_extension_lite.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_extension_lite.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_field.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_field.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_file.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_file.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_generator.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_generator.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_generator_factory.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_generator_factory.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_helpers.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_helpers.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_lazy_message_field.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_lazy_message_field.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_lazy_message_field_lite.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_lazy_message_field_lite.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_map_field.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_map_field.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_map_field_lite.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_map_field_lite.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_message.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_message.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_message_builder.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_message_builder.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_message_builder_lite.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_message_builder_lite.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_message_field.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_message_field.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_message_field_lite.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_message_field_lite.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_message_lite.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_message_lite.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_name_resolver.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_name_resolver.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_primitive_field.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_primitive_field.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_primitive_field_lite.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_primitive_field_lite.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_service.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_service.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_shared_code_generator.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_shared_code_generator.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_string_field.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_string_field.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\java\java_string_field_lite.cc">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\java\java_string_field_lite.h">
+      <Filter>src\google\protobuf\compiler\java</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\javanano\javanano_enum.cc">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\javanano\javanano_enum.h">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\javanano\javanano_enum_field.cc">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\javanano\javanano_enum_field.h">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\javanano\javanano_extension.cc">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\javanano\javanano_extension.h">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\javanano\javanano_field.cc">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\javanano\javanano_field.h">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\javanano\javanano_file.cc">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\javanano\javanano_file.h">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\javanano\javanano_generator.cc">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\javanano\javanano_generator.h">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\javanano\javanano_helpers.cc">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\javanano\javanano_helpers.h">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\javanano\javanano_map_field.cc">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\javanano\javanano_map_field.h">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\javanano\javanano_message.cc">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\javanano\javanano_message.h">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\javanano\javanano_message_field.cc">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\javanano\javanano_message_field.h">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\javanano\javanano_primitive_field.cc">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\javanano\javanano_primitive_field.h">
+      <Filter>src\google\protobuf\compiler\javanano</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\js\js_generator.cc">
+      <Filter>src\google\protobuf\compiler\js</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\js\js_generator.h">
+      <Filter>src\google\protobuf\compiler\js</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\objectivec\objectivec_enum.cc">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\objectivec\objectivec_enum.h">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\objectivec\objectivec_enum_field.cc">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\objectivec\objectivec_enum_field.h">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\objectivec\objectivec_extension.cc">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\objectivec\objectivec_extension.h">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\objectivec\objectivec_field.cc">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\objectivec\objectivec_field.h">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\objectivec\objectivec_file.cc">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\objectivec\objectivec_file.h">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\objectivec\objectivec_generator.cc">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\objectivec\objectivec_generator.h">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\objectivec\objectivec_helpers.cc">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\objectivec\objectivec_helpers.h">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\objectivec\objectivec_map_field.cc">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\objectivec\objectivec_map_field.h">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\objectivec\objectivec_message.cc">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\objectivec\objectivec_message.h">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\objectivec\objectivec_message_field.cc">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\objectivec\objectivec_message_field.h">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\objectivec\objectivec_oneof.cc">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\objectivec\objectivec_oneof.h">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\objectivec\objectivec_primitive_field.cc">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\objectivec\objectivec_primitive_field.h">
+      <Filter>src\google\protobuf\compiler\objectivec</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\plugin.cc">
+      <Filter>src\google\protobuf\compiler</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\plugin.h">
+      <Filter>src\google\protobuf\compiler</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\plugin.pb.cc">
+      <Filter>src\google\protobuf\compiler</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\plugin.pb.h">
+      <Filter>src\google\protobuf\compiler</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\python\python_generator.cc">
+      <Filter>src\google\protobuf\compiler\python</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\python\python_generator.h">
+      <Filter>src\google\protobuf\compiler\python</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\ruby\ruby_generator.cc">
+      <Filter>src\google\protobuf\compiler\ruby</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\ruby\ruby_generator.h">
+      <Filter>src\google\protobuf\compiler\ruby</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\subprocess.cc">
+      <Filter>src\google\protobuf\compiler</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\subprocess.h">
+      <Filter>src\google\protobuf\compiler</Filter>
+    </ClInclude>
+    <ClCompile Include="src\google\protobuf\compiler\zip_writer.cc">
+      <Filter>src\google\protobuf\compiler</Filter>
+    </ClCompile>
+    <ClInclude Include="src\google\protobuf\compiler\zip_writer.h">
+      <Filter>src\google\protobuf\compiler</Filter>
+    </ClInclude>
+    <None Include="protobuf.gyp"/>
+  </ItemGroup>
+</Project>

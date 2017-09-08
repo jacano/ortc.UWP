@@ -1,0 +1,157 @@
+{
+  "provider": {
+    "id": "48da0f57-3fd5-4f85-a9c2-7075b268ac3f",
+    "name": "OrtcServices",
+    "symbol": "OrtcServices",
+    "description": "ORTC Lib services library",
+    "resourceName": "ortc.Services.events",
+    "aliases": {
+      "alias": [
+        {
+          "in": "i",
+          "out": "Info"
+        },
+        {
+          "in": "w",
+          "out": "Warning"
+        },
+        {
+          "in": "e",
+          "out": "Error"
+        },
+        {
+          "in": "f",
+          "out": "Fatal"
+        }
+      ]
+    },
+    "typedefs": {
+      "typedef": [
+        {
+          "name": "boolean",
+          "type": "bool"
+        },
+        {
+          "name": "puid",
+          "type": "size_t"
+        },
+        {
+          "name": "size_t",
+          "type": "uint64"
+        },
+        {
+          "name": "this",
+          "type": "pointer"
+        },
+        {
+          "name": "socket",
+          "type": "uint64"
+        },
+        {
+          "name": "enum",
+          "type": "int64"
+        },
+        {
+          "name": "duration",
+          "type": "longlong"
+        },
+        {
+          "name": "buffer",
+          "type": "binary"
+        }
+      ]
+    },
+    "sources": {
+      "source": [
+        "services_services.cpp",
+        "services_BackOffTimer.cpp",
+        "services_BackOffTimerPattern.cpp",
+        "services_Cache.cpp",
+        "services_DNS.cpp",
+        "services_HTTP.cpp",
+        "services_HTTP_WinRT.cpp",
+        "services_Logger.cpp",
+        "services_STUNDiscovery.cpp",
+        "services_STUNPacket.cpp",
+        "services_STUNRequester.cpp",
+        "services_STUNRequesterManager.cpp",
+        "services_TURNSocket.cpp"
+      ]
+    },
+    "channels": {
+      "channel": [
+        {
+          "id": "os",
+          "name": "OrtcServices",
+          "type": "Debug"
+        }
+      ]
+    },
+    "tasks": {
+      "task": [
+        {
+          "name": "Stun"
+        },
+        {
+          "name": "StunRequester",
+          "opcodes": {
+            "opcode": [
+              { "name": "RetryNow" }
+            ]
+          }
+        },
+        {
+          "name": "StunRequesterManager"
+        },
+        {
+          "name": "StunDiscovery"
+        },
+        {
+          "name": "TurnSocket"
+        },
+        {
+          "name": "BackOffTimerPattern"
+        },
+        {
+          "name": "BackOffTimer"
+        },
+        {
+          "name": "Settings"
+        },
+        {
+          "name": "Cache"
+        },
+        {
+          "name": "Dns",
+          "opcodes": {
+            "opcode": [
+              { "name": "Lookup" }
+            ]
+          }
+        },
+        {
+          "name": "Http"
+        },
+        {
+          "name": "DebugLogger"
+        }
+      ]
+    },
+    "opcodes": {
+      "opcode": [
+        {
+          "name": "Cancel"
+        },
+        {
+          "name": "Event"
+        },
+        {
+          "name": "StateEvent"
+        },
+        {
+          "name": "InternalEvent"
+        }
+      ]
+    }
+  }
+}

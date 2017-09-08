@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BB495AAF-DDCB-9F8C-93DD-DFEF31EA53DF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>All_win10_x64</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationTypeRevision>8.1</ApplicationTypeRevision>
+    <ApplicationType>Windows Store</ApplicationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
+  <ImportGroup Label="ExtensionSettings"/>
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\.\bin\;$(MSBuildProjectDirectory)\.\bin\</ExecutablePath>
+    <OutDir>$(ProjectDir).\build_win10_x64\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)obj\All\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;third_party\wtl\include;.;testing\gtest\include;testing\gmock_custom;testing\gmock\include;webrtc\common_audio\resampler\include;webrtc\common_audio\signal_processing\include;webrtc\common_audio\vad\include;webrtc\common_video\include;webrtc\common_video\libyuv\include;third_party\libyuv\include;third_party\libyuv;webrtc;webrtc\modules\audio_coding\include;webrtc\modules\include;webrtc\modules\audio_coding\codecs\isac\main\include;webrtc\modules\audio_coding\codecs\isac\fix\include;webrtc\modules\audio_coding\codecs\red\include;webrtc\modules\audio_device\include;$(OutDir)obj\global_intermediate\protoc_out;third_party\protobuf\src;third_party\opus\src\src;third_party\opus\src\celt;third_party\opus\src\include;webrtc\modules\audio_coding\neteq\tools;webrtc\modules\audio_coding\neteq\include;webrtc\modules\audio_coding\neteq\test;webrtc\modules\remote_bitrate_estimator\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4373;4389;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;FEATURE_ENABLE_VOICEMAIL;SRTP_RELATIVE_PATH;HAVE_SCTP;HAVE_SRTP;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;d3d11.lib;dxgi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /safeseh /dynamicbase /ignore:4199 /ignore:4221 /nxcompat /largeaddressaware %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>.;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;third_party\wtl\include;.;testing\gtest\include;testing\gmock_custom;testing\gmock\include;webrtc\common_audio\resampler\include;webrtc\common_audio\signal_processing\include;webrtc\common_audio\vad\include;webrtc\common_video\include;webrtc\common_video\libyuv\include;third_party\libyuv\include;third_party\libyuv;webrtc;webrtc\modules\audio_coding\include;webrtc\modules\include;webrtc\modules\audio_coding\codecs\isac\main\include;webrtc\modules\audio_coding\codecs\isac\fix\include;webrtc\modules\audio_coding\codecs\red\include;webrtc\modules\audio_device\include;$(OutDir)obj\global_intermediate\protoc_out;third_party\protobuf\src;third_party\opus\src\src;third_party\opus\src\celt;third_party\opus\src\include;webrtc\modules\audio_coding\neteq\tools;webrtc\modules\audio_coding\neteq\include;webrtc\modules\audio_coding\neteq\test;webrtc\modules\remote_bitrate_estimator\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;FEATURE_ENABLE_VOICEMAIL;SRTP_RELATIVE_PATH;HAVE_SCTP;HAVE_SRTP;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;third_party\wtl\include;.;testing\gtest\include;testing\gmock_custom;testing\gmock\include;webrtc\common_audio\resampler\include;webrtc\common_audio\signal_processing\include;webrtc\common_audio\vad\include;webrtc\common_video\include;webrtc\common_video\libyuv\include;third_party\libyuv\include;third_party\libyuv;webrtc;webrtc\modules\audio_coding\include;webrtc\modules\include;webrtc\modules\audio_coding\codecs\isac\main\include;webrtc\modules\audio_coding\codecs\isac\fix\include;webrtc\modules\audio_coding\codecs\red\include;webrtc\modules\audio_device\include;$(OutDir)obj\global_intermediate\protoc_out;third_party\protobuf\src;third_party\opus\src\src;third_party\opus\src\celt;third_party\opus\src\include;webrtc\modules\audio_coding\neteq\tools;webrtc\modules\audio_coding\neteq\include;webrtc\modules\audio_coding\neteq\test;webrtc\modules\remote_bitrate_estimator\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4373;4389;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;FEATURE_ENABLE_VOICEMAIL;SRTP_RELATIVE_PATH;HAVE_SCTP;HAVE_SRTP;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;d3d11.lib;dxgi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>.;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;third_party\wtl\include;.;testing\gtest\include;testing\gmock_custom;testing\gmock\include;webrtc\common_audio\resampler\include;webrtc\common_audio\signal_processing\include;webrtc\common_audio\vad\include;webrtc\common_video\include;webrtc\common_video\libyuv\include;third_party\libyuv\include;third_party\libyuv;webrtc;webrtc\modules\audio_coding\include;webrtc\modules\include;webrtc\modules\audio_coding\codecs\isac\main\include;webrtc\modules\audio_coding\codecs\isac\fix\include;webrtc\modules\audio_coding\codecs\red\include;webrtc\modules\audio_device\include;$(OutDir)obj\global_intermediate\protoc_out;third_party\protobuf\src;third_party\opus\src\src;third_party\opus\src\celt;third_party\opus\src\include;webrtc\modules\audio_coding\neteq\tools;webrtc\modules\audio_coding\neteq\include;webrtc\modules\audio_coding\neteq\test;webrtc\modules\remote_bitrate_estimator\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;FEATURE_ENABLE_VOICEMAIL;SRTP_RELATIVE_PATH;HAVE_SCTP;HAVE_SRTP;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;third_party\wtl\include;.;testing\gtest\include;testing\gmock_custom;testing\gmock\include;webrtc\common_audio\resampler\include;webrtc\common_audio\signal_processing\include;webrtc\common_audio\vad\include;webrtc\common_video\include;webrtc\common_video\libyuv\include;third_party\libyuv\include;third_party\libyuv;webrtc;webrtc\modules\audio_coding\include;webrtc\modules\include;webrtc\modules\audio_coding\codecs\isac\main\include;webrtc\modules\audio_coding\codecs\isac\fix\include;webrtc\modules\audio_coding\codecs\red\include;webrtc\modules\audio_device\include;$(OutDir)obj\global_intermediate\protoc_out;third_party\protobuf\src;third_party\opus\src\src;third_party\opus\src\celt;third_party\opus\src\include;webrtc\modules\audio_coding\neteq\tools;webrtc\modules\audio_coding\neteq\include;webrtc\modules\audio_coding\neteq\test;webrtc\modules\remote_bitrate_estimator\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4373;4389;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;FEATURE_ENABLE_VOICEMAIL;SRTP_RELATIVE_PATH;HAVE_SCTP;HAVE_SRTP;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/10/Lib/10.0.10586.0/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;d3d11.lib;dxgi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/10/Lib/10.0.10586.0/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /dynamicbase /ignore:4199 /ignore:4221 /nxcompat %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>olepro32.lib</IgnoreSpecificDefaultLibraries>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>.;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;third_party\wtl\include;.;testing\gtest\include;testing\gmock_custom;testing\gmock\include;webrtc\common_audio\resampler\include;webrtc\common_audio\signal_processing\include;webrtc\common_audio\vad\include;webrtc\common_video\include;webrtc\common_video\libyuv\include;third_party\libyuv\include;third_party\libyuv;webrtc;webrtc\modules\audio_coding\include;webrtc\modules\include;webrtc\modules\audio_coding\codecs\isac\main\include;webrtc\modules\audio_coding\codecs\isac\fix\include;webrtc\modules\audio_coding\codecs\red\include;webrtc\modules\audio_device\include;$(OutDir)obj\global_intermediate\protoc_out;third_party\protobuf\src;third_party\opus\src\src;third_party\opus\src\celt;third_party\opus\src\include;webrtc\modules\audio_coding\neteq\tools;webrtc\modules\audio_coding\neteq\include;webrtc\modules\audio_coding\neteq\test;webrtc\modules\remote_bitrate_estimator\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;FEATURE_ENABLE_VOICEMAIL;SRTP_RELATIVE_PATH;HAVE_SCTP;HAVE_SRTP;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;third_party\wtl\include;.;testing\gtest\include;testing\gmock_custom;testing\gmock\include;webrtc\common_audio\resampler\include;webrtc\common_audio\signal_processing\include;webrtc\common_audio\vad\include;webrtc\common_video\include;webrtc\common_video\libyuv\include;third_party\libyuv\include;third_party\libyuv;webrtc;webrtc\modules\audio_coding\include;webrtc\modules\include;webrtc\modules\audio_coding\codecs\isac\main\include;webrtc\modules\audio_coding\codecs\isac\fix\include;webrtc\modules\audio_coding\codecs\red\include;webrtc\modules\audio_device\include;$(OutDir)obj\global_intermediate\protoc_out;third_party\protobuf\src;third_party\opus\src\src;third_party\opus\src\celt;third_party\opus\src\include;webrtc\modules\audio_coding\neteq\tools;webrtc\modules\audio_coding\neteq\include;webrtc\modules\audio_coding\neteq\test;webrtc\modules\remote_bitrate_estimator\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /d2Zi+ /Zc:inline /Oy- /Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4373;4389;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;FEATURE_ENABLE_VOICEMAIL;SRTP_RELATIVE_PATH;HAVE_SCTP;HAVE_SRTP;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;d3d11.lib;dxgi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /safeseh /dynamicbase /ignore:4199 /ignore:4221 /nxcompat /largeaddressaware %(AdditionalOptions)</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>.;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;third_party\wtl\include;.;testing\gtest\include;testing\gmock_custom;testing\gmock\include;webrtc\common_audio\resampler\include;webrtc\common_audio\signal_processing\include;webrtc\common_audio\vad\include;webrtc\common_video\include;webrtc\common_video\libyuv\include;third_party\libyuv\include;third_party\libyuv;webrtc;webrtc\modules\audio_coding\include;webrtc\modules\include;webrtc\modules\audio_coding\codecs\isac\main\include;webrtc\modules\audio_coding\codecs\isac\fix\include;webrtc\modules\audio_coding\codecs\red\include;webrtc\modules\audio_device\include;$(OutDir)obj\global_intermediate\protoc_out;third_party\protobuf\src;third_party\opus\src\src;third_party\opus\src\celt;third_party\opus\src\include;webrtc\modules\audio_coding\neteq\tools;webrtc\modules\audio_coding\neteq\include;webrtc\modules\audio_coding\neteq\test;webrtc\modules\remote_bitrate_estimator\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;FEATURE_ENABLE_VOICEMAIL;SRTP_RELATIVE_PATH;HAVE_SCTP;HAVE_SRTP;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;third_party\wtl\include;.;testing\gtest\include;testing\gmock_custom;testing\gmock\include;webrtc\common_audio\resampler\include;webrtc\common_audio\signal_processing\include;webrtc\common_audio\vad\include;webrtc\common_video\include;webrtc\common_video\libyuv\include;third_party\libyuv\include;third_party\libyuv;webrtc;webrtc\modules\audio_coding\include;webrtc\modules\include;webrtc\modules\audio_coding\codecs\isac\main\include;webrtc\modules\audio_coding\codecs\isac\fix\include;webrtc\modules\audio_coding\codecs\red\include;webrtc\modules\audio_device\include;$(OutDir)obj\global_intermediate\protoc_out;third_party\protobuf\src;third_party\opus\src\src;third_party\opus\src\celt;third_party\opus\src\include;webrtc\modules\audio_coding\neteq\tools;webrtc\modules\audio_coding\neteq\include;webrtc\modules\audio_coding\neteq\test;webrtc\modules\remote_bitrate_estimator\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /d2Zi+ /Zc:inline /Oy- /Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4373;4389;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;FEATURE_ENABLE_VOICEMAIL;SRTP_RELATIVE_PATH;HAVE_SCTP;HAVE_SRTP;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;d3d11.lib;dxgi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail %(AdditionalOptions)</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>.;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;third_party\wtl\include;.;testing\gtest\include;testing\gmock_custom;testing\gmock\include;webrtc\common_audio\resampler\include;webrtc\common_audio\signal_processing\include;webrtc\common_audio\vad\include;webrtc\common_video\include;webrtc\common_video\libyuv\include;third_party\libyuv\include;third_party\libyuv;webrtc;webrtc\modules\audio_coding\include;webrtc\modules\include;webrtc\modules\audio_coding\codecs\isac\main\include;webrtc\modules\audio_coding\codecs\isac\fix\include;webrtc\modules\audio_coding\codecs\red\include;webrtc\modules\audio_device\include;$(OutDir)obj\global_intermediate\protoc_out;third_party\protobuf\src;third_party\opus\src\src;third_party\opus\src\celt;third_party\opus\src\include;webrtc\modules\audio_coding\neteq\tools;webrtc\modules\audio_coding\neteq\include;webrtc\modules\audio_coding\neteq\test;webrtc\modules\remote_bitrate_estimator\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;FEATURE_ENABLE_VOICEMAIL;SRTP_RELATIVE_PATH;HAVE_SCTP;HAVE_SRTP;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;third_party\wtl\include;.;testing\gtest\include;testing\gmock_custom;testing\gmock\include;webrtc\common_audio\resampler\include;webrtc\common_audio\signal_processing\include;webrtc\common_audio\vad\include;webrtc\common_video\include;webrtc\common_video\libyuv\include;third_party\libyuv\include;third_party\libyuv;webrtc;webrtc\modules\audio_coding\include;webrtc\modules\include;webrtc\modules\audio_coding\codecs\isac\main\include;webrtc\modules\audio_coding\codecs\isac\fix\include;webrtc\modules\audio_coding\codecs\red\include;webrtc\modules\audio_device\include;$(OutDir)obj\global_intermediate\protoc_out;third_party\protobuf\src;third_party\opus\src\src;third_party\opus\src\celt;third_party\opus\src\include;webrtc\modules\audio_coding\neteq\tools;webrtc\modules\audio_coding\neteq\include;webrtc\modules\audio_coding\neteq\test;webrtc\modules\remote_bitrate_estimator\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /d2Zi+ /Zc:inline /Oy- /Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4373;4389;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;FEATURE_ENABLE_VOICEMAIL;SRTP_RELATIVE_PATH;HAVE_SCTP;HAVE_SRTP;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/10/Lib/10.0.10586.0/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;d3d11.lib;dxgi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/10/Lib/10.0.10586.0/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /dynamicbase /ignore:4199 /ignore:4221 /nxcompat %(AdditionalOptions)</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>olepro32.lib</IgnoreSpecificDefaultLibraries>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>.;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;third_party\wtl\include;.;testing\gtest\include;testing\gmock_custom;testing\gmock\include;webrtc\common_audio\resampler\include;webrtc\common_audio\signal_processing\include;webrtc\common_audio\vad\include;webrtc\common_video\include;webrtc\common_video\libyuv\include;third_party\libyuv\include;third_party\libyuv;webrtc;webrtc\modules\audio_coding\include;webrtc\modules\include;webrtc\modules\audio_coding\codecs\isac\main\include;webrtc\modules\audio_coding\codecs\isac\fix\include;webrtc\modules\audio_coding\codecs\red\include;webrtc\modules\audio_device\include;$(OutDir)obj\global_intermediate\protoc_out;third_party\protobuf\src;third_party\opus\src\src;third_party\opus\src\celt;third_party\opus\src\include;webrtc\modules\audio_coding\neteq\tools;webrtc\modules\audio_coding\neteq\include;webrtc\modules\audio_coding\neteq\test;webrtc\modules\remote_bitrate_estimator\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;FEATURE_ENABLE_VOICEMAIL;SRTP_RELATIVE_PATH;HAVE_SCTP;HAVE_SRTP;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="all.gyp">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="webrtc\api\call_api_win10_x64.vcxproj">
+      <Project>{BA26F018-1DE0-D40C-70F5-19F0ECC88775}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\api\libjingle_peerconnection_win10_x64.vcxproj">
+      <Project>{0EC1A1C2-3A7E-1DA3-E867-72814D2B2795}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\base\rtc_base_approved_win10_x64.vcxproj">
+      <Project>{495ACE4E-AF0D-166D-829E-B1CA5DCA768C}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\base\rtc_task_queue_win10_x64.vcxproj">
+      <Project>{A3D263EC-CE0A-3CDF-73C8-93256F71434E}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\base\rtc_base_win10_x64.vcxproj">
+      <Project>{C946DBA6-AF27-CB38-D6AD-D95129B17F2F}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\base\gtest_prod_win10_x64.vcxproj">
+      <Project>{F4C1788F-1642-A5AC-7F4C-190EE954AC1A}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\webrtc_common_win10_x64.vcxproj">
+      <Project>{6A17D40B-5985-32F1-3D45-21CF50969E15}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\common_audio\common_audio_win10_x64.vcxproj">
+      <Project>{07E12B6F-FCE6-32C6-E1B1-561E715EE4A6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\common_audio\common_audio_sse2_win10_x64.vcxproj">
+      <Project>{C43CBAF9-D2BC-5472-A5B6-DB517B493690}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\common_audio\common_audio_unittests_win10_x64.vcxproj">
+      <Project>{BAEB5B8B-A427-1AAA-FE65-04136C99BE64}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\common_video\common_video_win10_x64.vcxproj">
+      <Project>{238099ED-1499-C5D9-7EE9-76EC2DCA4AD3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\media\rtc_media_win10_x64.vcxproj">
+      <Project>{CD8B682A-64D0-4FC3-2B42-3FF656E3B4F2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\media\rtc_unittest_main_win10_x64.vcxproj">
+      <Project>{F5437CC5-8AC4-05A7-F1F1-BE9A9F5A1AD2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\media\rtc_media_unittests_win10_x64.vcxproj">
+      <Project>{27AD6402-79F2-D59F-87C8-6FA66E8BB6B4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audio_decoder_factory_interface_win10_x64.vcxproj">
+      <Project>{010C6B08-01FA-17DF-A97B-C06FB580686F}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\builtin_audio_decoder_factory_win10_x64.vcxproj">
+      <Project>{614DCA25-65D5-F69A-4F80-496F69D3B258}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\rent_a_codec_win10_x64.vcxproj">
+      <Project>{5F4E3A45-C216-C27E-4AC5-325E7E56991F}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audio_coding_module_win10_x64.vcxproj">
+      <Project>{3BFF3F25-8F23-894F-4E91-B27D7D51DEC8}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audio_decoder_interface_win10_x64.vcxproj">
+      <Project>{7D5A12DB-0606-5E7F-9285-EC2BFFF49CDA}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audio_encoder_interface_win10_x64.vcxproj">
+      <Project>{C9B93688-75E5-17BC-D9AD-FBADD8055BE7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\cng_win10_x64.vcxproj">
+      <Project>{415CA37C-2871-F9B6-7203-6C8742120C28}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\g711_win10_x64.vcxproj">
+      <Project>{99B350B1-13AE-704A-4E56-8527DB4195E3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\g722_win10_x64.vcxproj">
+      <Project>{13241912-5D04-ABD8-B4BA-F0BFA84CDB2C}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\ilbc_win10_x64.vcxproj">
+      <Project>{E80F4F01-639B-AE1A-0A31-B37DF9B7C2E6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\isac_win10_x64.vcxproj">
+      <Project>{85DA79C7-D277-8359-34CF-E8D38BECF02E}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\isac_common_win10_x64.vcxproj">
+      <Project>{85F6830F-C507-31FE-3976-F523D9BC3CC7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\isac_fix_win10_x64.vcxproj">
+      <Project>{F239F74F-003F-C7E2-FB7F-ABE72433F8D9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\pcm16b_win10_x64.vcxproj">
+      <Project>{8C31DB98-76EA-1BEA-C6EE-97BFB5B4BAA1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\red_win10_x64.vcxproj">
+      <Project>{E22AB3B6-EE83-EFC7-49A6-EC4E19714C8D}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\neteq_win10_x64.vcxproj">
+      <Project>{D6CD66AB-8460-0CD7-E1D2-5024AAFD7F13}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audio_conference_mixer_win10_x64.vcxproj">
+      <Project>{53136BB0-C2D6-53FE-DB49-A6295E577B71}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audio_device_win10_x64.vcxproj">
+      <Project>{97898CB7-3EA2-2D57-A6D0-7E8BE88C3FF5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audio_mixer_win10_x64.vcxproj">
+      <Project>{75336DBF-91A5-CE98-803D-A528FB6A3B0F}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audio_processing_win10_x64.vcxproj">
+      <Project>{751F4B99-F002-E344-3495-FF6774CE0E7E}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\bitrate_controller_win10_x64.vcxproj">
+      <Project>{BCC0556E-2B36-EB39-47F6-A1EF966791DA}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\congestion_controller_win10_x64.vcxproj">
+      <Project>{E6E5162C-46A9-251D-EC52-C62F73DF1F1B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\primitives_win10_x64.vcxproj">
+      <Project>{073CD876-D0D7-6DCC-8091-BE84FB56E956}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\desktop_capture_win10_x64.vcxproj">
+      <Project>{CAD8CF46-555D-6652-00F3-945319B53E23}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\media_file_win10_x64.vcxproj">
+      <Project>{D8E1D492-C91B-AF03-D6F5-B6A6AFA7E500}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\paced_sender_win10_x64.vcxproj">
+      <Project>{524BF71F-95F2-22A4-E9CC-955274F986C6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\remote_bitrate_estimator_win10_x64.vcxproj">
+      <Project>{1FBEA3A7-63A1-FB51-7ACC-AE8B335CC3D1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\rtp_rtcp_win10_x64.vcxproj">
+      <Project>{3A2C09D9-5C18-18FC-CC83-F25F6EAD8C3A}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\webrtc_utility_win10_x64.vcxproj">
+      <Project>{F1D7899A-9BB3-9C8D-D4C4-F17F03D83792}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\webrtc_h264_win10_x64.vcxproj">
+      <Project>{462C1CD6-077E-9CBA-3B3C-C4045FBD16FF}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\webrtc_i420_win10_x64.vcxproj">
+      <Project>{51AEFC06-E092-2E19-BD88-DFF7BF3F9B54}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\webrtc_video_coding_win10_x64.vcxproj">
+      <Project>{C6D95F9F-1C61-0C8D-344F-53500772AB00}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\video_capture_module_win10_x64.vcxproj">
+      <Project>{0F9E4955-9F11-5C49-966A-E824321609D9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\video_capture_win10_x64.vcxproj">
+      <Project>{477CF335-EDD2-14B9-A5FA-351E35F277D7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\video_processing_win10_x64.vcxproj">
+      <Project>{A9D0C9CC-9059-BEDA-4FC1-F5149EDB0B7A}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\modules_tests_win10_x64.vcxproj">
+      <Project>{A8B7031E-A2AB-3DC4-69DB-0D110F3BC766}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\modules_unittests_win10_x64.vcxproj">
+      <Project>{EB3905F5-4713-E528-9F1C-B23822BB844A}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audio_codec_speed_tests_win10_x64.vcxproj">
+      <Project>{D2542DDE-C449-749F-6C7D-1EB26220A5FE}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\isac_test_win10_x64.vcxproj">
+      <Project>{AA7D3978-6984-742F-0A34-E3637BA0DFBA}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\isac_api_test_win10_x64.vcxproj">
+      <Project>{9F2F045B-F29B-52E8-3EA6-F2590FD5F7E3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\isac_switch_samprate_test_win10_x64.vcxproj">
+      <Project>{E39A37F2-A23F-A700-6D85-2610A74FAF92}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\isac_fix_test_win10_x64.vcxproj">
+      <Project>{340B9BA6-2646-F717-D488-92C71FC8550D}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audioproc_test_utils_win10_x64.vcxproj">
+      <Project>{C194B9F3-F018-492C-22B8-37B9BA92C8D7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\transient_suppression_test_win10_x64.vcxproj">
+      <Project>{8FB55398-9E0A-0877-3BDC-7A76DD7E8BB3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\click_annotate_win10_x64.vcxproj">
+      <Project>{B1A1C472-C88B-B656-4F16-1FA173D4700E}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\nonlinear_beamformer_test_win10_x64.vcxproj">
+      <Project>{831B3C6E-2260-8714-EF94-3F18E8A256A5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\test_packet_masks_metrics_win10_x64.vcxproj">
+      <Project>{8CD5FE1F-88A3-3E29-96EB-B83A4DF70FEE}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\rtp_player_win10_x64.vcxproj">
+      <Project>{83567B11-EEA6-68E8-D5B3-22226187DCAE}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audioproc_unittest_proto_win10_x64.vcxproj">
+      <Project>{B2DD150F-95EB-15A1-2D4E-6B1E9D0327B4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audioproc_protobuf_utils_win10_x64.vcxproj">
+      <Project>{14F2FCF1-4152-4EE5-950B-654718732B08}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audioproc_win10_x64.vcxproj">
+      <Project>{A92F5556-C12C-69A4-DD58-48815622DB13}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audioproc_f_win10_x64.vcxproj">
+      <Project>{5CB10F9A-C789-A93F-0911-4F2C68FC8A13}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\unpack_aecdump_win10_x64.vcxproj">
+      <Project>{8B1590F5-4849-B3B9-1998-01FF8783417E}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\video_codecs_test_framework_win10_x64.vcxproj">
+      <Project>{DDC5B643-7BB7-AFFF-3F14-91CB1C2B7821}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\video_quality_measurement_win10_x64.vcxproj">
+      <Project>{648D790D-68AF-22CB-15DE-230D94ABE04E}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\webrtc_opus_win10_x64.vcxproj">
+      <Project>{8C40BC3A-0C6C-564E-F93B-4EB85451EE62}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\webrtc_opus_fec_test_win10_x64.vcxproj">
+      <Project>{F74FE2F8-4BBA-5ADC-DDF0-3EB2F8D4B57A}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\acm_receive_test_win10_x64.vcxproj">
+      <Project>{EF74ACA5-FBD3-88DB-E1EE-765D1E265EC6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\acm_send_test_win10_x64.vcxproj">
+      <Project>{7472D677-AF1E-52F0-2EF3-78D3048AE8FE}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\delay_test_win10_x64.vcxproj">
+      <Project>{31405F42-CAF6-FE49-8D4F-AF01E3FFDEF4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\insert_packet_with_timing_win10_x64.vcxproj">
+      <Project>{C4921C46-B756-5CAA-A02F-BA72FC2FF4A3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\g711_test_win10_x64.vcxproj">
+      <Project>{5F20A291-4292-B1A2-6C28-B20AD7597056}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\g722_test_win10_x64.vcxproj">
+      <Project>{B38AD9C6-9F8E-F563-E70A-0101B983F8D7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\ilbc_test_win10_x64.vcxproj">
+      <Project>{94F00463-B438-E07E-7240-2C1FEB121877}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audio_decoder_unittests_win10_x64.vcxproj">
+      <Project>{7634ED2D-2671-5B0D-F6AE-EC7A1EE45E35}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\neteq_unittest_proto_win10_x64.vcxproj">
+      <Project>{12886297-7807-AF20-4F52-CF70F2583019}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\neteq_unittest_tools_win10_x64.vcxproj">
+      <Project>{0DCD1B41-5BE1-FF88-631E-BA0D87C4BAAD}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\RTPencode_win10_x64.vcxproj">
+      <Project>{B292067A-6C7B-B7DD-FFEE-EEEFA0A0F31B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\RTPjitter_win10_x64.vcxproj">
+      <Project>{67992A92-A0F0-CAF8-6A81-18CFB522546F}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\rtp_analyze_win10_x64.vcxproj">
+      <Project>{586D538F-3DEC-2856-27E2-03CCDCC09A49}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\RTPchange_win10_x64.vcxproj">
+      <Project>{C19C1AD3-41DF-7486-5287-11CEB5AB0A34}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\RTPtimeshift_win10_x64.vcxproj">
+      <Project>{C3E91583-A82C-B44F-16D7-66C1143B9E60}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\rtpcat_win10_x64.vcxproj">
+      <Project>{31A4CDB1-8356-76F6-D6C2-91613069F017}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audio_classifier_test_win10_x64.vcxproj">
+      <Project>{2C9134C2-B77E-16C2-056E-6EF33A02CBAF}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\neteq_test_support_win10_x64.vcxproj">
+      <Project>{0323297A-0745-B05B-CCDA-9C2E04FADC0C}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\neteq_quality_test_support_win10_x64.vcxproj">
+      <Project>{3216A1EE-05C9-DB73-B7EE-D445E5E06ECB}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\neteq_speed_test_win10_x64.vcxproj">
+      <Project>{8D28B06A-A9E5-FB60-97CC-326CF9DE8FEF}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\neteq_opus_quality_test_win10_x64.vcxproj">
+      <Project>{551A4E66-3328-A4FD-7CA5-63D7B41AEF1F}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\neteq_isac_quality_test_win10_x64.vcxproj">
+      <Project>{BA0EEE05-F1D4-2A18-4E0F-850A3FB673B6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\neteq_pcmu_quality_test_win10_x64.vcxproj">
+      <Project>{6766B735-2565-D892-552E-6F469B53E5AD}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\neteq_ilbc_quality_test_win10_x64.vcxproj">
+      <Project>{36CA7B66-F4E9-9D90-4C6B-1B75B2D56346}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\neteq_test_tools_win10_x64.vcxproj">
+      <Project>{7AB5D342-AF4E-3372-E917-D83AC0F9793F}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\neteq_rtpplay_win10_x64.vcxproj">
+      <Project>{D7B21732-DA82-1EEF-B423-BBC364BD589B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audio_device_tests_win10_x64.vcxproj">
+      <Project>{A2EA0829-3719-B784-64C2-87B85B4786DA}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audioproc_debug_proto_win10_x64.vcxproj">
+      <Project>{16E08276-5832-46C7-CCF8-F12F6A210391}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\audio_processing_sse2_win10_x64.vcxproj">
+      <Project>{1D521276-E2AC-3561-0281-9A14ECD9CCCD}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\desktop_capture_differ_sse2_win10_x64.vcxproj">
+      <Project>{F2DB6C74-782E-198F-085E-B6E35D05BA11}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\bwe_simulator_win10_x64.vcxproj">
+      <Project>{3645D462-35EA-6354-F508-C5279036E419}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\bwe_tools_util_win10_x64.vcxproj">
+      <Project>{E989B380-76AD-5C46-8D3E-25637FC3B7F7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\bwe_rtp_to_text_win10_x64.vcxproj">
+      <Project>{0B2716AF-9851-7610-88F0-996AD3FCEBCE}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\bwe_rtp_play_win10_x64.vcxproj">
+      <Project>{70E735C3-4CC6-A002-3597-3BDEFA645F98}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\video_capture_module_internal_impl_win10_x64.vcxproj">
+      <Project>{1262B675-E522-F249-D499-46B3D5433D79}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\video_capture_tests_win10_x64.vcxproj">
+      <Project>{DC5515D3-A296-2708-EE37-B04B1FBD5B0E}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\video_processing_sse2_win10_x64.vcxproj">
+      <Project>{1E870A2A-F0FB-C381-603C-AC2E8E13F0B6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\p2p\rtc_p2p_win10_x64.vcxproj">
+      <Project>{FB60D25F-245C-EBF2-037E-D09B36A19080}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\p2p\libstunprober_win10_x64.vcxproj">
+      <Project>{41E6E8B6-5DBF-1DBC-BEEE-121BDA26A1BC}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\p2p\stun_prober_win10_x64.vcxproj">
+      <Project>{052FA482-A4F4-B5B3-89E9-48D37D429A12}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\pc\rtc_pc_win10_x64.vcxproj">
+      <Project>{A3F8B371-34B9-7839-B5F6-72D8CF03E544}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\pc\rtc_pc_unittests_win10_x64.vcxproj">
+      <Project>{8404C255-C194-7BA8-4FF5-F36BDA61D340}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\stats\rtc_stats_win10_x64.vcxproj">
+      <Project>{9346D2A6-1392-2DC8-626E-6397D7BC9398}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\stats\rtc_stats_unittests_win10_x64.vcxproj">
+      <Project>{50CFB1A1-66DE-0432-801A-E5ACF1F8655B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\system_wrappers\system_wrappers_win10_x64.vcxproj">
+      <Project>{EE1EB853-003C-CD74-89A7-D6522B56085C}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\system_wrappers\field_trial_default_win10_x64.vcxproj">
+      <Project>{C52C3C0D-B1D2-A9DF-C16B-3B29F12348DE}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\system_wrappers\metrics_default_win10_x64.vcxproj">
+      <Project>{8E35FA0F-1824-C08F-B4EF-E1703FE86CB2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\tools\video_quality_analysis_win10_x64.vcxproj">
+      <Project>{2D933318-ADD0-A419-C986-3692575CEFC4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\tools\frame_analyzer_win10_x64.vcxproj">
+      <Project>{0CDF9C7E-C86F-62B3-E4D4-30C0F2F3A8B6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\tools\psnr_ssim_analyzer_win10_x64.vcxproj">
+      <Project>{46DC59EB-F456-0FF3-7EFC-9D422643BE41}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\tools\rgba_to_i420_converter_win10_x64.vcxproj">
+      <Project>{59954B91-060B-CF4B-EBC4-AC5D1076610A}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\tools\frame_editing_lib_win10_x64.vcxproj">
+      <Project>{8FF9C29F-7992-74B1-3696-0101A91112F9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\tools\frame_editor_win10_x64.vcxproj">
+      <Project>{E0529C50-E634-B3AE-9BD5-2B7DE613A0B3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\tools\force_mic_volume_max_win10_x64.vcxproj">
+      <Project>{33BD63A4-AB06-73F9-47A2-613DC7C78B7C}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\tools\graph_proto_win10_x64.vcxproj">
+      <Project>{147E0FF1-206A-E7AA-37D1-DB1CDB43E7CD}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\tools\event_log_visualizer_utils_win10_x64.vcxproj">
+      <Project>{2C94D346-3B94-5719-4989-0926E9F4C290}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\tools\event_log_visualizer_win10_x64.vcxproj">
+      <Project>{791B1200-294D-B715-87DD-09A5CC0A3AFC}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\tools\activity_metric_win10_x64.vcxproj">
+      <Project>{F39AF948-D971-173C-0F72-AF053DF315B1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\tools\audio_e2e_harness_win10_x64.vcxproj">
+      <Project>{229F4218-CC8B-9AEF-A33F-330E62A8B8EE}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\tools\tools_unittests_win10_x64.vcxproj">
+      <Project>{6DB3EA19-DAC5-AFAA-8E58-EA4CE9EFC312}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\voice_engine\voice_engine_win10_x64.vcxproj">
+      <Project>{C0F5695D-9F3C-53F6-9599-73F76C81E460}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\voice_engine\level_indicator_win10_x64.vcxproj">
+      <Project>{4B1A811C-ABBE-11CB-1F25-548483B88D02}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\voice_engine\voice_engine_unittests_win10_x64.vcxproj">
+      <Project>{265621B5-1B6A-6393-15F0-49F754D9A87D}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\voice_engine\voe_cmd_test_win10_x64.vcxproj">
+      <Project>{157692D1-ADFD-4340-CE71-429A54AFCA6B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\voice_engine\voe_auto_test_win10_x64.vcxproj">
+      <Project>{BED5D7C5-22D6-0E7B-A0C9-21FF0698D1AB}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\webrtc_win10_x64.vcxproj">
+      <Project>{5D622261-9FAF-10CB-41F3-476371D826B8}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\rtc_event_log_win10_x64.vcxproj">
+      <Project>{DD6C2EAD-15C4-E701-6085-1638C68208D4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\rtc_unittests_win10_x64.vcxproj">
+      <Project>{FABDC1D1-585A-E387-67BE-3EA0914C6F16}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\xmllite_xmpp_unittests_win10_x64.vcxproj">
+      <Project>{77F2D134-235B-87F2-AFBC-0402BD013158}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\video_quality_test_win10_x64.vcxproj">
+      <Project>{CB0683E1-6A13-FB7E-BD11-484AA7677404}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\video_loopback_win10_x64.vcxproj">
+      <Project>{62594836-8742-2041-1C5F-7B1708FA4A78}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\screenshare_loopback_win10_x64.vcxproj">
+      <Project>{16E867E4-F843-B146-3810-3445805CD56E}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\video_replay_win10_x64.vcxproj">
+      <Project>{E3B36AD2-CEDC-360B-D0D6-9C9ABA2C8175}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\video_engine_tests_win10_x64.vcxproj">
+      <Project>{DA931CA4-C1D6-B58F-083B-344C3CC0F623}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\webrtc_perf_tests_win10_x64.vcxproj">
+      <Project>{F548C867-F6F3-F6FB-053C-039D1DAB7C36}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\webrtc_nonparallel_tests_win10_x64.vcxproj">
+      <Project>{4003F7EB-8C41-8AA8-D677-66D0F8861C13}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\rtc_event_log_proto_win10_x64.vcxproj">
+      <Project>{74DA77E5-C92A-D52C-9E1F-2F7206F66612}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\rtc_event_log_parser_win10_x64.vcxproj">
+      <Project>{8BD200A1-8CEB-4AA3-D6B9-21A893305CFF}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\rtc_event_log2rtp_dump_win10_x64.vcxproj">
+      <Project>{B21B4AE3-6B33-2B17-55F3-F4F4861B6EB5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\video_coding\codecs\vp8\webrtc_vp8_win10_x64.vcxproj">
+      <Project>{28DB3A16-D95D-44ED-BE26-CDCFD905A4EC}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\video_coding\codecs\vp8\vp8_coder_win10_x64.vcxproj">
+      <Project>{77E0C28D-CD7F-7652-B62E-D13522546619}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\modules\video_coding\codecs\vp9\webrtc_vp9_win10_x64.vcxproj">
+      <Project>{45DE7F2D-72EF-0EB4-0A96-C8AA1EA088B7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\api\peerconnection_unittests_win10_x64.vcxproj">
+      <Project>{42B9A1C9-C2D0-CCAA-BD6D-6F4A2C4913D0}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\common_video\common_video_unittests_win10_x64.vcxproj">
+      <Project>{40A6C379-7266-51A8-7691-67E79A82EEB0}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\system_wrappers\system_wrappers_unittests_win10_x64.vcxproj">
+      <Project>{F0CC2EE9-9A8D-94B9-09BD-7E73D22AA730}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\test\channel_transport_win10_x64.vcxproj">
+      <Project>{9756BCAA-79CF-420E-44D8-688A0922B1A1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\test\video_test_common_win10_x64.vcxproj">
+      <Project>{83F35A5C-F9A0-8598-AB9D-03469823F8C1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\test\rtp_test_utils_win10_x64.vcxproj">
+      <Project>{0E3FAE79-3108-23AE-645A-B5EDF008A8D8}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\test\field_trial_win10_x64.vcxproj">
+      <Project>{6C9DAC98-C480-97FE-4B07-4E352D7FDB15}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\test\test_main_win10_x64.vcxproj">
+      <Project>{C9CD2F76-F48C-9828-062B-18D0C9A052CC}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\test\test_support_win10_x64.vcxproj">
+      <Project>{4426E75A-C228-0B33-4BB5-19AE3FEC6575}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\test\test_support_main_win10_x64.vcxproj">
+      <Project>{7F9458C5-5379-211D-81DD-56A185BDC75A}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\test\test_support_main_threaded_mac_win10_x64.vcxproj">
+      <Project>{835B755E-9D51-8ACB-3780-9120F7B447FD}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\test\test_support_unittests_win10_x64.vcxproj">
+      <Project>{524D36CE-C10C-E401-83D6-2397D5F11CD3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\test\test_common_win10_x64.vcxproj">
+      <Project>{8A69135E-A35D-FADC-E151-C4337648D32E}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\test\test_renderer_win10_x64.vcxproj">
+      <Project>{A8D64695-1FF7-F8B7-7E02-51C346007253}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\relayserver_win10_x64.vcxproj">
+      <Project>{F97A9F64-95D2-A873-BAA1-F1EA670C04F1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\stunserver_win10_x64.vcxproj">
+      <Project>{D965F4F4-1FC3-93B2-D72C-46B43F227B32}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\turnserver_win10_x64.vcxproj">
+      <Project>{8A43EB45-923A-3959-1877-745FE3C0E43D}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\peerconnection_server_win10_x64.vcxproj">
+      <Project>{B44455BD-B007-6E93-48E7-82248ED62FD5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="webrtc\peerconnection_client_win10_x64.vcxproj">
+      <Project>{B899B302-C6C9-267C-97DA-40CC81F940DE}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
+  <ImportGroup Label="ExtensionTargets"/>
+</Project>

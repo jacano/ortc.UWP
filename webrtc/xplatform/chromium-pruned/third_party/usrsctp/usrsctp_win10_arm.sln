@@ -1,0 +1,40 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(usrsctp)", "..\..\usrsctp", "{0F3B85E5-A69A-4B10-5AD9-AA13ED1F0EBA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "boringssl", "..\boringssl\boringssl_win10_arm.vcxproj", "{6604C6EF-B7BE-CAF0-E6FE-04A143F668A0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "usrsctplib", "usrsctplib_win10_arm.vcxproj", "{620E55E4-F933-9D0D-226E-C83C685972EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{620E55E4-F933-9D0D-226E-C83C685972EF}.Debug|ARM.ActiveCfg = Debug|ARM
+		{620E55E4-F933-9D0D-226E-C83C685972EF}.Debug|ARM.Build.0 = Debug|ARM
+		{620E55E4-F933-9D0D-226E-C83C685972EF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{620E55E4-F933-9D0D-226E-C83C685972EF}.Debug|Win32.Build.0 = Debug|Win32
+		{620E55E4-F933-9D0D-226E-C83C685972EF}.Release|ARM.ActiveCfg = Release|ARM
+		{620E55E4-F933-9D0D-226E-C83C685972EF}.Release|ARM.Build.0 = Release|ARM
+		{620E55E4-F933-9D0D-226E-C83C685972EF}.Release|Win32.ActiveCfg = Release|Win32
+		{620E55E4-F933-9D0D-226E-C83C685972EF}.Release|Win32.Build.0 = Release|Win32
+		{6604C6EF-B7BE-CAF0-E6FE-04A143F668A0}.Debug|ARM.ActiveCfg = Debug|ARM
+		{6604C6EF-B7BE-CAF0-E6FE-04A143F668A0}.Debug|ARM.Build.0 = Debug|ARM
+		{6604C6EF-B7BE-CAF0-E6FE-04A143F668A0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6604C6EF-B7BE-CAF0-E6FE-04A143F668A0}.Debug|Win32.Build.0 = Debug|Win32
+		{6604C6EF-B7BE-CAF0-E6FE-04A143F668A0}.Release|ARM.ActiveCfg = Release|ARM
+		{6604C6EF-B7BE-CAF0-E6FE-04A143F668A0}.Release|ARM.Build.0 = Release|ARM
+		{6604C6EF-B7BE-CAF0-E6FE-04A143F668A0}.Release|Win32.ActiveCfg = Release|Win32
+		{6604C6EF-B7BE-CAF0-E6FE-04A143F668A0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{620E55E4-F933-9D0D-226E-C83C685972EF} = {0F3B85E5-A69A-4B10-5AD9-AA13ED1F0EBA}
+	EndGlobalSection
+EndGlobal

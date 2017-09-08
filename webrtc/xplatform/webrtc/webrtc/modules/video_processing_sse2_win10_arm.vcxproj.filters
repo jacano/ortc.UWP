@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing\util">
+      <UniqueIdentifier>{F977CC92-61A1-407C-2835-A38A3BBED548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing\util">
+      <UniqueIdentifier>{F977CC92-61A1-407C-2835-A38A3BBED548}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="video_processing\util\denoiser_filter_sse2.cc">
+      <Filter>video_processing\util</Filter>
+    </ClCompile>
+    <ClInclude Include="video_processing\util\denoiser_filter_sse2.h">
+      <Filter>video_processing\util</Filter>
+    </ClInclude>
+    <None Include="modules.gyp"/>
+  </ItemGroup>
+</Project>

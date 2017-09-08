@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libvpx", "libvpx_win10_arm.vcxproj", "{F80E42B5-46AA-24DC-7D32-19640CF0A69E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F80E42B5-46AA-24DC-7D32-19640CF0A69E}.Debug|ARM.ActiveCfg = Debug|ARM
+		{F80E42B5-46AA-24DC-7D32-19640CF0A69E}.Debug|ARM.Build.0 = Debug|ARM
+		{F80E42B5-46AA-24DC-7D32-19640CF0A69E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F80E42B5-46AA-24DC-7D32-19640CF0A69E}.Debug|Win32.Build.0 = Debug|Win32
+		{F80E42B5-46AA-24DC-7D32-19640CF0A69E}.Release|ARM.ActiveCfg = Release|ARM
+		{F80E42B5-46AA-24DC-7D32-19640CF0A69E}.Release|ARM.Build.0 = Release|ARM
+		{F80E42B5-46AA-24DC-7D32-19640CF0A69E}.Release|Win32.ActiveCfg = Release|Win32
+		{F80E42B5-46AA-24DC-7D32-19640CF0A69E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

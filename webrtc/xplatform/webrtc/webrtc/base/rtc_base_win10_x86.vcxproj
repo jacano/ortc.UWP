@@ -1,0 +1,1106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AA356CBC-3ADE-B997-2745-8ABE044F9580}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>rtc_base_win10_x86</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationTypeRevision>8.1</ApplicationTypeRevision>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.14393.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\.\bin\;$(MSBuildProjectDirectory)\.\bin\</ExecutablePath>
+    <OutDir>$(ProjectDir)..\..\build_win10_x86\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)obj\rtc_base\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)lib\$(ProjectName)$(TargetExt)</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;..\..;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4373;4389;4005;4703;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;LOGGING=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /safeseh /dynamicbase /ignore:4199 /ignore:4221 /nxcompat /largeaddressaware %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;..\..;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;LOGGING=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;..\..;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4373;4389;4005;4703;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;LOGGING=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;..\..;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;LOGGING=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;..\..;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4373;4389;4005;4703;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;LOGGING=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/10/Lib/10.0.10586.0/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/10/Lib/10.0.10586.0/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /dynamicbase /ignore:4199 /ignore:4221 /nxcompat %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>olepro32.lib</IgnoreSpecificDefaultLibraries>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;..\..;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;LOGGING=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;..\..;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /d2Zi+ /Zc:inline /Oy- /Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4373;4389;4005;4703;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;LOGGING=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /safeseh /dynamicbase /ignore:4199 /ignore:4221 /nxcompat /largeaddressaware %(AdditionalOptions)</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;..\..;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;LOGGING=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;..\..;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /d2Zi+ /Zc:inline /Oy- /Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4373;4389;4005;4703;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;LOGGING=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail %(AdditionalOptions)</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;..\..;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;LOGGING=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;..\..;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /d2Zi+ /Zc:inline /Oy- /Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4373;4389;4005;4703;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;LOGGING=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/10/Lib/10.0.10586.0/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/10/Lib/10.0.10586.0/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /dynamicbase /ignore:4199 /ignore:4221 /nxcompat %(AdditionalOptions)</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>olepro32.lib</IgnoreSpecificDefaultLibraries>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..\third_party\wtl\include;..\..;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\jsoncpp\overrides\include;..\..\third_party\jsoncpp\source\include;..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;FEATURE_ENABLE_SSL;SSL_USE_OPENSSL;HAVE_OPENSSL_SSL_H;LOGGING=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="base.gyp">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </None>
+    <None Include="iosfilesystem.mm">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arraysize.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="asyncfile.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="asyncinvoker.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="asyncinvoker-inl.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="asyncpacketsocket.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="asyncresolverinterface.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="asyncsocket.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="asynctcpsocket.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="asyncudpsocket.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="autodetectproxy.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="base64.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="crc32.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="cryptstring.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="diskcache.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="filerotatingstream.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="fileutils.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="firewallsocketserver.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="flags.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="gunit_prod.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="helpers.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="httpbase.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="httpclient.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="httpcommon-inl.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="httpcommon.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="httprequest.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="ipaddress.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="linked_ptr.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="messagedigest.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="messagehandler.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="messagequeue.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="nethelpers.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="network.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="networkmonitor.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="nullsocketserver.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="openssl.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="openssladapter.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="openssldigest.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="opensslidentity.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="opensslstreamadapter.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="pathutils.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="physicalsocketserver.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="proxydetect.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="proxyinfo.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="ratelimiter.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="rtccertificate.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="rtccertificategenerator.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="sha1.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="sha1digest.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="sharedexclusivelock.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="signalthread.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="sigslot.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="sigslotrepeater.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="socket.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="socketadapters.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="socketaddress.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="socketaddresspair.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="socketfactory.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="socketpool.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="socketserver.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="socketstream.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="ssladapter.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="sslfingerprint.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="sslidentity.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="sslsocketfactory.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="sslstreamadapter.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="stream.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="task.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="taskparent.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="taskrunner.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="thread.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="timing.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="urlencode.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="worker.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="bandwidthsmoother.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="callback.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="fileutils_mock.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="httpserver.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="json.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="logsinks.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="mathutils.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="multipart.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="natserver.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="natsocketfactory.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="nattypes.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="optionsfile.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="profiler.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="proxyserver.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="referencecountedsingletonfactory.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="rollingaccumulator.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="scopedptrcollection.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="sslconfig.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="sslroots.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="testbase64.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="testclient.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="tracelog.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="transformadapter.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="versionparsing.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="virtualsocketserver.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="window.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="windowpicker.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="windowpickerfactory.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="diskcache_win32.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="win32socketinit.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="win32.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="win32filesystem.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="winping.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="loggingserver.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="sec_buffer.h">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="win32regkey.h">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="win32socketserver.h">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="asyncfile.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="asyncinvoker.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="asyncpacketsocket.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="asyncresolverinterface.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="asyncsocket.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="asynctcpsocket.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="asyncudpsocket.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="autodetectproxy.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="base64.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="common.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="crc32.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="cryptstring.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="diskcache.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="filerotatingstream.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="fileutils.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="firewallsocketserver.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="flags.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="helpers.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="httpbase.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="httpclient.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="httpcommon.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="httprequest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="ipaddress.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="messagedigest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="messagehandler.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="messagequeue.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="nethelpers.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="network.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="networkmonitor.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="nullsocketserver.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="openssladapter.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="openssldigest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="opensslidentity.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="opensslstreamadapter.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="pathutils.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="physicalsocketserver.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="proxydetect.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="proxyinfo.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="ratelimiter.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtccertificate.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtccertificategenerator.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="sha1.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="sha1digest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="sharedexclusivelock.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="signalthread.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="sigslot.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="socketadapters.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="socketaddress.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="socketaddresspair.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="socketpool.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="socketstream.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="ssladapter.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="sslfingerprint.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="sslidentity.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="sslsocketfactory.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="sslstreamadapter.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="stream.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="task.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="taskparent.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="taskrunner.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="thread.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="timing.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="urlencode.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="worker.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="bandwidthsmoother.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="httpserver.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="json.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="logsinks.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="multipart.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="natserver.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="natsocketfactory.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="nattypes.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="optionsfile.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="profiler.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="proxyserver.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="testclient.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="tracelog.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="transformadapter.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="versionparsing.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="virtualsocketserver.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="diskcache_win32.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="win32socketinit.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="win32.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="win32filesystem.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="win32securityerrors.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="winping.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="loggingserver.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="win32regkey.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="win32socketserver.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

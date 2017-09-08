@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing\include">
+      <UniqueIdentifier>{57CA55B8-BCC5-4000-CE3A-58972F82E9CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing\include">
+      <UniqueIdentifier>{57CA55B8-BCC5-4000-CE3A-58972F82E9CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing\util">
+      <UniqueIdentifier>{F977CC92-61A1-407C-2835-A38A3BBED548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing\util">
+      <UniqueIdentifier>{F977CC92-61A1-407C-2835-A38A3BBED548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing\util">
+      <UniqueIdentifier>{F977CC92-61A1-407C-2835-A38A3BBED548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing\util">
+      <UniqueIdentifier>{F977CC92-61A1-407C-2835-A38A3BBED548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing\util">
+      <UniqueIdentifier>{F977CC92-61A1-407C-2835-A38A3BBED548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing\util">
+      <UniqueIdentifier>{F977CC92-61A1-407C-2835-A38A3BBED548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing\util">
+      <UniqueIdentifier>{F977CC92-61A1-407C-2835-A38A3BBED548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing\util">
+      <UniqueIdentifier>{F977CC92-61A1-407C-2835-A38A3BBED548}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="video_processing\include\video_processing.h">
+      <Filter>video_processing\include</Filter>
+    </ClInclude>
+    <ClInclude Include="video_processing\include\video_processing_defines.h">
+      <Filter>video_processing\include</Filter>
+    </ClInclude>
+    <ClCompile Include="video_processing\frame_preprocessor.cc">
+      <Filter>video_processing</Filter>
+    </ClCompile>
+    <ClInclude Include="video_processing\frame_preprocessor.h">
+      <Filter>video_processing</Filter>
+    </ClInclude>
+    <ClCompile Include="video_processing\spatial_resampler.cc">
+      <Filter>video_processing</Filter>
+    </ClCompile>
+    <ClInclude Include="video_processing\spatial_resampler.h">
+      <Filter>video_processing</Filter>
+    </ClInclude>
+    <ClCompile Include="video_processing\video_decimator.cc">
+      <Filter>video_processing</Filter>
+    </ClCompile>
+    <ClInclude Include="video_processing\video_decimator.h">
+      <Filter>video_processing</Filter>
+    </ClInclude>
+    <ClCompile Include="video_processing\video_processing_impl.cc">
+      <Filter>video_processing</Filter>
+    </ClCompile>
+    <ClInclude Include="video_processing\video_processing_impl.h">
+      <Filter>video_processing</Filter>
+    </ClInclude>
+    <ClCompile Include="video_processing\video_denoiser.cc">
+      <Filter>video_processing</Filter>
+    </ClCompile>
+    <ClInclude Include="video_processing\video_denoiser.h">
+      <Filter>video_processing</Filter>
+    </ClInclude>
+    <ClCompile Include="video_processing\util\denoiser_filter.cc">
+      <Filter>video_processing\util</Filter>
+    </ClCompile>
+    <ClInclude Include="video_processing\util\denoiser_filter.h">
+      <Filter>video_processing\util</Filter>
+    </ClInclude>
+    <ClCompile Include="video_processing\util\denoiser_filter_c.cc">
+      <Filter>video_processing\util</Filter>
+    </ClCompile>
+    <ClInclude Include="video_processing\util\denoiser_filter_c.h">
+      <Filter>video_processing\util</Filter>
+    </ClInclude>
+    <ClCompile Include="video_processing\util\noise_estimation.cc">
+      <Filter>video_processing\util</Filter>
+    </ClCompile>
+    <ClInclude Include="video_processing\util\noise_estimation.h">
+      <Filter>video_processing\util</Filter>
+    </ClInclude>
+    <ClCompile Include="video_processing\util\skin_detection.cc">
+      <Filter>video_processing\util</Filter>
+    </ClCompile>
+    <ClInclude Include="video_processing\util\skin_detection.h">
+      <Filter>video_processing\util</Filter>
+    </ClInclude>
+    <None Include="modules.gyp"/>
+  </ItemGroup>
+</Project>

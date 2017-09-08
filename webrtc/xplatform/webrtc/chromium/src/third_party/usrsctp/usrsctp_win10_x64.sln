@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(usrsctp)", "..\..\usrsctp", "{0F3B85E5-A69A-4B10-5AD9-AA13ED1F0EBA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "boringssl", "..\boringssl\boringssl_win10_x64.vcxproj", "{91A54749-C5AA-7CC0-1C9D-22153B1071E6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "usrsctplib", "usrsctplib_win10_x64.vcxproj", "{8BBF808B-439F-3E69-8D02-86019B72888A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Debug|ARM = Debug|ARM
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BBF808B-439F-3E69-8D02-86019B72888A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8BBF808B-439F-3E69-8D02-86019B72888A}.Debug|Win32.Build.0 = Debug|Win32
+		{8BBF808B-439F-3E69-8D02-86019B72888A}.Debug|x64.ActiveCfg = Debug|x64
+		{8BBF808B-439F-3E69-8D02-86019B72888A}.Debug|x64.Build.0 = Debug|x64
+		{8BBF808B-439F-3E69-8D02-86019B72888A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{8BBF808B-439F-3E69-8D02-86019B72888A}.Debug|ARM.Build.0 = Debug|ARM
+		{8BBF808B-439F-3E69-8D02-86019B72888A}.Release|ARM.ActiveCfg = Release|ARM
+		{8BBF808B-439F-3E69-8D02-86019B72888A}.Release|ARM.Build.0 = Release|ARM
+		{8BBF808B-439F-3E69-8D02-86019B72888A}.Release|x64.ActiveCfg = Release|x64
+		{8BBF808B-439F-3E69-8D02-86019B72888A}.Release|x64.Build.0 = Release|x64
+		{8BBF808B-439F-3E69-8D02-86019B72888A}.Release|Win32.ActiveCfg = Release|Win32
+		{8BBF808B-439F-3E69-8D02-86019B72888A}.Release|Win32.Build.0 = Release|Win32
+		{91A54749-C5AA-7CC0-1C9D-22153B1071E6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{91A54749-C5AA-7CC0-1C9D-22153B1071E6}.Debug|Win32.Build.0 = Debug|Win32
+		{91A54749-C5AA-7CC0-1C9D-22153B1071E6}.Debug|x64.ActiveCfg = Debug|x64
+		{91A54749-C5AA-7CC0-1C9D-22153B1071E6}.Debug|x64.Build.0 = Debug|x64
+		{91A54749-C5AA-7CC0-1C9D-22153B1071E6}.Debug|ARM.ActiveCfg = Debug|ARM
+		{91A54749-C5AA-7CC0-1C9D-22153B1071E6}.Debug|ARM.Build.0 = Debug|ARM
+		{91A54749-C5AA-7CC0-1C9D-22153B1071E6}.Release|ARM.ActiveCfg = Release|ARM
+		{91A54749-C5AA-7CC0-1C9D-22153B1071E6}.Release|ARM.Build.0 = Release|ARM
+		{91A54749-C5AA-7CC0-1C9D-22153B1071E6}.Release|x64.ActiveCfg = Release|x64
+		{91A54749-C5AA-7CC0-1C9D-22153B1071E6}.Release|x64.Build.0 = Release|x64
+		{91A54749-C5AA-7CC0-1C9D-22153B1071E6}.Release|Win32.ActiveCfg = Release|Win32
+		{91A54749-C5AA-7CC0-1C9D-22153B1071E6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8BBF808B-439F-3E69-8D02-86019B72888A} = {0F3B85E5-A69A-4B10-5AD9-AA13ED1F0EBA}
+	EndGlobalSection
+EndGlobal

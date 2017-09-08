@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\test\testFec">
+      <UniqueIdentifier>{CA6B830A-46B2-9F38-65C7-DE145667B1D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs\vp8">
+      <UniqueIdentifier>{A0F295BA-D737-445C-13DE-9E9F732861C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs\vp8\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="audio_coding\test\APITest.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\test\Channel.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\test\EncodeDecodeTest.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\test\PCMFile.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\test\PacketLossTest.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\test\RTPFile.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\test\TestAllCodecs.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\test\TestRedFec.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\test\TestStereo.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\test\TestVADDTX.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\test\Tester.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\test\TwoWayCommunication.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\test\iSACTest.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\test\opus_test.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\test\target_delay_unittest.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\test\utility.cc">
+      <Filter>audio_coding\test</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\test\testFec\test_fec.cc">
+      <Filter>rtp_rtcp\test\testFec</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\test\videoprocessor_integrationtest.cc">
+      <Filter>video_coding\codecs\test</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\vp8\test\vp8_impl_unittest.cc">
+      <Filter>video_coding\codecs\vp8\test</Filter>
+    </ClCompile>
+    <None Include="modules.gyp"/>
+  </ItemGroup>
+</Project>

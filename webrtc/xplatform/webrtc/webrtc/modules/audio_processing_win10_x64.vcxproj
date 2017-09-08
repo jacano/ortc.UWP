@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{751F4B99-F002-E344-3495-FF6774CE0E7E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>audio_processing_win10_x64</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationTypeRevision>8.1</ApplicationTypeRevision>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.14393.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\.\bin\;$(MSBuildProjectDirectory)\.\bin\</ExecutablePath>
+    <OutDir>$(ProjectDir)..\..\build_win10_x64\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)obj\audio_processing\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)lib\$(ProjectName)$(TargetExt)</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;audio_coding\codecs\isac\main\include;..\..\webrtc;$(OutDir)obj\global_intermediate\protoc_out;..\..\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4373;4389;4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_AUDIOPROC_DEBUG_DUMP;WEBRTC_INTELLIGIBILITY_ENHANCER=0;WEBRTC_NS_FLOAT;_CRT_SECURE_NO_WARNINGS;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /safeseh /dynamicbase /ignore:4199 /ignore:4221 /nxcompat /largeaddressaware %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;audio_coding\codecs\isac\main\include;..\..\webrtc;$(OutDir)obj\global_intermediate\protoc_out;..\..\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_AUDIOPROC_DEBUG_DUMP;WEBRTC_INTELLIGIBILITY_ENHANCER=0;WEBRTC_NS_FLOAT;_CRT_SECURE_NO_WARNINGS;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;audio_coding\codecs\isac\main\include;..\..\webrtc;$(OutDir)obj\global_intermediate\protoc_out;..\..\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4373;4389;4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_AUDIOPROC_DEBUG_DUMP;WEBRTC_INTELLIGIBILITY_ENHANCER=0;WEBRTC_NS_FLOAT;_CRT_SECURE_NO_WARNINGS;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;audio_coding\codecs\isac\main\include;..\..\webrtc;$(OutDir)obj\global_intermediate\protoc_out;..\..\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_AUDIOPROC_DEBUG_DUMP;WEBRTC_INTELLIGIBILITY_ENHANCER=0;WEBRTC_NS_FLOAT;_CRT_SECURE_NO_WARNINGS;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;audio_coding\codecs\isac\main\include;..\..\webrtc;$(OutDir)obj\global_intermediate\protoc_out;..\..\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4373;4389;4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_AUDIOPROC_DEBUG_DUMP;WEBRTC_INTELLIGIBILITY_ENHANCER=0;WEBRTC_NS_FLOAT;_CRT_SECURE_NO_WARNINGS;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/10/Lib/10.0.10586.0/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/10/Lib/10.0.10586.0/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /dynamicbase /ignore:4199 /ignore:4221 /nxcompat %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>olepro32.lib</IgnoreSpecificDefaultLibraries>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;audio_coding\codecs\isac\main\include;..\..\webrtc;$(OutDir)obj\global_intermediate\protoc_out;..\..\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_AUDIOPROC_DEBUG_DUMP;WEBRTC_INTELLIGIBILITY_ENHANCER=0;WEBRTC_NS_FLOAT;_CRT_SECURE_NO_WARNINGS;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;audio_coding\codecs\isac\main\include;..\..\webrtc;$(OutDir)obj\global_intermediate\protoc_out;..\..\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /d2Zi+ /Zc:inline /Oy- /Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4373;4389;4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_AUDIOPROC_DEBUG_DUMP;WEBRTC_INTELLIGIBILITY_ENHANCER=0;WEBRTC_NS_FLOAT;_CRT_SECURE_NO_WARNINGS;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /safeseh /dynamicbase /ignore:4199 /ignore:4221 /nxcompat /largeaddressaware %(AdditionalOptions)</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;audio_coding\codecs\isac\main\include;..\..\webrtc;$(OutDir)obj\global_intermediate\protoc_out;..\..\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_AUDIOPROC_DEBUG_DUMP;WEBRTC_INTELLIGIBILITY_ENHANCER=0;WEBRTC_NS_FLOAT;_CRT_SECURE_NO_WARNINGS;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;audio_coding\codecs\isac\main\include;..\..\webrtc;$(OutDir)obj\global_intermediate\protoc_out;..\..\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /d2Zi+ /Zc:inline /Oy- /Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4373;4389;4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_AUDIOPROC_DEBUG_DUMP;WEBRTC_INTELLIGIBILITY_ENHANCER=0;WEBRTC_NS_FLOAT;_CRT_SECURE_NO_WARNINGS;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail %(AdditionalOptions)</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;audio_coding\codecs\isac\main\include;..\..\webrtc;$(OutDir)obj\global_intermediate\protoc_out;..\..\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_AUDIOPROC_DEBUG_DUMP;WEBRTC_INTELLIGIBILITY_ENHANCER=0;WEBRTC_NS_FLOAT;_CRT_SECURE_NO_WARNINGS;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;audio_coding\codecs\isac\main\include;..\..\webrtc;$(OutDir)obj\global_intermediate\protoc_out;..\..\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /d2Zi+ /Zc:inline /Oy- /Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4373;4389;4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_AUDIOPROC_DEBUG_DUMP;WEBRTC_INTELLIGIBILITY_ENHANCER=0;WEBRTC_NS_FLOAT;_CRT_SECURE_NO_WARNINGS;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/10/Lib/10.0.10586.0/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/10/Lib/10.0.10586.0/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /dynamicbase /ignore:4199 /ignore:4221 /nxcompat %(AdditionalOptions)</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>olepro32.lib</IgnoreSpecificDefaultLibraries>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;audio_coding\codecs\isac\main\include;..\..\webrtc;$(OutDir)obj\global_intermediate\protoc_out;..\..\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WINAPI_FAMILY=WINAPI_FAMILY_APP;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_AUDIOPROC_DEBUG_DUMP;WEBRTC_INTELLIGIBILITY_ENHANCER=0;WEBRTC_NS_FLOAT;_CRT_SECURE_NO_WARNINGS;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="modules.gyp">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audio_processing\aec\aec_core.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\aec\aec_core_optimized_methods.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\aec\aec_rdft.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\aec\aec_resampler.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\aec\echo_cancellation.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\aecm\aecm_core.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\aecm\echo_control_mobile.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\agc\agc.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\agc\agc_manager_direct.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\agc\gain_map_internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\agc\loudness_histogram.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\agc\legacy\analog_agc.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\agc\legacy\digital_agc.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\agc\legacy\gain_control.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\agc\utility.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\audio_buffer.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\audio_processing_impl.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\beamformer\array_util.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\beamformer\complex_matrix.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\beamformer\covariance_matrix_generator.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\beamformer\matrix.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\beamformer\nonlinear_beamformer.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\common.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\echo_cancellation_impl.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\echo_control_mobile_impl.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\gain_control_for_experimental_agc.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\gain_control_impl.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\high_pass_filter_impl.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\include\audio_processing.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\level_controller\biquad_filter.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\level_controller\down_sampler.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\level_controller\gain_applier.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\level_controller\gain_selector.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\level_controller\lc_constants.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\level_controller\level_controller.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\level_controller\noise_spectrum_estimator.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\level_controller\noise_level_estimator.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\level_controller\peak_level_estimator.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\level_controller\saturating_gain_estimator.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\level_controller\signal_classifier.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\level_estimator_impl.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\logging\apm_data_dumper.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\noise_suppression_impl.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\render_queue_item_verifier.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\rms_level.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\splitting_filter.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\three_band_filter_bank.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\transient\common.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\transient\daubechies_8_wavelet_coeffs.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\transient\dyadic_decimator.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\transient\moving_moments.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\transient\transient_detector.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\transient\transient_suppressor.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\transient\wpd_node.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\transient\wpd_tree.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\typing_detection.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\utility\block_mean_calculator.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\utility\delay_estimator.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\utility\delay_estimator_internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\utility\delay_estimator_wrapper.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\vad\common.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\vad\gmm.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\vad\noise_gmm_tables.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\vad\pitch_based_vad.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\vad\pitch_internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\vad\pole_zero_filter.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\vad\standalone_vad.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\vad\vad_audio_proc.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\vad\vad_audio_proc_internal.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\vad\vad_circular_buffer.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\vad\voice_activity_detector.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\vad\voice_gmm_tables.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\voice_detection_impl.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\ns\defines.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\ns\noise_suppression.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\ns\ns_core.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\ns\windows_private.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="audio_processing\aec\aec_core.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\aec\aec_rdft.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\aec\aec_resampler.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\aec\echo_cancellation.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\aecm\aecm_core.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\aecm\echo_control_mobile.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\agc\agc.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\agc\agc_manager_direct.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\agc\loudness_histogram.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\agc\legacy\analog_agc.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="audio_processing\agc\legacy\digital_agc.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="audio_processing\agc\utility.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\audio_buffer.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\audio_processing.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\audio_processing_impl.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\beamformer\array_util.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\beamformer\covariance_matrix_generator.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\beamformer\nonlinear_beamformer.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\echo_cancellation_impl.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\echo_control_mobile_impl.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\gain_control_for_experimental_agc.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\gain_control_impl.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\high_pass_filter_impl.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\level_controller\biquad_filter.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\level_controller\down_sampler.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\level_controller\gain_applier.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\level_controller\gain_selector.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\level_controller\level_controller.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\level_controller\noise_spectrum_estimator.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\level_controller\noise_level_estimator.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\level_controller\peak_level_estimator.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\level_controller\saturating_gain_estimator.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\level_controller\signal_classifier.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\level_estimator_impl.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\logging\apm_data_dumper.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\noise_suppression_impl.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\rms_level.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\splitting_filter.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\three_band_filter_bank.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\moving_moments.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\transient_detector.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\transient_suppressor.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\wpd_node.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\wpd_tree.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\typing_detection.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\utility\block_mean_calculator.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\utility\delay_estimator.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\utility\delay_estimator_wrapper.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\gmm.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\pitch_based_vad.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\pitch_internal.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\pole_zero_filter.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\standalone_vad.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\vad_audio_proc.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\vad_circular_buffer.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\voice_activity_detector.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\voice_detection_impl.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\ns\noise_suppression.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="audio_processing\ns\ns_core.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="audio_processing\aecm\aecm_core_c.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="audioproc_debug_proto_win10_x64.vcxproj">
+      <Project>{16E08276-5832-46C7-CCF8-F12F6A210391}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

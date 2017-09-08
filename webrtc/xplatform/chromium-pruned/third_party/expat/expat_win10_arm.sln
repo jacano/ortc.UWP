@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "expat", "expat_win10_arm.vcxproj", "{EF658CC2-3D3A-E4EB-70EA-13DC95E35C0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF658CC2-3D3A-E4EB-70EA-13DC95E35C0E}.Debug|ARM.ActiveCfg = Debug|ARM
+		{EF658CC2-3D3A-E4EB-70EA-13DC95E35C0E}.Debug|ARM.Build.0 = Debug|ARM
+		{EF658CC2-3D3A-E4EB-70EA-13DC95E35C0E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EF658CC2-3D3A-E4EB-70EA-13DC95E35C0E}.Debug|Win32.Build.0 = Debug|Win32
+		{EF658CC2-3D3A-E4EB-70EA-13DC95E35C0E}.Release|ARM.ActiveCfg = Release|ARM
+		{EF658CC2-3D3A-E4EB-70EA-13DC95E35C0E}.Release|ARM.Build.0 = Release|ARM
+		{EF658CC2-3D3A-E4EB-70EA-13DC95E35C0E}.Release|Win32.ActiveCfg = Release|Win32
+		{EF658CC2-3D3A-E4EB-70EA-13DC95E35C0E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{02F844FD-52D5-F106-5AC6-4C5A1C8196EA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>modules_unittests_win10_arm</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationTypeRevision>8.1</ApplicationTypeRevision>
+    <ApplicationType>Windows Phone</ApplicationType>
+    <WindowsSDKDesktopARMSupport>true</WindowsSDKDesktopARMSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v120_wp81</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
+  <ImportGroup Label="ExtensionSettings"/>
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\.\bin\;$(MSBuildProjectDirectory)\.\bin\</ExecutablePath>
+    <OutDir>$(ProjectDir)..\..\build_win10_arm\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)obj\modules_unittests\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)lib\$(ProjectName)$(TargetExt)</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\..\testing\gtest\include;..\..\testing\gmock_custom;..\..\testing\gmock\include;audio_coding\include;include;..\..\webrtc;audio_device\include;audio_coding\codecs\isac\fix\include;audio_coding\neteq\tools;audio_coding\codecs\red\include;..\..\third_party\opus\src\src;..\..\third_party\opus\src\celt;..\..\third_party\opus\src\include;audio_coding\codecs\isac\main\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;..\..\third_party\gflags\gen\win\include;..\..\third_party\gflags\src\src;..\common_video\include;..\common_video\libyuv\include;..\..\third_party\libyuv\include;..\..\third_party\libyuv;..\..\third_party\libvpx\source\libvpx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4373;4389;4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4267;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_HAS_NEON;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_CODEC_ILBC;WEBRTC_CODEC_OPUS;WEBRTC_CODEC_G722;WEBRTC_CODEC_ISAC;WEBRTC_CODEC_RED;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_INTELLIGIBILITY_ENHANCER=0;BWE_TEST_LOGGING_COMPILE_TIME_ENABLE=0;WEBRTC_AUDIOPROC_FLOAT_PROFILE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;OPUS_FIXED_POINT;UNIT_TEST;GFLAGS_DLL_DECL=;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /safeseh /dynamicbase /ignore:4199 /ignore:4221 /nxcompat /largeaddressaware %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\..\testing\gtest\include;..\..\testing\gmock_custom;..\..\testing\gmock\include;audio_coding\include;include;..\..\webrtc;audio_device\include;audio_coding\codecs\isac\fix\include;audio_coding\neteq\tools;audio_coding\codecs\red\include;..\..\third_party\opus\src\src;..\..\third_party\opus\src\celt;..\..\third_party\opus\src\include;audio_coding\codecs\isac\main\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;..\..\third_party\gflags\gen\win\include;..\..\third_party\gflags\src\src;..\common_video\include;..\common_video\libyuv\include;..\..\third_party\libyuv\include;..\..\third_party\libyuv;..\..\third_party\libvpx\source\libvpx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_HAS_NEON;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_CODEC_ILBC;WEBRTC_CODEC_OPUS;WEBRTC_CODEC_G722;WEBRTC_CODEC_ISAC;WEBRTC_CODEC_RED;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_INTELLIGIBILITY_ENHANCER=0;BWE_TEST_LOGGING_COMPILE_TIME_ENABLE=0;WEBRTC_AUDIOPROC_FLOAT_PROFILE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;OPUS_FIXED_POINT;UNIT_TEST;GFLAGS_DLL_DECL=;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\..\testing\gtest\include;..\..\testing\gmock_custom;..\..\testing\gmock\include;audio_coding\include;include;..\..\webrtc;audio_device\include;audio_coding\codecs\isac\fix\include;audio_coding\neteq\tools;audio_coding\codecs\red\include;..\..\third_party\opus\src\src;..\..\third_party\opus\src\celt;..\..\third_party\opus\src\include;audio_coding\codecs\isac\main\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;..\..\third_party\gflags\gen\win\include;..\..\third_party\gflags\src\src;..\common_video\include;..\common_video\libyuv\include;..\..\third_party\libyuv\include;..\..\third_party\libyuv;..\..\third_party\libvpx\source\libvpx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4373;4389;4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4267;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_HAS_NEON;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_CODEC_ILBC;WEBRTC_CODEC_OPUS;WEBRTC_CODEC_G722;WEBRTC_CODEC_ISAC;WEBRTC_CODEC_RED;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_INTELLIGIBILITY_ENHANCER=0;BWE_TEST_LOGGING_COMPILE_TIME_ENABLE=0;WEBRTC_AUDIOPROC_FLOAT_PROFILE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;OPUS_FIXED_POINT;UNIT_TEST;GFLAGS_DLL_DECL=;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\..\testing\gtest\include;..\..\testing\gmock_custom;..\..\testing\gmock\include;audio_coding\include;include;..\..\webrtc;audio_device\include;audio_coding\codecs\isac\fix\include;audio_coding\neteq\tools;audio_coding\codecs\red\include;..\..\third_party\opus\src\src;..\..\third_party\opus\src\celt;..\..\third_party\opus\src\include;audio_coding\codecs\isac\main\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;..\..\third_party\gflags\gen\win\include;..\..\third_party\gflags\src\src;..\common_video\include;..\common_video\libyuv\include;..\..\third_party\libyuv\include;..\..\third_party\libyuv;..\..\third_party\libvpx\source\libvpx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_HAS_NEON;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_CODEC_ILBC;WEBRTC_CODEC_OPUS;WEBRTC_CODEC_G722;WEBRTC_CODEC_ISAC;WEBRTC_CODEC_RED;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_INTELLIGIBILITY_ENHANCER=0;BWE_TEST_LOGGING_COMPILE_TIME_ENABLE=0;WEBRTC_AUDIOPROC_FLOAT_PROFILE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;OPUS_FIXED_POINT;UNIT_TEST;GFLAGS_DLL_DECL=;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\..\testing\gtest\include;..\..\testing\gmock_custom;..\..\testing\gmock\include;audio_coding\include;include;..\..\webrtc;audio_device\include;audio_coding\codecs\isac\fix\include;audio_coding\neteq\tools;audio_coding\codecs\red\include;..\..\third_party\opus\src\src;..\..\third_party\opus\src\celt;..\..\third_party\opus\src\include;audio_coding\codecs\isac\main\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;..\..\third_party\gflags\gen\win\include;..\..\third_party\gflags\src\src;..\common_video\include;..\common_video\libyuv\include;..\..\third_party\libyuv\include;..\..\third_party\libyuv;..\..\third_party\libvpx\source\libvpx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /d2Zi+ /Zc:inline /Oy- /Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4373;4389;4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4267;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_HAS_NEON;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_CODEC_ILBC;WEBRTC_CODEC_OPUS;WEBRTC_CODEC_G722;WEBRTC_CODEC_ISAC;WEBRTC_CODEC_RED;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_INTELLIGIBILITY_ENHANCER=0;BWE_TEST_LOGGING_COMPILE_TIME_ENABLE=0;WEBRTC_AUDIOPROC_FLOAT_PROFILE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;OPUS_FIXED_POINT;UNIT_TEST;GFLAGS_DLL_DECL=;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail /safeseh /dynamicbase /ignore:4199 /ignore:4221 /nxcompat /largeaddressaware %(AdditionalOptions)</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\..\testing\gtest\include;..\..\testing\gmock_custom;..\..\testing\gmock\include;audio_coding\include;include;..\..\webrtc;audio_device\include;audio_coding\codecs\isac\fix\include;audio_coding\neteq\tools;audio_coding\codecs\red\include;..\..\third_party\opus\src\src;..\..\third_party\opus\src\celt;..\..\third_party\opus\src\include;audio_coding\codecs\isac\main\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;..\..\third_party\gflags\gen\win\include;..\..\third_party\gflags\src\src;..\common_video\include;..\common_video\libyuv\include;..\..\third_party\libyuv\include;..\..\third_party\libyuv;..\..\third_party\libvpx\source\libvpx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_HAS_NEON;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_CODEC_ILBC;WEBRTC_CODEC_OPUS;WEBRTC_CODEC_G722;WEBRTC_CODEC_ISAC;WEBRTC_CODEC_RED;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_INTELLIGIBILITY_ENHANCER=0;BWE_TEST_LOGGING_COMPILE_TIME_ENABLE=0;WEBRTC_AUDIOPROC_FLOAT_PROFILE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;OPUS_FIXED_POINT;UNIT_TEST;GFLAGS_DLL_DECL=;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\..\testing\gtest\include;..\..\testing\gmock_custom;..\..\testing\gmock\include;audio_coding\include;include;..\..\webrtc;audio_device\include;audio_coding\codecs\isac\fix\include;audio_coding\neteq\tools;audio_coding\codecs\red\include;..\..\third_party\opus\src\src;..\..\third_party\opus\src\celt;..\..\third_party\opus\src\include;audio_coding\codecs\isac\main\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;..\..\third_party\gflags\gen\win\include;..\..\third_party\gflags\src\src;..\common_video\include;..\common_video\libyuv\include;..\..\third_party\libyuv\include;..\..\third_party\libyuv;..\..\third_party\libvpx\source\libvpx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /d2FastFail /d2Zi+ /Zc:inline /Oy- /Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4373;4389;4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4311;4312;4302;4456;4457;4458;4459;4595;4702;4267;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_HAS_NEON;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_CODEC_ILBC;WEBRTC_CODEC_OPUS;WEBRTC_CODEC_G722;WEBRTC_CODEC_ISAC;WEBRTC_CODEC_RED;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_INTELLIGIBILITY_ENHANCER=0;BWE_TEST_LOGGING_COMPILE_TIME_ENABLE=0;WEBRTC_AUDIOPROC_FLOAT_PROFILE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;OPUS_FIXED_POINT;UNIT_TEST;GFLAGS_DLL_DECL=;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;credui.lib</AdditionalDependencies>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /fastfail %(AdditionalOptions)</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkAsWinRT>true</LinkAsWinRT>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;$(OutDir)obj\global_intermediate;..\..;..\..\third_party\wtl\include;..\..\testing\gtest\include;..\..\testing\gmock_custom;..\..\testing\gmock\include;audio_coding\include;include;..\..\webrtc;audio_device\include;audio_coding\codecs\isac\fix\include;audio_coding\neteq\tools;audio_coding\codecs\red\include;..\..\third_party\opus\src\src;..\..\third_party\opus\src\celt;..\..\third_party\opus\src\include;audio_coding\codecs\isac\main\include;..\common_audio\resampler\include;..\common_audio\signal_processing\include;..\common_audio\vad\include;..\..\third_party\gflags\gen\win\include;..\..\third_party\gflags\src\src;..\common_video\include;..\common_video\libyuv\include;..\..\third_party\libyuv\include;..\..\third_party\libyuv;..\..\third_party\libvpx\source\libvpx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;EXPAT_RELATIVE_PATH;WEBRTC_WIN;WEBRTC_HAS_NEON;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;NOMINMAX;WIN32;_WIN32_WINNT=0x0A00;WINVER=0x0A00;_WINDOWS;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=278861-1;USE_AURA=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_NOTIFICATIONS;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x0A000000;_USING_V110_SDK71_;WINRT;_HAS_EXCEPTIONS=1;__WINCRYPT_H__;WIN10;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PDF=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;WEBRTC_CODEC_ILBC;WEBRTC_CODEC_OPUS;WEBRTC_CODEC_G722;WEBRTC_CODEC_ISAC;WEBRTC_CODEC_RED;WEBRTC_APM_DEBUG_DUMP=0;WEBRTC_INTELLIGIBILITY_ENHANCER=0;BWE_TEST_LOGGING_COMPILE_TIME_ENABLE=0;WEBRTC_AUDIOPROC_FLOAT_PROFILE;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;_CRT_SECURE_NO_WARNINGS;OPUS_FIXED_POINT;UNIT_TEST;GFLAGS_DLL_DECL=;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;USE_LIBPCI=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ALLOCATOR_SHIM;WINRT;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="modules.gyp">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audio_coding\neteq\mock\mock_audio_decoder.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_audio_vector.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_buffer_level_filter.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_decoder_database.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_delay_manager.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_delay_peak_detector.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_dtmf_buffer.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_dtmf_tone_generator.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_expand.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_external_decoder_pcm16b.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_packet_buffer.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_payload_splitter.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\agc\mock_agc.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\beamformer\mock_nonlinear_beamformer.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="audio_processing\transient\file_utils.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="congestion_controller\delay_based_bwe_unittest_helper.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="remote_bitrate_estimator\include\mock\mock_remote_bitrate_estimator.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="remote_bitrate_estimator\include\mock\mock_remote_bitrate_observer.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="remote_bitrate_estimator\remote_bitrate_estimator_unittest_helper.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="rtp_rtcp\source\fec_test_helper.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="rtp_rtcp\source\mock\mock_rtp_payload_strategy.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="rtp_rtcp\source\rtp_format_vp8_test_helper.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="rtp_rtcp\test\testAPI\test_api.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="video_coding\codecs\vp8\simulcast_unittest.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="video_coding\include\mock\mock_vcm_callbacks.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="video_coding\test\stream_generator.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="video_processing\test\video_processing_unittest.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="desktop_capture\fake_desktop_capturer.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="desktop_capture\fake_screen_capturer.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="desktop_capture\desktop_frame_generator.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="desktop_capture\screen_drawer.h">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="desktop_capture\screen_capturer_mock_objects.h">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+    <ClInclude Include="desktop_capture\win\cursor_unittest_resources.h">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="audio_coding\acm2\acm_receiver_unittest_oldapi.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\acm2\audio_coding_module_unittest_oldapi.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\acm2\call_statistics_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\acm2\codec_manager_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\acm2\initial_delay_manager_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\acm2\rent_a_codec_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\audio_decoder_factory_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\cng\audio_encoder_cng_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\cng\cng_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\ilbc\ilbc_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\isac\fix\source\filterbanks_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\isac\fix\source\filters_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\isac\fix\source\lpc_masking_model_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\isac\fix\source\transform_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\isac\main\source\audio_encoder_isac_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\isac\main\source\isac_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\isac\unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\mock\mock_audio_encoder.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\opus\audio_encoder_opus_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\opus\opus_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\red\audio_encoder_copy_red_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\audio_classifier_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\audio_multi_vector_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\audio_vector_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\background_noise_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\buffer_level_filter_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\comfort_noise_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\decision_logic_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\decoder_database_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\delay_manager_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\delay_peak_detector_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\dsp_helper_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\dtmf_buffer_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\dtmf_tone_generator_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\expand_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\merge_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\nack_tracker_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\neteq_external_decoder_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\neteq_impl_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\neteq_network_stats_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\neteq_stereo_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\neteq_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\normal_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\packet_buffer_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\payload_splitter_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\post_decode_vad_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\random_vector_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\sync_buffer_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\tick_timer_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\time_stretch_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\timestamp_scaler_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\tools\input_audio_file_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\tools\packet_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_conference_mixer\test\audio_conference_mixer_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_device\fine_audio_buffer_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_mixer\test\audio_mixer_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\aec\echo_cancellation_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\aec\system_delay_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\agc\agc_manager_direct_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\agc\loudness_histogram_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\audio_buffer_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\beamformer\array_util_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\beamformer\complex_matrix_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\beamformer\covariance_matrix_generator_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\beamformer\matrix_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\beamformer\nonlinear_beamformer_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\echo_cancellation_impl_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\splitting_filter_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\dyadic_decimator_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\file_utils.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\file_utils_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\moving_moments_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\transient_detector_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\transient_suppressor_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\wpd_node_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\wpd_tree_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\utility\block_mean_calculator_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\utility\delay_estimator_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\gmm_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\pitch_based_vad_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\pitch_internal_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\pole_zero_filter_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\standalone_vad_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\vad_audio_proc_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\vad_circular_buffer_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\voice_activity_detector_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="bitrate_controller\bitrate_controller_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="bitrate_controller\send_side_bandwidth_estimation_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="congestion_controller\congestion_controller_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="congestion_controller\delay_based_bwe_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="congestion_controller\delay_based_bwe_unittest_helper.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="congestion_controller\probe_bitrate_estimator_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="media_file\media_file_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="module_common_types_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="pacing\bitrate_prober_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="pacing\paced_sender_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="pacing\packet_router_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\bwe_simulations.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\inter_arrival_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\remote_bitrate_estimator_unittest_helper.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\remote_estimator_proxy_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\send_time_history_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\test\bwe_test_framework_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\test\bwe_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\test\estimators\nada_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\test\metric_recorder_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\transport_feedback_adapter_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\byte_io_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\fec_receiver_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\fec_test_helper.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\nack_rtx_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\packet_loss_stats_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\playout_delay_oracle_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\producer_fec_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\receive_statistics_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\remote_ntp_time_estimator_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\app_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\bye_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\common_header_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\compound_packet_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\dlrr_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\extended_jitter_report_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\extended_reports_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\fir_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\nack_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\pli_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\rapid_resync_request_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\receiver_report_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\remb_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\report_block_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\rpsi_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\rrtr_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\sdes_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\sender_report_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\sli_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\tmmbn_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\tmmbr_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\transport_feedback_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\voip_metric_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_receiver_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_sender_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_utility_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_fec_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_format_h264_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_format_vp8_test_helper.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_format_vp8_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_format_vp9_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_header_extension_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_packet_history_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_packet_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_payload_registry_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_rtcp_impl_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_sender_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\time_util_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\vp8_partition_aggregator_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\test\testAPI\test_api.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\test\testAPI\test_api_audio.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\test\testAPI\test_api_rtcp.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\test\testAPI\test_api_video.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="utility\source\audio_frame_operations_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="utility\source\file_player_unittests.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="utility\source\process_thread_impl_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\test\packet_manipulator_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\test\stats_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\test\videoprocessor_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\vp8\default_temporal_layers_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\vp8\reference_picture_selection_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\vp8\simulcast_encoder_adapter_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\vp8\simulcast_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\decoding_state_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\frame_buffer2_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\histogram_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\jitter_buffer_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\jitter_estimator_tests.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\nack_module_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\percentile_filter_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\protection_bitrate_calculator_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\receiver_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\rtp_frame_reference_finder_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\sequence_number_util_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\session_info_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\test\stream_generator.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\timing_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\utility\frame_dropper_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\utility\h264_bitstream_parser_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\utility\ivf_file_writer_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\utility\quality_scaler_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\video_coding_robustness_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\video_packet_buffer_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\video_receiver_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\video_sender_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_processing\test\denoiser_test.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_processing\test\video_processing_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\vp9\vp9_screenshare_layers_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\screen_capturer_differ_wrapper_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\fake_screen_capturer.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\desktop_frame_generator.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\screen_drawer_unittest.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\screen_drawer_win.cc">
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\overuse_detector_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\remote_bitrate_estimator_abs_send_time_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\remote_bitrate_estimator_single_stream_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\desktop_region_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\differ_block_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\differ_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\desktop_and_cursor_composer_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\mouse_cursor_monitor_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\screen_capturer_helper_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\screen_capturer_mac_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\screen_capturer_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\screen_drawer_linux.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\screen_drawer_mac.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\window_capturer_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\win\cursor_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <ExceptionHandling>sync</ExceptionHandling>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="desktop_capture\win\cursor_unittest_resources.rc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
+  <ImportGroup Label="ExtensionTargets"/>
+</Project>

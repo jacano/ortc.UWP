@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <convert_asm_For_WPDependsOn Condition="'$(ConfigurationType)' != 'Makefile'">_SelectedFiles;$(convert_asm_For_WPDependsOn)</convert_asm_For_WPDependsOn>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <convert_asm_For_WP>
+      <CommandLineTemplate>call pushd src\celt\arm &amp;&amp; type armopts.s.msvs &gt; armopts.s &amp;&amp; type %(Filename)%(Extension) | perl ads2armasm_msvs.pl &gt; $(IntDir)%(Filename).asm &amp;&amp; popd &amp; exit 0</CommandLineTemplate>
+      <Outputs>$(IntDir)%(Filename).asm</Outputs>
+      <ExecutionDescription>Convert assembler file for MS ASM %(Identity)</ExecutionDescription>
+      <AdditionalDependencies></AdditionalDependencies>
+    </convert_asm_For_WP>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(convert_asm_For_WPBeforeTargets)' == '' and '$(convert_asm_For_WPAfterTargets)' == '' and '$(ConfigurationType)' != 'Makefile'">
+    <convert_asm_For_WPBeforeTargets>CustomBuild</convert_asm_For_WPBeforeTargets>
+    <convert_asm_For_WPAfterTargets>Midl</convert_asm_For_WPAfterTargets>
+  </PropertyGroup>
+</Project>

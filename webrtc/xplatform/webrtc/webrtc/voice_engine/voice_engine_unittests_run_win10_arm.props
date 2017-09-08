@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <isolateDependsOn Condition="'$(ConfigurationType)' != 'Makefile'">_SelectedFiles;$(isolateDependsOn)</isolateDependsOn>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <isolate>
+      <CommandLineTemplate>call python &quot;..\..\tools\isolate_driver.py&quot; &quot;check&quot; &quot;--isolated&quot; &quot;$(OutDir)%(Filename).isolated&quot; &quot;--isolate&quot; &quot;%(Identity)&quot; &quot;--path-variable&quot; &quot;DEPTH&quot; &quot;..\..&quot; &quot;--path-variable&quot; &quot;PRODUCT_DIR&quot; &quot;$(OutDir) &quot; &quot;--config-variable&quot; &quot;CONFIGURATION_NAME=$(Configuration)&quot; &quot;--config-variable&quot; &quot;OS=win&quot; &quot;--config-variable&quot; &quot;asan=0&quot; &quot;--config-variable&quot; &quot;branding=Chromium&quot; &quot;--config-variable&quot; &quot;chromeos=0&quot; &quot;--config-variable&quot; &quot;component=static_library&quot; &quot;--config-variable&quot; &quot;disable_nacl=0&quot; &quot;--config-variable&quot; &quot;enable_pepper_cdms=1&quot; &quot;--config-variable&quot; &quot;enable_plugins=1&quot; &quot;--config-variable&quot; &quot;fastbuild=0&quot; &quot;--config-variable&quot; &quot;icu_use_data_file_flag=1&quot; &quot;--config-variable&quot; &quot;internal_gles2_conform_tests=0&quot; &quot;--config-variable&quot; &quot;kasko=0&quot; &quot;--config-variable&quot; &quot;lsan=0&quot; &quot;--config-variable&quot; &quot;msan=0&quot; &quot;--config-variable&quot; &quot;target_arch=ia32&quot; &quot;--config-variable&quot; &quot;tsan=0&quot; &quot;--config-variable&quot; &quot;use_custom_libcxx=0&quot; &quot;--config-variable&quot; &quot;use_instrumented_libraries=0&quot; &quot;--config-variable&quot; &quot;use_prebuilt_instrumented_libraries=0&quot; &quot;--config-variable&quot; &quot;use_ozone=0&quot; &quot;--config-variable&quot; &quot;use_x11=0&quot; &quot;--config-variable&quot; &quot;v8_use_external_startup_data=1&quot; &quot;--config-variable&quot; &quot;msvs_version=2010&quot;</CommandLineTemplate>
+      <Outputs>$(OutDir)%(Filename).isolated</Outputs>
+      <ExecutionDescription>isolate</ExecutionDescription>
+      <AdditionalDependencies>..\..\tools\isolate_driver.py;..\..\tools\swarming_client\isolate.py;..\..\tools\swarming_client\run_isolated.py</AdditionalDependencies>
+    </isolate>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(isolateBeforeTargets)' == '' and '$(isolateAfterTargets)' == '' and '$(ConfigurationType)' != 'Makefile'">
+    <isolateBeforeTargets>Midl</isolateBeforeTargets>
+    <isolateAfterTargets>CustomBuild</isolateAfterTargets>
+  </PropertyGroup>
+</Project>

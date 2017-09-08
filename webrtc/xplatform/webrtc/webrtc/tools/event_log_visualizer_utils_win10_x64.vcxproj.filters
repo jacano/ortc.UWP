@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="event_log_visualizer">
+      <UniqueIdentifier>{27456A86-3215-5785-0A14-77E22EF30982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event_log_visualizer">
+      <UniqueIdentifier>{27456A86-3215-5785-0A14-77E22EF30982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event_log_visualizer">
+      <UniqueIdentifier>{27456A86-3215-5785-0A14-77E22EF30982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event_log_visualizer">
+      <UniqueIdentifier>{27456A86-3215-5785-0A14-77E22EF30982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event_log_visualizer">
+      <UniqueIdentifier>{27456A86-3215-5785-0A14-77E22EF30982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event_log_visualizer">
+      <UniqueIdentifier>{27456A86-3215-5785-0A14-77E22EF30982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event_log_visualizer">
+      <UniqueIdentifier>{27456A86-3215-5785-0A14-77E22EF30982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event_log_visualizer">
+      <UniqueIdentifier>{27456A86-3215-5785-0A14-77E22EF30982}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="event_log_visualizer\analyzer.cc">
+      <Filter>event_log_visualizer</Filter>
+    </ClCompile>
+    <ClInclude Include="event_log_visualizer\analyzer.h">
+      <Filter>event_log_visualizer</Filter>
+    </ClInclude>
+    <ClCompile Include="event_log_visualizer\plot_base.cc">
+      <Filter>event_log_visualizer</Filter>
+    </ClCompile>
+    <ClInclude Include="event_log_visualizer\plot_base.h">
+      <Filter>event_log_visualizer</Filter>
+    </ClInclude>
+    <ClCompile Include="event_log_visualizer\plot_protobuf.cc">
+      <Filter>event_log_visualizer</Filter>
+    </ClCompile>
+    <ClInclude Include="event_log_visualizer\plot_protobuf.h">
+      <Filter>event_log_visualizer</Filter>
+    </ClInclude>
+    <ClCompile Include="event_log_visualizer\plot_python.cc">
+      <Filter>event_log_visualizer</Filter>
+    </ClCompile>
+    <ClInclude Include="event_log_visualizer\plot_python.h">
+      <Filter>event_log_visualizer</Filter>
+    </ClInclude>
+    <None Include="tools.gyp"/>
+  </ItemGroup>
+</Project>

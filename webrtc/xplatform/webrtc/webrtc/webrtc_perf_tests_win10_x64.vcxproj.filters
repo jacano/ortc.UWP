@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="call">
+      <UniqueIdentifier>{4194A5F5-EAC8-84D3-5A1B-2FE5680BDC83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="call">
+      <UniqueIdentifier>{4194A5F5-EAC8-84D3-5A1B-2FE5680BDC83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="call">
+      <UniqueIdentifier>{4194A5F5-EAC8-84D3-5A1B-2FE5680BDC83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_coding\neteq\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\audio_processing\level_controller">
+      <UniqueIdentifier>{6B27458F-6E12-0BBA-C78B-8C17AD745AF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{5A4388DD-8A3A-FA65-0F09-87F605ED3291}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="call\call_perf_tests.cc">
+      <Filter>call</Filter>
+    </ClCompile>
+    <ClCompile Include="call\rampup_tests.cc">
+      <Filter>call</Filter>
+    </ClCompile>
+    <ClInclude Include="call\rampup_tests.h">
+      <Filter>call</Filter>
+    </ClInclude>
+    <ClCompile Include="modules\audio_coding\neteq\test\neteq_performance_unittest.cc">
+      <Filter>modules\audio_coding\neteq\test</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\audio_processing_performance_unittest.cc">
+      <Filter>modules\audio_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\audio_processing\level_controller\level_controller_complexity_unittest.cc">
+      <Filter>modules\audio_processing\level_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\remote_bitrate_estimator\remote_bitrate_estimators_test.cc">
+      <Filter>modules\remote_bitrate_estimator</Filter>
+    </ClCompile>
+    <ClCompile Include="video\full_stack.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <None Include="webrtc.gyp"/>
+  </ItemGroup>
+</Project>

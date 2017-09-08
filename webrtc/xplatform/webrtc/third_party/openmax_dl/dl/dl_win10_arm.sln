@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openmax_dl", "openmax_dl_win10_arm.vcxproj", "{647D8B8A-7FDE-97A1-5FB5-233D6978E0AC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openmax_dl_armv7", "openmax_dl_armv7_win10_arm.vcxproj", "{BBB9C181-FCE8-3F56-2642-77964B61648A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openmax_dl_neon", "openmax_dl_neon_win10_arm.vcxproj", "{D0776BF0-D0BD-7632-AB1C-F07CEAD04670}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{647D8B8A-7FDE-97A1-5FB5-233D6978E0AC}.Debug|ARM.ActiveCfg = Debug|ARM
+		{647D8B8A-7FDE-97A1-5FB5-233D6978E0AC}.Debug|ARM.Build.0 = Debug|ARM
+		{647D8B8A-7FDE-97A1-5FB5-233D6978E0AC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{647D8B8A-7FDE-97A1-5FB5-233D6978E0AC}.Debug|Win32.Build.0 = Debug|Win32
+		{647D8B8A-7FDE-97A1-5FB5-233D6978E0AC}.Release|ARM.ActiveCfg = Release|ARM
+		{647D8B8A-7FDE-97A1-5FB5-233D6978E0AC}.Release|ARM.Build.0 = Release|ARM
+		{647D8B8A-7FDE-97A1-5FB5-233D6978E0AC}.Release|Win32.ActiveCfg = Release|Win32
+		{647D8B8A-7FDE-97A1-5FB5-233D6978E0AC}.Release|Win32.Build.0 = Release|Win32
+		{BBB9C181-FCE8-3F56-2642-77964B61648A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{BBB9C181-FCE8-3F56-2642-77964B61648A}.Debug|ARM.Build.0 = Debug|ARM
+		{BBB9C181-FCE8-3F56-2642-77964B61648A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BBB9C181-FCE8-3F56-2642-77964B61648A}.Debug|Win32.Build.0 = Debug|Win32
+		{BBB9C181-FCE8-3F56-2642-77964B61648A}.Release|ARM.ActiveCfg = Release|ARM
+		{BBB9C181-FCE8-3F56-2642-77964B61648A}.Release|ARM.Build.0 = Release|ARM
+		{BBB9C181-FCE8-3F56-2642-77964B61648A}.Release|Win32.ActiveCfg = Release|Win32
+		{BBB9C181-FCE8-3F56-2642-77964B61648A}.Release|Win32.Build.0 = Release|Win32
+		{D0776BF0-D0BD-7632-AB1C-F07CEAD04670}.Debug|ARM.ActiveCfg = Debug|ARM
+		{D0776BF0-D0BD-7632-AB1C-F07CEAD04670}.Debug|ARM.Build.0 = Debug|ARM
+		{D0776BF0-D0BD-7632-AB1C-F07CEAD04670}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D0776BF0-D0BD-7632-AB1C-F07CEAD04670}.Debug|Win32.Build.0 = Debug|Win32
+		{D0776BF0-D0BD-7632-AB1C-F07CEAD04670}.Release|ARM.ActiveCfg = Release|ARM
+		{D0776BF0-D0BD-7632-AB1C-F07CEAD04670}.Release|ARM.Build.0 = Release|ARM
+		{D0776BF0-D0BD-7632-AB1C-F07CEAD04670}.Release|Win32.ActiveCfg = Release|Win32
+		{D0776BF0-D0BD-7632-AB1C-F07CEAD04670}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

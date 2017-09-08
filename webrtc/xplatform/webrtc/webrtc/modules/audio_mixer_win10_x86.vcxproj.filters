@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="audio_mixer">
+      <UniqueIdentifier>{565F61EF-5613-D7FC-4CAB-973431B8BBC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_mixer">
+      <UniqueIdentifier>{565F61EF-5613-D7FC-4CAB-973431B8BBC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_mixer">
+      <UniqueIdentifier>{565F61EF-5613-D7FC-4CAB-973431B8BBC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_mixer">
+      <UniqueIdentifier>{565F61EF-5613-D7FC-4CAB-973431B8BBC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_mixer">
+      <UniqueIdentifier>{565F61EF-5613-D7FC-4CAB-973431B8BBC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_mixer">
+      <UniqueIdentifier>{565F61EF-5613-D7FC-4CAB-973431B8BBC7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="audio_mixer\audio_frame_manipulator.cc">
+      <Filter>audio_mixer</Filter>
+    </ClCompile>
+    <ClInclude Include="audio_mixer\audio_frame_manipulator.h">
+      <Filter>audio_mixer</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_mixer\audio_mixer.h">
+      <Filter>audio_mixer</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_mixer\audio_mixer_defines.h">
+      <Filter>audio_mixer</Filter>
+    </ClInclude>
+    <ClCompile Include="audio_mixer\audio_mixer_impl.cc">
+      <Filter>audio_mixer</Filter>
+    </ClCompile>
+    <ClInclude Include="audio_mixer\audio_mixer_impl.h">
+      <Filter>audio_mixer</Filter>
+    </ClInclude>
+    <None Include="modules.gyp"/>
+  </ItemGroup>
+</Project>

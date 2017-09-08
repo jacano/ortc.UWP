@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="event_log_visualizer">
+      <UniqueIdentifier>{27456A86-3215-5785-0A14-77E22EF30982}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="event_log_visualizer\main.cc">
+      <Filter>event_log_visualizer</Filter>
+    </ClCompile>
+    <None Include="tools.gyp"/>
+  </ItemGroup>
+</Project>

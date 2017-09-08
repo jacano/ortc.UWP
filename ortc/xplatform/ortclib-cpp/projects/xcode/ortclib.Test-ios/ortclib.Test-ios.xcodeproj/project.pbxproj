@@ -1,0 +1,1265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		009D19931DE52DEA00D139FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 009D19921DE52DEA00D139FF /* main.m */; };
+		009D19961DE52DEA00D139FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 009D19951DE52DEA00D139FF /* AppDelegate.m */; };
+		009D19991DE52DEA00D139FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009D19981DE52DEA00D139FF /* ViewController.m */; };
+		009D199C1DE52DEA00D139FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009D199A1DE52DEA00D139FF /* Main.storyboard */; };
+		009D199E1DE52DEA00D139FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009D199D1DE52DEA00D139FF /* Assets.xcassets */; };
+		009D19A11DE52DEA00D139FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009D199F1DE52DEA00D139FF /* LaunchScreen.storyboard */; };
+		009D19AC1DE52DEA00D139FF /* ortclib_Test_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 009D19AB1DE52DEA00D139FF /* ortclib_Test_iosTests.m */; };
+		009D19B71DE52DEA00D139FF /* ortclib_Test_iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 009D19B61DE52DEA00D139FF /* ortclib_Test_iosUITests.m */; };
+		009D1A9C1DE52FBF00D139FF /* TestDTLS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A801DE52FBF00D139FF /* TestDTLS.cpp */; };
+		009D1A9D1DE52FBF00D139FF /* TestDTLS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A801DE52FBF00D139FF /* TestDTLS.cpp */; };
+		009D1A9E1DE52FBF00D139FF /* TestDTLS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A801DE52FBF00D139FF /* TestDTLS.cpp */; };
+		009D1A9F1DE52FBF00D139FF /* TestICEGatherer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A811DE52FBF00D139FF /* TestICEGatherer.cpp */; };
+		009D1AA01DE52FBF00D139FF /* TestICEGatherer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A811DE52FBF00D139FF /* TestICEGatherer.cpp */; };
+		009D1AA11DE52FBF00D139FF /* TestICEGatherer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A811DE52FBF00D139FF /* TestICEGatherer.cpp */; };
+		009D1AA21DE52FBF00D139FF /* TestICETransport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A821DE52FBF00D139FF /* TestICETransport.cpp */; };
+		009D1AA31DE52FBF00D139FF /* TestICETransport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A821DE52FBF00D139FF /* TestICETransport.cpp */; };
+		009D1AA41DE52FBF00D139FF /* TestICETransport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A821DE52FBF00D139FF /* TestICETransport.cpp */; };
+		009D1AA51DE52FBF00D139FF /* testing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A831DE52FBF00D139FF /* testing.cpp */; };
+		009D1AA61DE52FBF00D139FF /* testing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A831DE52FBF00D139FF /* testing.cpp */; };
+		009D1AA71DE52FBF00D139FF /* testing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A831DE52FBF00D139FF /* testing.cpp */; };
+		009D1AA81DE52FBF00D139FF /* TestMediaStreamTrack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A851DE52FBF00D139FF /* TestMediaStreamTrack.cpp */; };
+		009D1AA91DE52FBF00D139FF /* TestMediaStreamTrack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A851DE52FBF00D139FF /* TestMediaStreamTrack.cpp */; };
+		009D1AAA1DE52FBF00D139FF /* TestMediaStreamTrack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A851DE52FBF00D139FF /* TestMediaStreamTrack.cpp */; };
+		009D1AAB1DE52FBF00D139FF /* TestRTCPPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A871DE52FBF00D139FF /* TestRTCPPacket.cpp */; };
+		009D1AAC1DE52FBF00D139FF /* TestRTCPPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A871DE52FBF00D139FF /* TestRTCPPacket.cpp */; };
+		009D1AAD1DE52FBF00D139FF /* TestRTCPPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A871DE52FBF00D139FF /* TestRTCPPacket.cpp */; };
+		009D1AAE1DE52FBF00D139FF /* TestRTPChannel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A881DE52FBF00D139FF /* TestRTPChannel.cpp */; };
+		009D1AAF1DE52FBF00D139FF /* TestRTPChannel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A881DE52FBF00D139FF /* TestRTPChannel.cpp */; };
+		009D1AB01DE52FBF00D139FF /* TestRTPChannel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A881DE52FBF00D139FF /* TestRTPChannel.cpp */; };
+		009D1AB11DE52FBF00D139FF /* TestRTPChannelAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A8A1DE52FBF00D139FF /* TestRTPChannelAudio.cpp */; };
+		009D1AB21DE52FBF00D139FF /* TestRTPChannelAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A8A1DE52FBF00D139FF /* TestRTPChannelAudio.cpp */; };
+		009D1AB31DE52FBF00D139FF /* TestRTPChannelAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A8A1DE52FBF00D139FF /* TestRTPChannelAudio.cpp */; };
+		009D1AB41DE52FBF00D139FF /* TestRTPChannelVideo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A8C1DE52FBF00D139FF /* TestRTPChannelVideo.cpp */; };
+		009D1AB51DE52FBF00D139FF /* TestRTPChannelVideo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A8C1DE52FBF00D139FF /* TestRTPChannelVideo.cpp */; };
+		009D1AB61DE52FBF00D139FF /* TestRTPChannelVideo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A8C1DE52FBF00D139FF /* TestRTPChannelVideo.cpp */; };
+		009D1AB71DE52FBF00D139FF /* TestRTPListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A8E1DE52FBF00D139FF /* TestRTPListener.cpp */; };
+		009D1AB81DE52FBF00D139FF /* TestRTPListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A8E1DE52FBF00D139FF /* TestRTPListener.cpp */; };
+		009D1AB91DE52FBF00D139FF /* TestRTPListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A8E1DE52FBF00D139FF /* TestRTPListener.cpp */; };
+		009D1ABA1DE52FBF00D139FF /* TestRTPPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A901DE52FBF00D139FF /* TestRTPPacket.cpp */; };
+		009D1ABB1DE52FBF00D139FF /* TestRTPPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A901DE52FBF00D139FF /* TestRTPPacket.cpp */; };
+		009D1ABC1DE52FBF00D139FF /* TestRTPPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A901DE52FBF00D139FF /* TestRTPPacket.cpp */; };
+		009D1ABD1DE52FC000D139FF /* TestRTPReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A911DE52FBF00D139FF /* TestRTPReceiver.cpp */; };
+		009D1ABE1DE52FC000D139FF /* TestRTPReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A911DE52FBF00D139FF /* TestRTPReceiver.cpp */; };
+		009D1ABF1DE52FC000D139FF /* TestRTPReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A911DE52FBF00D139FF /* TestRTPReceiver.cpp */; };
+		009D1AC01DE52FC000D139FF /* TestRTPSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A931DE52FBF00D139FF /* TestRTPSender.cpp */; };
+		009D1AC11DE52FC000D139FF /* TestRTPSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A931DE52FBF00D139FF /* TestRTPSender.cpp */; };
+		009D1AC21DE52FC000D139FF /* TestRTPSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A931DE52FBF00D139FF /* TestRTPSender.cpp */; };
+		009D1AC31DE52FC000D139FF /* TestSCTP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A951DE52FBF00D139FF /* TestSCTP.cpp */; };
+		009D1AC41DE52FC000D139FF /* TestSCTP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A951DE52FBF00D139FF /* TestSCTP.cpp */; };
+		009D1AC51DE52FC000D139FF /* TestSCTP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A951DE52FBF00D139FF /* TestSCTP.cpp */; };
+		009D1AC61DE52FC000D139FF /* TestSetup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A971DE52FBF00D139FF /* TestSetup.cpp */; };
+		009D1AC71DE52FC000D139FF /* TestSetup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A971DE52FBF00D139FF /* TestSetup.cpp */; };
+		009D1AC81DE52FC000D139FF /* TestSetup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A971DE52FBF00D139FF /* TestSetup.cpp */; };
+		009D1AC91DE52FC000D139FF /* TestSRTP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A981DE52FBF00D139FF /* TestSRTP.cpp */; };
+		009D1ACA1DE52FC000D139FF /* TestSRTP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A981DE52FBF00D139FF /* TestSRTP.cpp */; };
+		009D1ACB1DE52FC000D139FF /* TestSRTP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009D1A981DE52FBF00D139FF /* TestSRTP.cpp */; };
+		52AD843F1E5DF2DD00DCD81D /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AD843E1E5DF2DD00DCD81D /* libcurl.a */; };
+		52BA73931E647BAD00CAF5AE /* webrtc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BA73921E647BAD00CAF5AE /* webrtc.a */; };
+		52BA73951E647BB600CAF5AE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BA73941E647BB600CAF5AE /* CoreMedia.framework */; };
+		52BA73971E647C1400CAF5AE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BA73961E647C1400CAF5AE /* AVFoundation.framework */; };
+		52BA73991E647C9C00CAF5AE /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BA73981E647C9C00CAF5AE /* VideoToolbox.framework */; };
+		52BA739B1E647CCC00CAF5AE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BA739A1E647CCC00CAF5AE /* AudioToolbox.framework */; };
+		52BA73C41E64DD1900CAF5AE /* libcryptopp-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BA73BD1E64DD1900CAF5AE /* libcryptopp-ios.a */; };
+		52BA73C51E64DD1900CAF5AE /* libidnkit-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BA73BE1E64DD1900CAF5AE /* libidnkit-ios.a */; };
+		52BA73C71E64DD1900CAF5AE /* libortclib.services-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BA73C01E64DD1900CAF5AE /* libortclib.services-ios.a */; };
+		52BA73C81E64DD1900CAF5AE /* libudns-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BA73C11E64DD1900CAF5AE /* libudns-ios.a */; };
+		52BA73CD1E64DECB00CAF5AE /* libortclib-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BA73CB1E64DECB00CAF5AE /* libortclib-ios.a */; };
+		52BA73CE1E64DECB00CAF5AE /* libzsLib-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BA73CC1E64DECB00CAF5AE /* libzsLib-ios.a */; };
+		52BA73FC1E64E28D00CAF5AE /* libzsLib-eventing-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BA73FB1E64E28D00CAF5AE /* libzsLib-eventing-ios.a */; };
+		52BA73FE1E64E2C200CAF5AE /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BA73FD1E64E2C200CAF5AE /* libresolv.9.tbd */; };
+		52BA74001E64E2E700CAF5AE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BA73FF1E64E2E700CAF5AE /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		009D19A81DE52DEA00D139FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 009D19861DE52DEA00D139FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 009D198D1DE52DEA00D139FF;
+			remoteInfo = "ortclib.Test-ios";
+		};
+		009D19B31DE52DEA00D139FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 009D19861DE52DEA00D139FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 009D198D1DE52DEA00D139FF;
+			remoteInfo = "ortclib.Test-ios";
+		};
+		5285F3361E65B1D70005D02E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BA739C1E64DB4200CAF5AE /* zsLib-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0067EE151D9C5B4E003BE1AC;
+			remoteInfo = "zsLib-ios";
+		};
+		5285F3401E65B1D70005D02E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BA73F51E64E28000CAF5AE /* zsLib-eventing-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008698371DE3F458009D669C;
+			remoteInfo = "zsLib-eventing-ios";
+		};
+		5285F3481E65B1D70005D02E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BA73A51E64DC0300CAF5AE /* idnkit-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0001A45F1DA1DD5F00D807DA;
+			remoteInfo = "idnkit-ios";
+		};
+		5285F34D1E65B1D70005D02E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 009D19C41DE52E8200D139FF /* ortclib-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0064F8031DE51EB900EE8962;
+			remoteInfo = "ortclib-ios";
+		};
+		5285F36D1E65B3470005D02E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BA73B71E64DC2C00CAF5AE /* ortclib.services-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008A13851DA1A13600D1664A;
+			remoteInfo = "ortclib.services-ios";
+		};
+		5285F3741E65B3470005D02E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BA73AB1E64DC1000CAF5AE /* udns-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0022EA3D1D989A1F002FCECF;
+			remoteInfo = "udns-ios";
+		};
+		5285F3791E65B3470005D02E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BA73B11E64DC1B00CAF5AE /* cryptopp-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 009BBA0A1D974F4400B6B633;
+			remoteInfo = "cryptopp-ios";
+		};
+		5285F37E1E65B3470005D02E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526A20B31E6093A800BA0F07 /* webrtcWrapper_ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9451F25C1BC54F57008CB8D7;
+			remoteInfo = webrtcWrapper_ios;
+		};
+		5285F3801E65CAE40005D02E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526A20B31E6093A800BA0F07 /* webrtcWrapper_ios.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9451F25B1BC54F57008CB8D7;
+			remoteInfo = webrtcWrapper_ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009D198E1DE52DEA00D139FF /* ortclib.Test-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ortclib.Test-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		009D19921DE52DEA00D139FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		009D19941DE52DEA00D139FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		009D19951DE52DEA00D139FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		009D19971DE52DEA00D139FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		009D19981DE52DEA00D139FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		009D199B1DE52DEA00D139FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		009D199D1DE52DEA00D139FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		009D19A01DE52DEA00D139FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		009D19A21DE52DEA00D139FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009D19A71DE52DEA00D139FF /* ortclib.Test-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ortclib.Test-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		009D19AB1DE52DEA00D139FF /* ortclib_Test_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ortclib_Test_iosTests.m; sourceTree = "<group>"; };
+		009D19AD1DE52DEA00D139FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009D19B21DE52DEA00D139FF /* ortclib.Test-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ortclib.Test-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		009D19B61DE52DEA00D139FF /* ortclib_Test_iosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ortclib_Test_iosUITests.m; sourceTree = "<group>"; };
+		009D19B81DE52DEA00D139FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009D19C41DE52E8200D139FF /* ortclib-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "ortclib-ios.xcodeproj"; path = "../ortclib-ios/ortclib-ios.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		009D1A7E1DE52FBF00D139FF /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		009D1A7F1DE52FBF00D139FF /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		009D1A801DE52FBF00D139FF /* TestDTLS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestDTLS.cpp; sourceTree = "<group>"; };
+		009D1A811DE52FBF00D139FF /* TestICEGatherer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestICEGatherer.cpp; sourceTree = "<group>"; };
+		009D1A821DE52FBF00D139FF /* TestICETransport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestICETransport.cpp; sourceTree = "<group>"; };
+		009D1A831DE52FBF00D139FF /* testing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testing.cpp; sourceTree = "<group>"; };
+		009D1A841DE52FBF00D139FF /* testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testing.h; sourceTree = "<group>"; };
+		009D1A851DE52FBF00D139FF /* TestMediaStreamTrack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestMediaStreamTrack.cpp; sourceTree = "<group>"; };
+		009D1A861DE52FBF00D139FF /* TestMediaStreamTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMediaStreamTrack.h; sourceTree = "<group>"; };
+		009D1A871DE52FBF00D139FF /* TestRTCPPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestRTCPPacket.cpp; sourceTree = "<group>"; };
+		009D1A881DE52FBF00D139FF /* TestRTPChannel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestRTPChannel.cpp; sourceTree = "<group>"; };
+		009D1A891DE52FBF00D139FF /* TestRTPChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRTPChannel.h; sourceTree = "<group>"; };
+		009D1A8A1DE52FBF00D139FF /* TestRTPChannelAudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestRTPChannelAudio.cpp; sourceTree = "<group>"; };
+		009D1A8B1DE52FBF00D139FF /* TestRTPChannelAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRTPChannelAudio.h; sourceTree = "<group>"; };
+		009D1A8C1DE52FBF00D139FF /* TestRTPChannelVideo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestRTPChannelVideo.cpp; sourceTree = "<group>"; };
+		009D1A8D1DE52FBF00D139FF /* TestRTPChannelVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRTPChannelVideo.h; sourceTree = "<group>"; };
+		009D1A8E1DE52FBF00D139FF /* TestRTPListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestRTPListener.cpp; sourceTree = "<group>"; };
+		009D1A8F1DE52FBF00D139FF /* TestRTPListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRTPListener.h; sourceTree = "<group>"; };
+		009D1A901DE52FBF00D139FF /* TestRTPPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestRTPPacket.cpp; sourceTree = "<group>"; };
+		009D1A911DE52FBF00D139FF /* TestRTPReceiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestRTPReceiver.cpp; sourceTree = "<group>"; };
+		009D1A921DE52FBF00D139FF /* TestRTPReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRTPReceiver.h; sourceTree = "<group>"; };
+		009D1A931DE52FBF00D139FF /* TestRTPSender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestRTPSender.cpp; sourceTree = "<group>"; };
+		009D1A941DE52FBF00D139FF /* TestRTPSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRTPSender.h; sourceTree = "<group>"; };
+		009D1A951DE52FBF00D139FF /* TestSCTP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestSCTP.cpp; sourceTree = "<group>"; };
+		009D1A961DE52FBF00D139FF /* TestSCTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSCTP.h; sourceTree = "<group>"; };
+		009D1A971DE52FBF00D139FF /* TestSetup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestSetup.cpp; sourceTree = "<group>"; };
+		009D1A981DE52FBF00D139FF /* TestSRTP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestSRTP.cpp; sourceTree = "<group>"; };
+		52656CBC1E5F02A1009DAE87 /* libaudio_decoder_factory_interface.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaudio_decoder_factory_interface.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios64/Debug-iphoneos/libaudio_decoder_factory_interface.a"; sourceTree = "<group>"; };
+		52656CBE1E5F040E009DAE87 /* libaudio_processing_neon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaudio_processing_neon.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios64/Debug-iphoneos/libaudio_processing_neon.a"; sourceTree = "<group>"; };
+		526A20B31E6093A800BA0F07 /* webrtcWrapper_ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = webrtcWrapper_ios.xcodeproj; path = ../../../../../apple/projects/xcode/webrtcWrappers/webrtcWrapper_ios/webrtcWrapper_ios.xcodeproj; sourceTree = SOURCE_ROOT; };
+		52AD84301E5DE9C200DCD81D /* libzsLib-eventing-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libzsLib-eventing-ios.a"; path = "../../../../zsLib-eventing/projects/xcode/zsLib-eventing-ios/build/Debug-iphoneos/libzsLib-eventing-ios.a"; sourceTree = "<group>"; };
+		52AD84321E5DE9D500DCD81D /* libwebrtcWrapper_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebrtcWrapper_ios.a; path = "../../../../../apple/projects/xcode/webrtcWrappers/webrtcWrapper_ios/build/Debug-iphoneos/libwebrtcWrapper_ios.a"; sourceTree = "<group>"; };
+		52AD843E1E5DF2DD00DCD81D /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = "../../../../curl/curl/ios-appstore/lib/libcurl.a"; sourceTree = "<group>"; };
+		52AD84401E5DF35B00DCD81D /* libwebrtc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebrtc.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libwebrtc.a"; sourceTree = "<group>"; };
+		52AD84421E5DF48B00DCD81D /* librtp_rtcp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librtp_rtcp.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/librtp_rtcp.a"; sourceTree = "<group>"; };
+		52AD84431E5DF48B00DCD81D /* libaudio_processing.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaudio_processing.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libaudio_processing.a"; sourceTree = "<group>"; };
+		52AD84441E5DF48B00DCD81D /* libvoice_engine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvoice_engine.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libvoice_engine.a"; sourceTree = "<group>"; };
+		52AD84451E5DF48B00DCD81D /* libneteq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libneteq.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libneteq.a"; sourceTree = "<group>"; };
+		52AD84461E5DF48B00DCD81D /* libwebrtc_video_coding.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebrtc_video_coding.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libwebrtc_video_coding.a"; sourceTree = "<group>"; };
+		52AD84471E5DF48B00DCD81D /* libvpx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvpx.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libvpx.a"; sourceTree = "<group>"; };
+		52AD84481E5DF48B00DCD81D /* libboringssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboringssl.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libboringssl.a"; sourceTree = "<group>"; };
+		52AD84491E5DF48B00DCD81D /* librtc_base_approved.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librtc_base_approved.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/librtc_base_approved.a"; sourceTree = "<group>"; };
+		52AD844A1E5DF48B00DCD81D /* libaudio_device.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaudio_device.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libaudio_device.a"; sourceTree = "<group>"; };
+		52AD844B1E5DF48B00DCD81D /* libremote_bitrate_estimator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libremote_bitrate_estimator.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libremote_bitrate_estimator.a"; sourceTree = "<group>"; };
+		52AD844C1E5DF48B00DCD81D /* libcommon_audio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcommon_audio.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libcommon_audio.a"; sourceTree = "<group>"; };
+		52AD844D1E5DF48B00DCD81D /* libsystem_wrappers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsystem_wrappers.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libsystem_wrappers.a"; sourceTree = "<group>"; };
+		52AD844E1E5DF48B00DCD81D /* libusrsctplib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libusrsctplib.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libusrsctplib.a"; sourceTree = "<group>"; };
+		52AD844F1E5DF48B00DCD81D /* libcommon_video.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcommon_video.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libcommon_video.a"; sourceTree = "<group>"; };
+		52AD84501E5DF48B00DCD81D /* libaudio_coding_module.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaudio_coding_module.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libaudio_coding_module.a"; sourceTree = "<group>"; };
+		52AD84511E5DF48B00DCD81D /* libwebrtc_utility.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebrtc_utility.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libwebrtc_utility.a"; sourceTree = "<group>"; };
+		52AD84521E5DF48B00DCD81D /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libopus.a"; sourceTree = "<group>"; };
+		52AD84531E5DF48B00DCD81D /* libwebrtc_vp8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebrtc_vp8.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libwebrtc_vp8.a"; sourceTree = "<group>"; };
+		52AD84541E5DF48B00DCD81D /* libpaced_sender.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpaced_sender.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libpaced_sender.a"; sourceTree = "<group>"; };
+		52AD84551E5DF48B00DCD81D /* librtc_event_log.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librtc_event_log.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/librtc_event_log.a"; sourceTree = "<group>"; };
+		52AD84561E5DF48B00DCD81D /* libbitrate_controller.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbitrate_controller.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libbitrate_controller.a"; sourceTree = "<group>"; };
+		52AD84571E5DF48B00DCD81D /* librtc_event_log_proto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librtc_event_log_proto.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/librtc_event_log_proto.a"; sourceTree = "<group>"; };
+		52AD84581E5DF48B00DCD81D /* libisac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libisac.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libisac.a"; sourceTree = "<group>"; };
+		52AD84591E5DF48B00DCD81D /* libisac_fix.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libisac_fix.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libisac_fix.a"; sourceTree = "<group>"; };
+		52AD845A1E5DF48B00DCD81D /* libwebrtc_h264_video_toolbox.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebrtc_h264_video_toolbox.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libwebrtc_h264_video_toolbox.a"; sourceTree = "<group>"; };
+		52AD845B1E5DF48B00DCD81D /* libwebrtc_vp9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebrtc_vp9.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libwebrtc_vp9.a"; sourceTree = "<group>"; };
+		52AD845C1E5DF48B00DCD81D /* libaudio_conference_mixer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaudio_conference_mixer.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libaudio_conference_mixer.a"; sourceTree = "<group>"; };
+		52AD845D1E5DF48B00DCD81D /* libvideo_coding_utility.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvideo_coding_utility.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libvideo_coding_utility.a"; sourceTree = "<group>"; };
+		52AD845E1E5DF48B00DCD81D /* librent_a_codec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librent_a_codec.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/librent_a_codec.a"; sourceTree = "<group>"; };
+		52AD845F1E5DF48B00DCD81D /* libyuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libyuv.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libyuv.a"; sourceTree = "<group>"; };
+		52AD84601E5DF48B00DCD81D /* libilbc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libilbc.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libilbc.a"; sourceTree = "<group>"; };
+		52AD84611E5DF48B00DCD81D /* libmetrics_default.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmetrics_default.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libmetrics_default.a"; sourceTree = "<group>"; };
+		52AD84621E5DF48B00DCD81D /* libvideo_processing.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvideo_processing.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libvideo_processing.a"; sourceTree = "<group>"; };
+		52AD84631E5DF48B00DCD81D /* libvideo_capture_module_internal_impl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvideo_capture_module_internal_impl.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libvideo_capture_module_internal_impl.a"; sourceTree = "<group>"; };
+		52AD84641E5DF48B00DCD81D /* libcng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcng.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libcng.a"; sourceTree = "<group>"; };
+		52AD84651E5DF48B00DCD81D /* libaudioproc_debug_proto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaudioproc_debug_proto.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libaudioproc_debug_proto.a"; sourceTree = "<group>"; };
+		52AD84661E5DF48B00DCD81D /* libwebrtc_opus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebrtc_opus.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libwebrtc_opus.a"; sourceTree = "<group>"; };
+		52AD84671E5DF48B00DCD81D /* libg711.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libg711.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libg711.a"; sourceTree = "<group>"; };
+		52AD84681E5DF48B00DCD81D /* libg722.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libg722.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libg722.a"; sourceTree = "<group>"; };
+		52AD84691E5DF48B00DCD81D /* libwebrtc_common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebrtc_common.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libwebrtc_common.a"; sourceTree = "<group>"; };
+		52AD846A1E5DF48B00DCD81D /* libvideo_capture_module.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvideo_capture_module.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libvideo_capture_module.a"; sourceTree = "<group>"; };
+		52AD846B1E5DF48B00DCD81D /* libsrtp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsrtp.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libsrtp.a"; sourceTree = "<group>"; };
+		52AD846C1E5DF48B00DCD81D /* libred.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libred.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libred.a"; sourceTree = "<group>"; };
+		52AD846D1E5DF48B00DCD81D /* libpcm16b.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcm16b.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libpcm16b.a"; sourceTree = "<group>"; };
+		52AD846E1E5DF48B00DCD81D /* libaudio_encoder_interface.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaudio_encoder_interface.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libaudio_encoder_interface.a"; sourceTree = "<group>"; };
+		52AD846F1E5DF48B00DCD81D /* libaudio_decoder_interface.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaudio_decoder_interface.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libaudio_decoder_interface.a"; sourceTree = "<group>"; };
+		52AD84701E5DF48B00DCD81D /* libmedia_file.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmedia_file.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libmedia_file.a"; sourceTree = "<group>"; };
+		52AD84711E5DF48B00DCD81D /* libwebrtc_h264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebrtc_h264.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libwebrtc_h264.a"; sourceTree = "<group>"; };
+		52AD84721E5DF48B00DCD81D /* libcommon_audio_neon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcommon_audio_neon.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libcommon_audio_neon.a"; sourceTree = "<group>"; };
+		52AD84731E5DF48B00DCD81D /* libisac_neon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libisac_neon.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libisac_neon.a"; sourceTree = "<group>"; };
+		52AD84741E5DF48B00DCD81D /* libfield_trial_default.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfield_trial_default.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libfield_trial_default.a"; sourceTree = "<group>"; };
+		52AD84751E5DF48B00DCD81D /* libwebrtc_i420.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebrtc_i420.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libwebrtc_i420.a"; sourceTree = "<group>"; };
+		52AD84761E5DF48B00DCD81D /* libisac_common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libisac_common.a; path = "../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos/libisac_common.a"; sourceTree = "<group>"; };
+		52BA73921E647BAD00CAF5AE /* webrtc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = webrtc.a; path = ../../../../../../webrtc/xplatform/webrtc/out_ios/webrtc.a; sourceTree = "<group>"; };
+		52BA73941E647BB600CAF5AE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		52BA73961E647C1400CAF5AE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		52BA73981E647C9C00CAF5AE /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		52BA739A1E647CCC00CAF5AE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		52BA739C1E64DB4200CAF5AE /* zsLib-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "zsLib-ios.xcodeproj"; path = "../../../../zsLib/projects/xcode/zsLib-ios/zsLib-ios.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		52BA73A51E64DC0300CAF5AE /* idnkit-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "idnkit-ios.xcodeproj"; path = "../../../../idnkit/projects/xcode/idnkit-ios/idnkit-ios.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		52BA73AB1E64DC1000CAF5AE /* udns-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "udns-ios.xcodeproj"; path = "../../../../udns/projects/xcode/udns-ios/udns-ios.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		52BA73B11E64DC1B00CAF5AE /* cryptopp-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "cryptopp-ios.xcodeproj"; path = "../../../../cryptopp/projects/xcode/cryptopp-ios/cryptopp-ios.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		52BA73B71E64DC2C00CAF5AE /* ortclib.services-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "ortclib.services-ios.xcodeproj"; path = "../../../../ortclib-services-cpp/projects/xcode/ortclib.services-ios/ortclib.services-ios.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		52BA73BD1E64DD1900CAF5AE /* libcryptopp-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcryptopp-ios.a"; path = "../../../../../../../../../../../Library/Developer/Xcode/DerivedData/ortc-lib-sdk-dohryvixdwyhymduswwkpidonjup/Build/Products/Debug-iphoneos/libcryptopp-ios.a"; sourceTree = "<group>"; };
+		52BA73BE1E64DD1900CAF5AE /* libidnkit-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libidnkit-ios.a"; path = "../../../../../../../../../../../Library/Developer/Xcode/DerivedData/ortc-lib-sdk-dohryvixdwyhymduswwkpidonjup/Build/Products/Debug-iphoneos/libidnkit-ios.a"; sourceTree = "<group>"; };
+		52BA73BF1E64DD1900CAF5AE /* libortclib-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libortclib-ios.a"; path = "../ortclib-ios/build/Release-iphoneos/libortclib-ios.a"; sourceTree = "<group>"; };
+		52BA73C01E64DD1900CAF5AE /* libortclib.services-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libortclib.services-ios.a"; path = "../../../../../../../../../../../Library/Developer/Xcode/DerivedData/ortc-lib-sdk-dohryvixdwyhymduswwkpidonjup/Build/Products/Debug-iphoneos/libortclib.services-ios.a"; sourceTree = "<group>"; };
+		52BA73C11E64DD1900CAF5AE /* libudns-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libudns-ios.a"; path = "../../../../../../../../../../../Library/Developer/Xcode/DerivedData/ortc-lib-sdk-dohryvixdwyhymduswwkpidonjup/Build/Products/Debug-iphoneos/libudns-ios.a"; sourceTree = "<group>"; };
+		52BA73C21E64DD1900CAF5AE /* libwebrtcWrapper_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebrtcWrapper_ios.a; path = "../../../../../apple/projects/xcode/webrtcWrappers/webrtcWrapper_ios/build/Debug-iphoneos/libwebrtcWrapper_ios.a"; sourceTree = "<group>"; };
+		52BA73C31E64DD1900CAF5AE /* libzsLib-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libzsLib-ios.a"; path = "../../../../zsLib/projects/xcode/zsLib-ios/build/Release-iphoneos/libzsLib-ios.a"; sourceTree = "<group>"; };
+		52BA73CB1E64DECB00CAF5AE /* libortclib-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libortclib-ios.a"; path = "../../../../../../../../../../../Library/Developer/Xcode/DerivedData/ortc-lib-sdk-dohryvixdwyhymduswwkpidonjup/Build/Products/Debug-iphoneos/libortclib-ios.a"; sourceTree = "<group>"; };
+		52BA73CC1E64DECB00CAF5AE /* libzsLib-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libzsLib-ios.a"; path = "../../../../../../../../../../../Library/Developer/Xcode/DerivedData/ortc-lib-sdk-dohryvixdwyhymduswwkpidonjup/Build/Products/Debug-iphoneos/libzsLib-ios.a"; sourceTree = "<group>"; };
+		52BA73F51E64E28000CAF5AE /* zsLib-eventing-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "zsLib-eventing-ios.xcodeproj"; path = "../../../../zsLib-eventing/projects/xcode/zsLib-eventing-ios/zsLib-eventing-ios.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		52BA73FB1E64E28D00CAF5AE /* libzsLib-eventing-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libzsLib-eventing-ios.a"; path = "../../../../../../../../../../../Library/Developer/Xcode/DerivedData/ortc-lib-sdk-dohryvixdwyhymduswwkpidonjup/Build/Products/Debug-iphoneos/libzsLib-eventing-ios.a"; sourceTree = "<group>"; };
+		52BA73FD1E64E2C200CAF5AE /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		52BA73FF1E64E2E700CAF5AE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		009D198B1DE52DEA00D139FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BA74001E64E2E700CAF5AE /* libz.tbd in Frameworks */,
+				52BA73FE1E64E2C200CAF5AE /* libresolv.9.tbd in Frameworks */,
+				52BA73FC1E64E28D00CAF5AE /* libzsLib-eventing-ios.a in Frameworks */,
+				52BA73C41E64DD1900CAF5AE /* libcryptopp-ios.a in Frameworks */,
+				52BA73C51E64DD1900CAF5AE /* libidnkit-ios.a in Frameworks */,
+				52BA73CD1E64DECB00CAF5AE /* libortclib-ios.a in Frameworks */,
+				52BA73CE1E64DECB00CAF5AE /* libzsLib-ios.a in Frameworks */,
+				52BA73C71E64DD1900CAF5AE /* libortclib.services-ios.a in Frameworks */,
+				52BA73C81E64DD1900CAF5AE /* libudns-ios.a in Frameworks */,
+				52BA739B1E647CCC00CAF5AE /* AudioToolbox.framework in Frameworks */,
+				52BA73991E647C9C00CAF5AE /* VideoToolbox.framework in Frameworks */,
+				52BA73971E647C1400CAF5AE /* AVFoundation.framework in Frameworks */,
+				52BA73951E647BB600CAF5AE /* CoreMedia.framework in Frameworks */,
+				52BA73931E647BAD00CAF5AE /* webrtc.a in Frameworks */,
+				52AD843F1E5DF2DD00DCD81D /* libcurl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		009D19A41DE52DEA00D139FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		009D19AF1DE52DEA00D139FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		009D19851DE52DEA00D139FF = {
+			isa = PBXGroup;
+			children = (
+				52BA73F51E64E28000CAF5AE /* zsLib-eventing-ios.xcodeproj */,
+				52BA73B71E64DC2C00CAF5AE /* ortclib.services-ios.xcodeproj */,
+				52BA73B11E64DC1B00CAF5AE /* cryptopp-ios.xcodeproj */,
+				52BA73AB1E64DC1000CAF5AE /* udns-ios.xcodeproj */,
+				52BA73A51E64DC0300CAF5AE /* idnkit-ios.xcodeproj */,
+				52BA739C1E64DB4200CAF5AE /* zsLib-ios.xcodeproj */,
+				526A20B31E6093A800BA0F07 /* webrtcWrapper_ios.xcodeproj */,
+				009D19C41DE52E8200D139FF /* ortclib-ios.xcodeproj */,
+				009D1A7D1DE52FBF00D139FF /* test */,
+				009D19901DE52DEA00D139FF /* ortclib.Test-ios */,
+				009D19AA1DE52DEA00D139FF /* ortclib.Test-iosTests */,
+				009D19B51DE52DEA00D139FF /* ortclib.Test-iosUITests */,
+				009D198F1DE52DEA00D139FF /* Products */,
+				52AD842F1E5DE9C200DCD81D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		009D198F1DE52DEA00D139FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				009D198E1DE52DEA00D139FF /* ortclib.Test-ios.app */,
+				009D19A71DE52DEA00D139FF /* ortclib.Test-iosTests.xctest */,
+				009D19B21DE52DEA00D139FF /* ortclib.Test-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		009D19901DE52DEA00D139FF /* ortclib.Test-ios */ = {
+			isa = PBXGroup;
+			children = (
+				009D19941DE52DEA00D139FF /* AppDelegate.h */,
+				009D19951DE52DEA00D139FF /* AppDelegate.m */,
+				009D19971DE52DEA00D139FF /* ViewController.h */,
+				009D19981DE52DEA00D139FF /* ViewController.m */,
+				009D199A1DE52DEA00D139FF /* Main.storyboard */,
+				009D199D1DE52DEA00D139FF /* Assets.xcassets */,
+				009D199F1DE52DEA00D139FF /* LaunchScreen.storyboard */,
+				009D19A21DE52DEA00D139FF /* Info.plist */,
+				009D19911DE52DEA00D139FF /* Supporting Files */,
+			);
+			path = "ortclib.Test-ios";
+			sourceTree = "<group>";
+		};
+		009D19911DE52DEA00D139FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				009D19921DE52DEA00D139FF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		009D19AA1DE52DEA00D139FF /* ortclib.Test-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				009D19AB1DE52DEA00D139FF /* ortclib_Test_iosTests.m */,
+				009D19AD1DE52DEA00D139FF /* Info.plist */,
+			);
+			path = "ortclib.Test-iosTests";
+			sourceTree = "<group>";
+		};
+		009D19B51DE52DEA00D139FF /* ortclib.Test-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				009D19B61DE52DEA00D139FF /* ortclib_Test_iosUITests.m */,
+				009D19B81DE52DEA00D139FF /* Info.plist */,
+			);
+			path = "ortclib.Test-iosUITests";
+			sourceTree = "<group>";
+		};
+		009D1A7D1DE52FBF00D139FF /* test */ = {
+			isa = PBXGroup;
+			children = (
+				009D1A7E1DE52FBF00D139FF /* config.h */,
+				009D1A7F1DE52FBF00D139FF /* main.cpp */,
+				009D1A801DE52FBF00D139FF /* TestDTLS.cpp */,
+				009D1A811DE52FBF00D139FF /* TestICEGatherer.cpp */,
+				009D1A821DE52FBF00D139FF /* TestICETransport.cpp */,
+				009D1A831DE52FBF00D139FF /* testing.cpp */,
+				009D1A841DE52FBF00D139FF /* testing.h */,
+				009D1A851DE52FBF00D139FF /* TestMediaStreamTrack.cpp */,
+				009D1A861DE52FBF00D139FF /* TestMediaStreamTrack.h */,
+				009D1A871DE52FBF00D139FF /* TestRTCPPacket.cpp */,
+				009D1A881DE52FBF00D139FF /* TestRTPChannel.cpp */,
+				009D1A891DE52FBF00D139FF /* TestRTPChannel.h */,
+				009D1A8A1DE52FBF00D139FF /* TestRTPChannelAudio.cpp */,
+				009D1A8B1DE52FBF00D139FF /* TestRTPChannelAudio.h */,
+				009D1A8C1DE52FBF00D139FF /* TestRTPChannelVideo.cpp */,
+				009D1A8D1DE52FBF00D139FF /* TestRTPChannelVideo.h */,
+				009D1A8E1DE52FBF00D139FF /* TestRTPListener.cpp */,
+				009D1A8F1DE52FBF00D139FF /* TestRTPListener.h */,
+				009D1A901DE52FBF00D139FF /* TestRTPPacket.cpp */,
+				009D1A911DE52FBF00D139FF /* TestRTPReceiver.cpp */,
+				009D1A921DE52FBF00D139FF /* TestRTPReceiver.h */,
+				009D1A931DE52FBF00D139FF /* TestRTPSender.cpp */,
+				009D1A941DE52FBF00D139FF /* TestRTPSender.h */,
+				009D1A951DE52FBF00D139FF /* TestSCTP.cpp */,
+				009D1A961DE52FBF00D139FF /* TestSCTP.h */,
+				009D1A971DE52FBF00D139FF /* TestSetup.cpp */,
+				009D1A981DE52FBF00D139FF /* TestSRTP.cpp */,
+			);
+			name = test;
+			path = ../../../ortc/test;
+			sourceTree = "<group>";
+		};
+		5285F3311E65B1D70005D02E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5285F3371E65B1D70005D02E /* libzsLib-ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5285F33B1E65B1D70005D02E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5285F3411E65B1D70005D02E /* libzsLib-eventing-ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5285F3451E65B1D70005D02E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5285F3491E65B1D70005D02E /* libidnkit-ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5285F34A1E65B1D70005D02E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5285F34E1E65B1D70005D02E /* libortclib-ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5285F3681E65B3470005D02E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5285F36E1E65B3470005D02E /* libortclib.services-ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5285F3711E65B3470005D02E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5285F3751E65B3470005D02E /* libudns-ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5285F3761E65B3470005D02E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5285F37A1E65B3470005D02E /* libcryptopp-ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5285F37B1E65B3470005D02E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5285F37F1E65B3470005D02E /* libwebrtcWrapper_ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52AD842F1E5DE9C200DCD81D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52BA73FF1E64E2E700CAF5AE /* libz.tbd */,
+				52BA73FD1E64E2C200CAF5AE /* libresolv.9.tbd */,
+				52BA73FB1E64E28D00CAF5AE /* libzsLib-eventing-ios.a */,
+				52BA73CB1E64DECB00CAF5AE /* libortclib-ios.a */,
+				52BA73CC1E64DECB00CAF5AE /* libzsLib-ios.a */,
+				52BA73BD1E64DD1900CAF5AE /* libcryptopp-ios.a */,
+				52BA73BE1E64DD1900CAF5AE /* libidnkit-ios.a */,
+				52BA73BF1E64DD1900CAF5AE /* libortclib-ios.a */,
+				52BA73C01E64DD1900CAF5AE /* libortclib.services-ios.a */,
+				52BA73C11E64DD1900CAF5AE /* libudns-ios.a */,
+				52BA73C21E64DD1900CAF5AE /* libwebrtcWrapper_ios.a */,
+				52BA73C31E64DD1900CAF5AE /* libzsLib-ios.a */,
+				52BA739A1E647CCC00CAF5AE /* AudioToolbox.framework */,
+				52BA73981E647C9C00CAF5AE /* VideoToolbox.framework */,
+				52BA73961E647C1400CAF5AE /* AVFoundation.framework */,
+				52BA73941E647BB600CAF5AE /* CoreMedia.framework */,
+				52BA73921E647BAD00CAF5AE /* webrtc.a */,
+				52656CBE1E5F040E009DAE87 /* libaudio_processing_neon.a */,
+				52656CBC1E5F02A1009DAE87 /* libaudio_decoder_factory_interface.a */,
+				52AD84421E5DF48B00DCD81D /* librtp_rtcp.a */,
+				52AD84431E5DF48B00DCD81D /* libaudio_processing.a */,
+				52AD84441E5DF48B00DCD81D /* libvoice_engine.a */,
+				52AD84451E5DF48B00DCD81D /* libneteq.a */,
+				52AD84461E5DF48B00DCD81D /* libwebrtc_video_coding.a */,
+				52AD84471E5DF48B00DCD81D /* libvpx.a */,
+				52AD84481E5DF48B00DCD81D /* libboringssl.a */,
+				52AD84491E5DF48B00DCD81D /* librtc_base_approved.a */,
+				52AD844A1E5DF48B00DCD81D /* libaudio_device.a */,
+				52AD844B1E5DF48B00DCD81D /* libremote_bitrate_estimator.a */,
+				52AD844C1E5DF48B00DCD81D /* libcommon_audio.a */,
+				52AD844D1E5DF48B00DCD81D /* libsystem_wrappers.a */,
+				52AD844E1E5DF48B00DCD81D /* libusrsctplib.a */,
+				52AD844F1E5DF48B00DCD81D /* libcommon_video.a */,
+				52AD84501E5DF48B00DCD81D /* libaudio_coding_module.a */,
+				52AD84511E5DF48B00DCD81D /* libwebrtc_utility.a */,
+				52AD84521E5DF48B00DCD81D /* libopus.a */,
+				52AD84531E5DF48B00DCD81D /* libwebrtc_vp8.a */,
+				52AD84541E5DF48B00DCD81D /* libpaced_sender.a */,
+				52AD84551E5DF48B00DCD81D /* librtc_event_log.a */,
+				52AD84561E5DF48B00DCD81D /* libbitrate_controller.a */,
+				52AD84571E5DF48B00DCD81D /* librtc_event_log_proto.a */,
+				52AD84581E5DF48B00DCD81D /* libisac.a */,
+				52AD84591E5DF48B00DCD81D /* libisac_fix.a */,
+				52AD845A1E5DF48B00DCD81D /* libwebrtc_h264_video_toolbox.a */,
+				52AD845B1E5DF48B00DCD81D /* libwebrtc_vp9.a */,
+				52AD845C1E5DF48B00DCD81D /* libaudio_conference_mixer.a */,
+				52AD845D1E5DF48B00DCD81D /* libvideo_coding_utility.a */,
+				52AD845E1E5DF48B00DCD81D /* librent_a_codec.a */,
+				52AD845F1E5DF48B00DCD81D /* libyuv.a */,
+				52AD84601E5DF48B00DCD81D /* libilbc.a */,
+				52AD84611E5DF48B00DCD81D /* libmetrics_default.a */,
+				52AD84621E5DF48B00DCD81D /* libvideo_processing.a */,
+				52AD84631E5DF48B00DCD81D /* libvideo_capture_module_internal_impl.a */,
+				52AD84641E5DF48B00DCD81D /* libcng.a */,
+				52AD84651E5DF48B00DCD81D /* libaudioproc_debug_proto.a */,
+				52AD84661E5DF48B00DCD81D /* libwebrtc_opus.a */,
+				52AD84671E5DF48B00DCD81D /* libg711.a */,
+				52AD84681E5DF48B00DCD81D /* libg722.a */,
+				52AD84691E5DF48B00DCD81D /* libwebrtc_common.a */,
+				52AD846A1E5DF48B00DCD81D /* libvideo_capture_module.a */,
+				52AD846B1E5DF48B00DCD81D /* libsrtp.a */,
+				52AD846C1E5DF48B00DCD81D /* libred.a */,
+				52AD846D1E5DF48B00DCD81D /* libpcm16b.a */,
+				52AD846E1E5DF48B00DCD81D /* libaudio_encoder_interface.a */,
+				52AD846F1E5DF48B00DCD81D /* libaudio_decoder_interface.a */,
+				52AD84701E5DF48B00DCD81D /* libmedia_file.a */,
+				52AD84711E5DF48B00DCD81D /* libwebrtc_h264.a */,
+				52AD84721E5DF48B00DCD81D /* libcommon_audio_neon.a */,
+				52AD84731E5DF48B00DCD81D /* libisac_neon.a */,
+				52AD84741E5DF48B00DCD81D /* libfield_trial_default.a */,
+				52AD84751E5DF48B00DCD81D /* libwebrtc_i420.a */,
+				52AD84761E5DF48B00DCD81D /* libisac_common.a */,
+				52AD84401E5DF35B00DCD81D /* libwebrtc.a */,
+				52AD843E1E5DF2DD00DCD81D /* libcurl.a */,
+				52AD84321E5DE9D500DCD81D /* libwebrtcWrapper_ios.a */,
+				52AD84301E5DE9C200DCD81D /* libzsLib-eventing-ios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		009D198D1DE52DEA00D139FF /* ortclib.Test-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 009D19BB1DE52DEA00D139FF /* Build configuration list for PBXNativeTarget "ortclib.Test-ios" */;
+			buildPhases = (
+				009D198A1DE52DEA00D139FF /* Sources */,
+				009D198B1DE52DEA00D139FF /* Frameworks */,
+				009D198C1DE52DEA00D139FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5285F3811E65CAE40005D02E /* PBXTargetDependency */,
+			);
+			name = "ortclib.Test-ios";
+			productName = "ortclib.Test-ios";
+			productReference = 009D198E1DE52DEA00D139FF /* ortclib.Test-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		009D19A61DE52DEA00D139FF /* ortclib.Test-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 009D19BE1DE52DEA00D139FF /* Build configuration list for PBXNativeTarget "ortclib.Test-iosTests" */;
+			buildPhases = (
+				009D19A31DE52DEA00D139FF /* Sources */,
+				009D19A41DE52DEA00D139FF /* Frameworks */,
+				009D19A51DE52DEA00D139FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				009D19A91DE52DEA00D139FF /* PBXTargetDependency */,
+			);
+			name = "ortclib.Test-iosTests";
+			productName = "ortclib.Test-iosTests";
+			productReference = 009D19A71DE52DEA00D139FF /* ortclib.Test-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		009D19B11DE52DEA00D139FF /* ortclib.Test-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 009D19C11DE52DEA00D139FF /* Build configuration list for PBXNativeTarget "ortclib.Test-iosUITests" */;
+			buildPhases = (
+				009D19AE1DE52DEA00D139FF /* Sources */,
+				009D19AF1DE52DEA00D139FF /* Frameworks */,
+				009D19B01DE52DEA00D139FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				009D19B41DE52DEA00D139FF /* PBXTargetDependency */,
+			);
+			name = "ortclib.Test-iosUITests";
+			productName = "ortclib.Test-iosUITests";
+			productReference = 009D19B21DE52DEA00D139FF /* ortclib.Test-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		009D19861DE52DEA00D139FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Open Peer Foundation";
+				TargetAttributes = {
+					009D198D1DE52DEA00D139FF = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = QE9E5R8GUP;
+						ProvisioningStyle = Automatic;
+					};
+					009D19A61DE52DEA00D139FF = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 009D198D1DE52DEA00D139FF;
+					};
+					009D19B11DE52DEA00D139FF = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 009D198D1DE52DEA00D139FF;
+					};
+				};
+			};
+			buildConfigurationList = 009D19891DE52DEA00D139FF /* Build configuration list for PBXProject "ortclib.Test-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 009D19851DE52DEA00D139FF;
+			productRefGroup = 009D198F1DE52DEA00D139FF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5285F3761E65B3470005D02E /* Products */;
+					ProjectRef = 52BA73B11E64DC1B00CAF5AE /* cryptopp-ios.xcodeproj */;
+				},
+				{
+					ProductGroup = 5285F3451E65B1D70005D02E /* Products */;
+					ProjectRef = 52BA73A51E64DC0300CAF5AE /* idnkit-ios.xcodeproj */;
+				},
+				{
+					ProductGroup = 5285F34A1E65B1D70005D02E /* Products */;
+					ProjectRef = 009D19C41DE52E8200D139FF /* ortclib-ios.xcodeproj */;
+				},
+				{
+					ProductGroup = 5285F3681E65B3470005D02E /* Products */;
+					ProjectRef = 52BA73B71E64DC2C00CAF5AE /* ortclib.services-ios.xcodeproj */;
+				},
+				{
+					ProductGroup = 5285F3711E65B3470005D02E /* Products */;
+					ProjectRef = 52BA73AB1E64DC1000CAF5AE /* udns-ios.xcodeproj */;
+				},
+				{
+					ProductGroup = 5285F37B1E65B3470005D02E /* Products */;
+					ProjectRef = 526A20B31E6093A800BA0F07 /* webrtcWrapper_ios.xcodeproj */;
+				},
+				{
+					ProductGroup = 5285F33B1E65B1D70005D02E /* Products */;
+					ProjectRef = 52BA73F51E64E28000CAF5AE /* zsLib-eventing-ios.xcodeproj */;
+				},
+				{
+					ProductGroup = 5285F3311E65B1D70005D02E /* Products */;
+					ProjectRef = 52BA739C1E64DB4200CAF5AE /* zsLib-ios.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				009D198D1DE52DEA00D139FF /* ortclib.Test-ios */,
+				009D19A61DE52DEA00D139FF /* ortclib.Test-iosTests */,
+				009D19B11DE52DEA00D139FF /* ortclib.Test-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5285F3371E65B1D70005D02E /* libzsLib-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libzsLib-ios.a";
+			remoteRef = 5285F3361E65B1D70005D02E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5285F3411E65B1D70005D02E /* libzsLib-eventing-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libzsLib-eventing-ios.a";
+			remoteRef = 5285F3401E65B1D70005D02E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5285F3491E65B1D70005D02E /* libidnkit-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libidnkit-ios.a";
+			remoteRef = 5285F3481E65B1D70005D02E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5285F34E1E65B1D70005D02E /* libortclib-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libortclib-ios.a";
+			remoteRef = 5285F34D1E65B1D70005D02E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5285F36E1E65B3470005D02E /* libortclib.services-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libortclib.services-ios.a";
+			remoteRef = 5285F36D1E65B3470005D02E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5285F3751E65B3470005D02E /* libudns-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libudns-ios.a";
+			remoteRef = 5285F3741E65B3470005D02E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5285F37A1E65B3470005D02E /* libcryptopp-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcryptopp-ios.a";
+			remoteRef = 5285F3791E65B3470005D02E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5285F37F1E65B3470005D02E /* libwebrtcWrapper_ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libwebrtcWrapper_ios.a;
+			remoteRef = 5285F37E1E65B3470005D02E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		009D198C1DE52DEA00D139FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009D19A11DE52DEA00D139FF /* LaunchScreen.storyboard in Resources */,
+				009D199E1DE52DEA00D139FF /* Assets.xcassets in Resources */,
+				009D199C1DE52DEA00D139FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		009D19A51DE52DEA00D139FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		009D19B01DE52DEA00D139FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		009D198A1DE52DEA00D139FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009D1AA21DE52FBF00D139FF /* TestICETransport.cpp in Sources */,
+				009D1AA81DE52FBF00D139FF /* TestMediaStreamTrack.cpp in Sources */,
+				009D1AC91DE52FC000D139FF /* TestSRTP.cpp in Sources */,
+				009D1A9C1DE52FBF00D139FF /* TestDTLS.cpp in Sources */,
+				009D1AA51DE52FBF00D139FF /* testing.cpp in Sources */,
+				009D1A9F1DE52FBF00D139FF /* TestICEGatherer.cpp in Sources */,
+				009D1AB11DE52FBF00D139FF /* TestRTPChannelAudio.cpp in Sources */,
+				009D1AB41DE52FBF00D139FF /* TestRTPChannelVideo.cpp in Sources */,
+				009D19991DE52DEA00D139FF /* ViewController.m in Sources */,
+				009D1AAB1DE52FBF00D139FF /* TestRTCPPacket.cpp in Sources */,
+				009D19961DE52DEA00D139FF /* AppDelegate.m in Sources */,
+				009D1AB71DE52FBF00D139FF /* TestRTPListener.cpp in Sources */,
+				009D1AC01DE52FC000D139FF /* TestRTPSender.cpp in Sources */,
+				009D1AAE1DE52FBF00D139FF /* TestRTPChannel.cpp in Sources */,
+				009D1ABA1DE52FBF00D139FF /* TestRTPPacket.cpp in Sources */,
+				009D1AC31DE52FC000D139FF /* TestSCTP.cpp in Sources */,
+				009D1AC61DE52FC000D139FF /* TestSetup.cpp in Sources */,
+				009D19931DE52DEA00D139FF /* main.m in Sources */,
+				009D1ABD1DE52FC000D139FF /* TestRTPReceiver.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		009D19A31DE52DEA00D139FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009D1A9D1DE52FBF00D139FF /* TestDTLS.cpp in Sources */,
+				009D1AC71DE52FC000D139FF /* TestSetup.cpp in Sources */,
+				009D1AA91DE52FBF00D139FF /* TestMediaStreamTrack.cpp in Sources */,
+				009D1AB21DE52FBF00D139FF /* TestRTPChannelAudio.cpp in Sources */,
+				009D1AA61DE52FBF00D139FF /* testing.cpp in Sources */,
+				009D1ACA1DE52FC000D139FF /* TestSRTP.cpp in Sources */,
+				009D1AC11DE52FC000D139FF /* TestRTPSender.cpp in Sources */,
+				009D1AB51DE52FBF00D139FF /* TestRTPChannelVideo.cpp in Sources */,
+				009D1AC41DE52FC000D139FF /* TestSCTP.cpp in Sources */,
+				009D1AAC1DE52FBF00D139FF /* TestRTCPPacket.cpp in Sources */,
+				009D1AAF1DE52FBF00D139FF /* TestRTPChannel.cpp in Sources */,
+				009D1AB81DE52FBF00D139FF /* TestRTPListener.cpp in Sources */,
+				009D1ABE1DE52FC000D139FF /* TestRTPReceiver.cpp in Sources */,
+				009D19AC1DE52DEA00D139FF /* ortclib_Test_iosTests.m in Sources */,
+				009D1AA31DE52FBF00D139FF /* TestICETransport.cpp in Sources */,
+				009D1AA01DE52FBF00D139FF /* TestICEGatherer.cpp in Sources */,
+				009D1ABB1DE52FBF00D139FF /* TestRTPPacket.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		009D19AE1DE52DEA00D139FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009D1A9E1DE52FBF00D139FF /* TestDTLS.cpp in Sources */,
+				009D1AC81DE52FC000D139FF /* TestSetup.cpp in Sources */,
+				009D1AAA1DE52FBF00D139FF /* TestMediaStreamTrack.cpp in Sources */,
+				009D1AB31DE52FBF00D139FF /* TestRTPChannelAudio.cpp in Sources */,
+				009D1AA71DE52FBF00D139FF /* testing.cpp in Sources */,
+				009D1ACB1DE52FC000D139FF /* TestSRTP.cpp in Sources */,
+				009D1AC21DE52FC000D139FF /* TestRTPSender.cpp in Sources */,
+				009D1AB61DE52FBF00D139FF /* TestRTPChannelVideo.cpp in Sources */,
+				009D1AC51DE52FC000D139FF /* TestSCTP.cpp in Sources */,
+				009D1AAD1DE52FBF00D139FF /* TestRTCPPacket.cpp in Sources */,
+				009D1AB01DE52FBF00D139FF /* TestRTPChannel.cpp in Sources */,
+				009D1AB91DE52FBF00D139FF /* TestRTPListener.cpp in Sources */,
+				009D1ABF1DE52FC000D139FF /* TestRTPReceiver.cpp in Sources */,
+				009D19B71DE52DEA00D139FF /* ortclib_Test_iosUITests.m in Sources */,
+				009D1AA41DE52FBF00D139FF /* TestICETransport.cpp in Sources */,
+				009D1AA11DE52FBF00D139FF /* TestICEGatherer.cpp in Sources */,
+				009D1ABC1DE52FBF00D139FF /* TestRTPPacket.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		009D19A91DE52DEA00D139FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 009D198D1DE52DEA00D139FF /* ortclib.Test-ios */;
+			targetProxy = 009D19A81DE52DEA00D139FF /* PBXContainerItemProxy */;
+		};
+		009D19B41DE52DEA00D139FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 009D198D1DE52DEA00D139FF /* ortclib.Test-ios */;
+			targetProxy = 009D19B31DE52DEA00D139FF /* PBXContainerItemProxy */;
+		};
+		5285F3811E65CAE40005D02E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = webrtcWrapper_ios;
+			targetProxy = 5285F3801E65CAE40005D02E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		009D199A1DE52DEA00D139FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				009D199B1DE52DEA00D139FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		009D199F1DE52DEA00D139FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				009D19A01DE52DEA00D139FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		009D19B91DE52DEA00D139FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		009D19BA1DE52DEA00D139FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		009D19BC1DE52DEA00D139FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QE9E5R8GUP;
+				ENABLE_BITCODE = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE,
+					WEBRTC_BUILD_LIBEVENT,
+					WEBRTC_POSIX,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					../../..,
+					../../../..,
+					"../../../../ortclib-services-cpp",
+					../../../../zsLib,
+					../../../../../../webrtc/xplatform/boringssl/include,
+					../../../../../../webrtc/xplatform/libsrtp/srtp/include,
+					../../../../../../webrtc/xplatform/libsrtp/srtp/crypto/include,
+					../../../../../../webrtc/xplatform/libsrtp/config,
+					../../../../../../webrtc/xplatform/webrtc,
+					../../../../../../webrtc/xplatform/usrsctp/usrsctplib,
+					"../../../../zsLib-eventing",
+				);
+				INFOPLIST_FILE = "ortclib.Test-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"../../../../curl/curl/ios-dev/lib",
+					"../../../../../../webrtc/xplatform/webrtc/out_ios/Debug-iphoneos",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ortc.ortclib-Test-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7s";
+			};
+			name = Debug;
+		};
+		009D19BD1DE52DEA00D139FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QE9E5R8GUP;
+				ENABLE_BITCODE = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE,
+					WEBRTC_BUILD_LIBEVENT,
+					WEBRTC_POSIX,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					../../..,
+					../../../..,
+					"../../../../ortclib-services-cpp",
+					../../../../zsLib,
+					../../../../../../webrtc/xplatform/boringssl/include,
+					../../../../../../webrtc/xplatform/libsrtp/srtp/include,
+					../../../../../../webrtc/xplatform/libsrtp/srtp/crypto/include,
+					../../../../../../webrtc/xplatform/libsrtp/config,
+					../../../../../../webrtc/xplatform/webrtc,
+					../../../../../../webrtc/xplatform/usrsctp/usrsctplib,
+					"../../../../zsLib-eventing",
+				);
+				INFOPLIST_FILE = "ortclib.Test-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"../../../../curl/curl/ios-appstore/lib",
+					"../../../../../../webrtc/xplatform/webrtc/out_ios/Release-iphoneos",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ortc.ortclib-Test-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7s";
+			};
+			name = Release;
+		};
+		009D19BF1DE52DEA00D139FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE,
+					WEBRTC_BUILD_LIBEVENT,
+					WEBRTC_POSIX,
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					../../..,
+					../../../..,
+					"../../../../ortclib-services-cpp",
+					../../../../zsLib,
+					../../../../../../webrtc/xplatform/boringssl/include,
+					../../../../../../webrtc/xplatform/libsrtp/srtp/include,
+					../../../../../../webrtc/xplatform/libsrtp/srtp/crypto/include,
+					../../../../../../webrtc/xplatform/libsrtp/config,
+					../../../../../../webrtc/xplatform/webrtc,
+					../../../../../../webrtc/xplatform/usrsctp/usrsctplib,
+				);
+				INFOPLIST_FILE = "ortclib.Test-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ortc.ortclib-Test-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ortclib.Test-ios.app/ortclib.Test-ios";
+			};
+			name = Debug;
+		};
+		009D19C01DE52DEA00D139FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE,
+					WEBRTC_BUILD_LIBEVENT,
+					WEBRTC_POSIX,
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					../../..,
+					../../../..,
+					"../../../../ortclib-services-cpp",
+					../../../../zsLib,
+					../../../../../../webrtc/xplatform/boringssl/include,
+					../../../../../../webrtc/xplatform/libsrtp/srtp/include,
+					../../../../../../webrtc/xplatform/libsrtp/srtp/crypto/include,
+					../../../../../../webrtc/xplatform/libsrtp/config,
+					../../../../../../webrtc/xplatform/webrtc,
+					../../../../../../webrtc/xplatform/usrsctp/usrsctplib,
+				);
+				INFOPLIST_FILE = "ortclib.Test-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ortc.ortclib-Test-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ortclib.Test-ios.app/ortclib.Test-ios";
+			};
+			name = Release;
+		};
+		009D19C21DE52DEA00D139FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE,
+					WEBRTC_BUILD_LIBEVENT,
+					WEBRTC_POSIX,
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					../../..,
+					../../../..,
+					"../../../../ortclib-services-cpp",
+					../../../../zsLib,
+					../../../../../../webrtc/xplatform/boringssl/include,
+					../../../../../../webrtc/xplatform/libsrtp/srtp/include,
+					../../../../../../webrtc/xplatform/libsrtp/srtp/crypto/include,
+					../../../../../../webrtc/xplatform/libsrtp/config,
+					../../../../../../webrtc/xplatform/webrtc,
+					../../../../../../webrtc/xplatform/usrsctp/usrsctplib,
+				);
+				INFOPLIST_FILE = "ortclib.Test-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ortc.ortclib-Test-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "ortclib.Test-ios";
+			};
+			name = Debug;
+		};
+		009D19C31DE52DEA00D139FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE,
+					WEBRTC_BUILD_LIBEVENT,
+					WEBRTC_POSIX,
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					../../..,
+					../../../..,
+					"../../../../ortclib-services-cpp",
+					../../../../zsLib,
+					../../../../../../webrtc/xplatform/boringssl/include,
+					../../../../../../webrtc/xplatform/libsrtp/srtp/include,
+					../../../../../../webrtc/xplatform/libsrtp/srtp/crypto/include,
+					../../../../../../webrtc/xplatform/libsrtp/config,
+					../../../../../../webrtc/xplatform/webrtc,
+					../../../../../../webrtc/xplatform/usrsctp/usrsctplib,
+				);
+				INFOPLIST_FILE = "ortclib.Test-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ortc.ortclib-Test-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "ortclib.Test-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		009D19891DE52DEA00D139FF /* Build configuration list for PBXProject "ortclib.Test-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				009D19B91DE52DEA00D139FF /* Debug */,
+				009D19BA1DE52DEA00D139FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		009D19BB1DE52DEA00D139FF /* Build configuration list for PBXNativeTarget "ortclib.Test-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				009D19BC1DE52DEA00D139FF /* Debug */,
+				009D19BD1DE52DEA00D139FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		009D19BE1DE52DEA00D139FF /* Build configuration list for PBXNativeTarget "ortclib.Test-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				009D19BF1DE52DEA00D139FF /* Debug */,
+				009D19C01DE52DEA00D139FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		009D19C11DE52DEA00D139FF /* Build configuration list for PBXNativeTarget "ortclib.Test-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				009D19C21DE52DEA00D139FF /* Debug */,
+				009D19C31DE52DEA00D139FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 009D19861DE52DEA00D139FF /* Project object */;
+}

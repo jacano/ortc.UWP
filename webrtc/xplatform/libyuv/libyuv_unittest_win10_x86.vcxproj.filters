@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="unit_test">
+      <UniqueIdentifier>{E48E08ED-F19C-BD7A-D798-4B9547D9D5CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit_test">
+      <UniqueIdentifier>{E48E08ED-F19C-BD7A-D798-4B9547D9D5CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit_test">
+      <UniqueIdentifier>{E48E08ED-F19C-BD7A-D798-4B9547D9D5CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit_test">
+      <UniqueIdentifier>{E48E08ED-F19C-BD7A-D798-4B9547D9D5CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit_test">
+      <UniqueIdentifier>{E48E08ED-F19C-BD7A-D798-4B9547D9D5CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit_test">
+      <UniqueIdentifier>{E48E08ED-F19C-BD7A-D798-4B9547D9D5CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit_test">
+      <UniqueIdentifier>{E48E08ED-F19C-BD7A-D798-4B9547D9D5CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit_test">
+      <UniqueIdentifier>{E48E08ED-F19C-BD7A-D798-4B9547D9D5CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit_test">
+      <UniqueIdentifier>{E48E08ED-F19C-BD7A-D798-4B9547D9D5CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit_test">
+      <UniqueIdentifier>{E48E08ED-F19C-BD7A-D798-4B9547D9D5CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit_test">
+      <UniqueIdentifier>{E48E08ED-F19C-BD7A-D798-4B9547D9D5CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit_test">
+      <UniqueIdentifier>{E48E08ED-F19C-BD7A-D798-4B9547D9D5CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit_test">
+      <UniqueIdentifier>{E48E08ED-F19C-BD7A-D798-4B9547D9D5CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit_test">
+      <UniqueIdentifier>{E48E08ED-F19C-BD7A-D798-4B9547D9D5CE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="unit_test\unit_test.h">
+      <Filter>unit_test</Filter>
+    </ClInclude>
+    <ClCompile Include="unit_test\basictypes_test.cc">
+      <Filter>unit_test</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_test\compare_test.cc">
+      <Filter>unit_test</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_test\color_test.cc">
+      <Filter>unit_test</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_test\convert_test.cc">
+      <Filter>unit_test</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_test\cpu_test.cc">
+      <Filter>unit_test</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_test\math_test.cc">
+      <Filter>unit_test</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_test\planar_test.cc">
+      <Filter>unit_test</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_test\rotate_argb_test.cc">
+      <Filter>unit_test</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_test\rotate_test.cc">
+      <Filter>unit_test</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_test\scale_argb_test.cc">
+      <Filter>unit_test</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_test\scale_test.cc">
+      <Filter>unit_test</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_test\unit_test.cc">
+      <Filter>unit_test</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_test\video_common_test.cc">
+      <Filter>unit_test</Filter>
+    </ClCompile>
+    <None Include="libyuv_test.gyp"/>
+  </ItemGroup>
+</Project>

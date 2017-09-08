@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{0E0E98FE-41F4-1E5C-D208-62A6218447D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{0E0E98FE-41F4-1E5C-D208-62A6218447D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{0E0E98FE-41F4-1E5C-D208-62A6218447D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{0E0E98FE-41F4-1E5C-D208-62A6218447D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{0E0E98FE-41F4-1E5C-D208-62A6218447D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{0E0E98FE-41F4-1E5C-D208-62A6218447D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{0E0E98FE-41F4-1E5C-D208-62A6218447D3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base\fakemediaengine.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\fakenetworkinterface.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\fakertp.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\fakevideocapturer.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\fakevideorenderer.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\test\mock_mediachannel.h">
+      <Filter>base\test</Filter>
+    </ClInclude>
+    <ClCompile Include="base\testutils.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClInclude Include="base\testutils.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClCompile Include="engine\fakewebrtccall.cc">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClInclude Include="engine\fakewebrtccall.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\fakewebrtcdeviceinfo.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\fakewebrtcvcmfactory.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\fakewebrtcvideocapturemodule.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\fakewebrtcvideoengine.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\fakewebrtcvoiceengine.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <None Include="media.gyp"/>
+  </ItemGroup>
+</Project>

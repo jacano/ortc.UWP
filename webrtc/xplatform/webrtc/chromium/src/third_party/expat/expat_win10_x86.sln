@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "expat", "expat_win10_x86.vcxproj", "{2C3811E9-F34D-B9DD-ED8B-C0926670014C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Debug|ARM = Debug|ARM
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C3811E9-F34D-B9DD-ED8B-C0926670014C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2C3811E9-F34D-B9DD-ED8B-C0926670014C}.Debug|Win32.Build.0 = Debug|Win32
+		{2C3811E9-F34D-B9DD-ED8B-C0926670014C}.Debug|x64.ActiveCfg = Debug|x64
+		{2C3811E9-F34D-B9DD-ED8B-C0926670014C}.Debug|x64.Build.0 = Debug|x64
+		{2C3811E9-F34D-B9DD-ED8B-C0926670014C}.Debug|ARM.ActiveCfg = Debug|ARM
+		{2C3811E9-F34D-B9DD-ED8B-C0926670014C}.Debug|ARM.Build.0 = Debug|ARM
+		{2C3811E9-F34D-B9DD-ED8B-C0926670014C}.Release|ARM.ActiveCfg = Release|ARM
+		{2C3811E9-F34D-B9DD-ED8B-C0926670014C}.Release|ARM.Build.0 = Release|ARM
+		{2C3811E9-F34D-B9DD-ED8B-C0926670014C}.Release|x64.ActiveCfg = Release|x64
+		{2C3811E9-F34D-B9DD-ED8B-C0926670014C}.Release|x64.Build.0 = Release|x64
+		{2C3811E9-F34D-B9DD-ED8B-C0926670014C}.Release|Win32.ActiveCfg = Release|Win32
+		{2C3811E9-F34D-B9DD-ED8B-C0926670014C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

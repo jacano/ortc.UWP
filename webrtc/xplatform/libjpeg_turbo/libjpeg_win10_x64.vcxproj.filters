@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simd">
+      <UniqueIdentifier>{D11A6EE5-9897-707D-CCC7-99DBD688FC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\yasm">
+      <UniqueIdentifier>{E019ECA3-7A84-34EF-29C6-5C04E7B41E6E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\yasm\binaries">
+      <UniqueIdentifier>{3A25A068-4337-7214-A6D8-EB21D1D1AC3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\yasm\binaries\win">
+      <UniqueIdentifier>{47FC5EC4-15EB-E92F-89D7-AFE51CF838A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo">
+      <UniqueIdentifier>{C6DE6E38-C3F1-B091-D74E-B48ECE25543C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="jcapimin.c"/>
+    <ClCompile Include="jcapistd.c"/>
+    <ClCompile Include="jccoefct.c"/>
+    <ClCompile Include="jccolor.c"/>
+    <ClCompile Include="jcdctmgr.c"/>
+    <ClCompile Include="jchuff.c"/>
+    <ClInclude Include="jchuff.h"/>
+    <ClCompile Include="jcinit.c"/>
+    <ClCompile Include="jcmainct.c"/>
+    <ClCompile Include="jcmarker.c"/>
+    <ClCompile Include="jcmaster.c"/>
+    <ClCompile Include="jcomapi.c"/>
+    <ClInclude Include="jconfig.h"/>
+    <ClCompile Include="jcparam.c"/>
+    <ClCompile Include="jcphuff.c"/>
+    <ClCompile Include="jcprepct.c"/>
+    <ClCompile Include="jcsample.c"/>
+    <ClCompile Include="jdapimin.c"/>
+    <ClCompile Include="jdapistd.c"/>
+    <ClCompile Include="jdatadst.c"/>
+    <ClCompile Include="jdatasrc.c"/>
+    <ClCompile Include="jdcoefct.c"/>
+    <ClCompile Include="jdcolor.c"/>
+    <ClInclude Include="jdct.h"/>
+    <ClCompile Include="jddctmgr.c"/>
+    <ClCompile Include="jdhuff.c"/>
+    <ClInclude Include="jdhuff.h"/>
+    <ClCompile Include="jdinput.c"/>
+    <ClCompile Include="jdmainct.c"/>
+    <ClCompile Include="jdmarker.c"/>
+    <ClCompile Include="jdmaster.c"/>
+    <ClCompile Include="jdmerge.c"/>
+    <ClCompile Include="jdphuff.c"/>
+    <ClCompile Include="jdpostct.c"/>
+    <ClCompile Include="jdsample.c"/>
+    <ClCompile Include="jerror.c"/>
+    <ClInclude Include="jerror.h"/>
+    <ClCompile Include="jfdctflt.c"/>
+    <ClCompile Include="jfdctfst.c"/>
+    <ClCompile Include="jfdctint.c"/>
+    <ClCompile Include="jidctflt.c"/>
+    <ClCompile Include="jidctfst.c"/>
+    <ClCompile Include="jidctint.c"/>
+    <ClCompile Include="jidctred.c"/>
+    <ClInclude Include="jinclude.h"/>
+    <ClCompile Include="jmemmgr.c"/>
+    <ClCompile Include="jmemnobs.c"/>
+    <ClInclude Include="jmemsys.h"/>
+    <ClInclude Include="jmorecfg.h"/>
+    <ClInclude Include="jpegint.h"/>
+    <ClInclude Include="jpeglib.h"/>
+    <ClInclude Include="jpeglibmangler.h"/>
+    <ClCompile Include="jquant1.c"/>
+    <ClCompile Include="jquant2.c"/>
+    <ClCompile Include="jutils.c"/>
+    <ClInclude Include="jversion.h"/>
+    <ClCompile Include="simd\jsimd_x86_64.c">
+      <Filter>simd</Filter>
+    </ClCompile>
+    <assemble Include="simd\jccolor-sse2-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <assemble Include="simd\jcgray-sse2-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <assemble Include="simd\jchuff-sse2-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <assemble Include="simd\jcsample-sse2-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <assemble Include="simd\jdcolor-sse2-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <assemble Include="simd\jdmerge-sse2-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <assemble Include="simd\jdsample-sse2-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <assemble Include="simd\jfdctflt-sse-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <assemble Include="simd\jfdctfst-sse2-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <assemble Include="simd\jfdctint-sse2-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <assemble Include="simd\jidctflt-sse2-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <assemble Include="simd\jidctfst-sse2-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <assemble Include="simd\jidctint-sse2-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <assemble Include="simd\jidctred-sse2-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <assemble Include="simd\jquantf-sse2-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <assemble Include="simd\jquanti-sse2-64.asm">
+      <Filter>simd</Filter>
+    </assemble>
+    <None Include="libjpeg.gyp"/>
+    <CustomBuild Include="..\yasm\binaries\win\yasm.exe">
+      <Filter>..\yasm\binaries\win</Filter>
+    </CustomBuild>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jccolor-sse2-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jcgray-sse2-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jchuff-sse2-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jcsample-sse2-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jdcolor-sse2-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jdmerge-sse2-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jdsample-sse2-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jfdctflt-sse-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jfdctfst-sse2-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jfdctint-sse2-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jidctflt-sse2-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jidctfst-sse2-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jidctint-sse2-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jidctred-sse2-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jquantf-sse2-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo\jquanti-sse2-64.obj">
+      <Filter>$(OutDir)obj\global_intermediate\third_party\libjpeg_turbo</Filter>
+    </None>
+  </ItemGroup>
+</Project>

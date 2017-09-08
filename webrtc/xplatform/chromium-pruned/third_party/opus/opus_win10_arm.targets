@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)$(MSBuildThisFileName).xml"/>
+    <AvailableItemName Include="convert_asm_For_WP">
+      <Targets>_convert_asm_For_WP</Targets>
+    </AvailableItemName>
+  </ItemGroup>
+  <UsingTask AssemblyName="Microsoft.Build.Tasks.v4.0" TaskFactory="XamlTaskFactory" TaskName="convert_asm_For_WP">
+    <Task>$(MSBuildThisFileDirectory)$(MSBuildThisFileName).xml</Task>
+  </UsingTask>
+  <Target AfterTargets="$(convert_asm_For_WPAfterTargets)" BeforeTargets="$(convert_asm_For_WPBeforeTargets)" Condition="'@(convert_asm_For_WP)' != ''" DependsOnTargets="$(convert_asm_For_WPDependsOn);Computeconvert_asm_For_WPOutput" Inputs="%(convert_asm_For_WP.Identity);%(convert_asm_For_WP.AdditionalDependencies);$(MSBuildProjectFile)" Name="_convert_asm_For_WP" Outputs="%(convert_asm_For_WP.Outputs)">
+    <ItemGroup Condition="'@(SelectedFiles)' != ''">
+      <convert_asm_For_WP Condition="'%(Identity)' != '@(SelectedFiles)'" Remove="@(convert_asm_For_WP)"/>
+    </ItemGroup>
+    <ItemGroup>
+      <convert_asm_For_WP_inputs Include="%(convert_asm_For_WP.AdditionalDependencies)"/>
+    </ItemGroup>
+    <ItemGroup>
+      <convert_asm_For_WP_tlog Condition="'%(convert_asm_For_WP.Outputs)' != '' and '%(convert_asm_For_WP.ExcludedFromBuild)' != 'true'" Include="%(convert_asm_For_WP.Outputs)">
+        <Source>@(convert_asm_For_WP, &apos;|&apos;)</Source>
+        <Inputs>@(convert_asm_For_WP_inputs -&gt; &apos;%(Fullpath)&apos;, &apos;;&apos;)</Inputs>
+      </convert_asm_For_WP_tlog>
+    </ItemGroup>
+    <Message Importance="High" Text="%(convert_asm_For_WP.ExecutionDescription)"/>
+    <WriteLinesToFile Condition="'@(convert_asm_For_WP_tlog)' != '' and '%(convert_asm_For_WP_tlog.ExcludedFromBuild)' != 'true'" File="$(IntDir)$(ProjectName).write.1.tlog" Lines="^%(convert_asm_For_WP_tlog.Source);@(convert_asm_For_WP_tlog-&gt;'%(Fullpath)')"/>
+    <WriteLinesToFile Condition="'@(convert_asm_For_WP_tlog)' != '' and '%(convert_asm_For_WP_tlog.ExcludedFromBuild)' != 'true'" File="$(IntDir)$(ProjectName).read.1.tlog" Lines="^%(convert_asm_For_WP_tlog.Source);%(convert_asm_For_WP_tlog.Inputs)"/>
+    <convert_asm_For_WP AdditionalOptions="%(convert_asm_For_WP.AdditionalOptions)" CommandLineTemplate="%(convert_asm_For_WP.CommandLineTemplate)" Condition="'@(convert_asm_For_WP)' != '' and '%(convert_asm_For_WP.ExcludedFromBuild)' != 'true'" EchoOff="true" Inputs="%(convert_asm_For_WP.Identity)" StandardErrorImportance="High" StandardOutputImportance="High"/>
+  </Target>
+  <PropertyGroup>
+    <ComputeLinkInputsTargets>$(ComputeLinkInputsTargets);Computeconvert_asm_For_WPOutput;</ComputeLinkInputsTargets>
+    <ComputeLibInputsTargets>$(ComputeLibInputsTargets);Computeconvert_asm_For_WPOutput;</ComputeLibInputsTargets>
+  </PropertyGroup>
+  <Target Condition="'@(convert_asm_For_WP)' != ''" Name="Computeconvert_asm_For_WPOutput">
+    <ItemGroup>
+      <convert_asm_For_WPDirsToMake Condition="'@(convert_asm_For_WP)' != '' and '%(convert_asm_For_WP.ExcludedFromBuild)' != 'true'" Include="%(convert_asm_For_WP.Outputs)"/>
+      <Link Condition="'%(Extension)'=='.obj' or '%(Extension)'=='.res' or '%(Extension)'=='.rsc' or '%(Extension)'=='.lib'" Include="%(convert_asm_For_WPDirsToMake.Identity)"/>
+      <Lib Condition="'%(Extension)'=='.obj' or '%(Extension)'=='.res' or '%(Extension)'=='.rsc' or '%(Extension)'=='.lib'" Include="%(convert_asm_For_WPDirsToMake.Identity)"/>
+      <ImpLib Condition="'%(Extension)'=='.obj' or '%(Extension)'=='.res' or '%(Extension)'=='.rsc' or '%(Extension)'=='.lib'" Include="%(convert_asm_For_WPDirsToMake.Identity)"/>
+    </ItemGroup>
+    <MakeDir Directories="@(convert_asm_For_WPDirsToMake-&gt;'%(RootDir)%(Directory)')"/>
+  </Target>
+</Project>

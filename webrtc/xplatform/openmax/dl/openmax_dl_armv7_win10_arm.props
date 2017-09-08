@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <gas_preprocessorDependsOn Condition="'$(ConfigurationType)' != 'Makefile'">_SelectedFiles;$(gas_preprocessorDependsOn)</gas_preprocessorDependsOn>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <gas_preprocessor>
+      <CommandLineTemplate>call perl build\gas-preprocessor.pl -as-type armasm -force-thumb -- armasm -oldit -I..\ -c %(Identity) -o $(IntDir)%(Filename).obj</CommandLineTemplate>
+      <Outputs>$(IntDir)%(Filename).obj</Outputs>
+      <ExecutionDescription>Compiling %(Identity)</ExecutionDescription>
+      <AdditionalDependencies></AdditionalDependencies>
+    </gas_preprocessor>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(gas_preprocessorBeforeTargets)' == '' and '$(gas_preprocessorAfterTargets)' == '' and '$(ConfigurationType)' != 'Makefile'">
+    <gas_preprocessorBeforeTargets>Midl</gas_preprocessorBeforeTargets>
+    <gas_preprocessorAfterTargets>CustomBuild</gas_preprocessorAfterTargets>
+  </PropertyGroup>
+</Project>

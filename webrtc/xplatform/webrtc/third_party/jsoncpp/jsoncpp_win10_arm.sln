@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jsoncpp", "jsoncpp_win10_arm.vcxproj", "{60344328-0188-1D48-DFA0-B8960830F40A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60344328-0188-1D48-DFA0-B8960830F40A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{60344328-0188-1D48-DFA0-B8960830F40A}.Debug|ARM.Build.0 = Debug|ARM
+		{60344328-0188-1D48-DFA0-B8960830F40A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{60344328-0188-1D48-DFA0-B8960830F40A}.Debug|Win32.Build.0 = Debug|Win32
+		{60344328-0188-1D48-DFA0-B8960830F40A}.Release|ARM.ActiveCfg = Release|ARM
+		{60344328-0188-1D48-DFA0-B8960830F40A}.Release|ARM.Build.0 = Release|ARM
+		{60344328-0188-1D48-DFA0-B8960830F40A}.Release|Win32.ActiveCfg = Release|Win32
+		{60344328-0188-1D48-DFA0-B8960830F40A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

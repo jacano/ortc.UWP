@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="congestion_controller">
+      <UniqueIdentifier>{04D890C9-A2FD-ABF0-A2A2-F97AB9F66E79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="congestion_controller">
+      <UniqueIdentifier>{04D890C9-A2FD-ABF0-A2A2-F97AB9F66E79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="congestion_controller">
+      <UniqueIdentifier>{04D890C9-A2FD-ABF0-A2A2-F97AB9F66E79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="congestion_controller">
+      <UniqueIdentifier>{04D890C9-A2FD-ABF0-A2A2-F97AB9F66E79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="congestion_controller\include">
+      <UniqueIdentifier>{57CA55B8-BCC5-4000-CE3A-58972F82E9CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="congestion_controller">
+      <UniqueIdentifier>{04D890C9-A2FD-ABF0-A2A2-F97AB9F66E79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="congestion_controller">
+      <UniqueIdentifier>{04D890C9-A2FD-ABF0-A2A2-F97AB9F66E79}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="congestion_controller\congestion_controller.cc">
+      <Filter>congestion_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="congestion_controller\delay_based_bwe.cc">
+      <Filter>congestion_controller</Filter>
+    </ClCompile>
+    <ClInclude Include="congestion_controller\delay_based_bwe.h">
+      <Filter>congestion_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="congestion_controller\include\congestion_controller.h">
+      <Filter>congestion_controller\include</Filter>
+    </ClInclude>
+    <ClCompile Include="congestion_controller\probe_bitrate_estimator.cc">
+      <Filter>congestion_controller</Filter>
+    </ClCompile>
+    <ClInclude Include="congestion_controller\probe_bitrate_estimator.h">
+      <Filter>congestion_controller</Filter>
+    </ClInclude>
+    <None Include="modules.gyp"/>
+  </ItemGroup>
+</Project>

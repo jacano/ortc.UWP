@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sp">
+      <UniqueIdentifier>{BF3849D4-D27A-82AF-853E-B72220DA139E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm">
+      <UniqueIdentifier>{3E9FB349-FA31-1F50-9C62-85F1B769737C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm\armv7">
+      <UniqueIdentifier>{A3010872-9C90-AD98-6ECA-D7F0000077FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp">
+      <UniqueIdentifier>{BF3849D4-D27A-82AF-853E-B72220DA139E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm">
+      <UniqueIdentifier>{3E9FB349-FA31-1F50-9C62-85F1B769737C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm\armv7">
+      <UniqueIdentifier>{A3010872-9C90-AD98-6ECA-D7F0000077FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp">
+      <UniqueIdentifier>{BF3849D4-D27A-82AF-853E-B72220DA139E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm">
+      <UniqueIdentifier>{3E9FB349-FA31-1F50-9C62-85F1B769737C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm\armv7">
+      <UniqueIdentifier>{A3010872-9C90-AD98-6ECA-D7F0000077FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp">
+      <UniqueIdentifier>{BF3849D4-D27A-82AF-853E-B72220DA139E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm">
+      <UniqueIdentifier>{3E9FB349-FA31-1F50-9C62-85F1B769737C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm\armv7">
+      <UniqueIdentifier>{A3010872-9C90-AD98-6ECA-D7F0000077FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp">
+      <UniqueIdentifier>{BF3849D4-D27A-82AF-853E-B72220DA139E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm">
+      <UniqueIdentifier>{3E9FB349-FA31-1F50-9C62-85F1B769737C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm\armv7">
+      <UniqueIdentifier>{A3010872-9C90-AD98-6ECA-D7F0000077FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp">
+      <UniqueIdentifier>{BF3849D4-D27A-82AF-853E-B72220DA139E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm">
+      <UniqueIdentifier>{3E9FB349-FA31-1F50-9C62-85F1B769737C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm\armv7">
+      <UniqueIdentifier>{A3010872-9C90-AD98-6ECA-D7F0000077FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp">
+      <UniqueIdentifier>{BF3849D4-D27A-82AF-853E-B72220DA139E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm">
+      <UniqueIdentifier>{3E9FB349-FA31-1F50-9C62-85F1B769737C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm\armv7">
+      <UniqueIdentifier>{A3010872-9C90-AD98-6ECA-D7F0000077FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp">
+      <UniqueIdentifier>{BF3849D4-D27A-82AF-853E-B72220DA139E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm">
+      <UniqueIdentifier>{3E9FB349-FA31-1F50-9C62-85F1B769737C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm\armv7">
+      <UniqueIdentifier>{A3010872-9C90-AD98-6ECA-D7F0000077FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp">
+      <UniqueIdentifier>{BF3849D4-D27A-82AF-853E-B72220DA139E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm">
+      <UniqueIdentifier>{3E9FB349-FA31-1F50-9C62-85F1B769737C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sp\src\arm\armv7">
+      <UniqueIdentifier>{A3010872-9C90-AD98-6ECA-D7F0000077FA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <gas_preprocessor Include="sp\src\arm\armv7\armSP_FFT_CToC_FC32_Radix2_fs_unsafe_s.S">
+      <Filter>sp\src\arm\armv7</Filter>
+    </gas_preprocessor>
+    <gas_preprocessor Include="sp\src\arm\armv7\armSP_FFT_CToC_FC32_Radix4_fs_unsafe_s.S">
+      <Filter>sp\src\arm\armv7</Filter>
+    </gas_preprocessor>
+    <gas_preprocessor Include="sp\src\arm\armv7\armSP_FFT_CToC_FC32_Radix4_unsafe_s.S">
+      <Filter>sp\src\arm\armv7</Filter>
+    </gas_preprocessor>
+    <gas_preprocessor Include="sp\src\arm\armv7\armSP_FFT_CToC_FC32_Radix8_fs_unsafe_s.S">
+      <Filter>sp\src\arm\armv7</Filter>
+    </gas_preprocessor>
+    <gas_preprocessor Include="sp\src\arm\armv7\omxSP_FFTInv_CToC_FC32_Sfs_s.S">
+      <Filter>sp\src\arm\armv7</Filter>
+    </gas_preprocessor>
+    <gas_preprocessor Include="sp\src\arm\armv7\omxSP_FFTFwd_CToC_FC32_Sfs_s.S">
+      <Filter>sp\src\arm\armv7</Filter>
+    </gas_preprocessor>
+    <gas_preprocessor Include="sp\src\arm\armv7\armSP_FFTInv_CCSToR_F32_preTwiddleRadix2_unsafe_s.S">
+      <Filter>sp\src\arm\armv7</Filter>
+    </gas_preprocessor>
+    <gas_preprocessor Include="sp\src\arm\armv7\omxSP_FFTFwd_RToCCS_F32_Sfs_s.S">
+      <Filter>sp\src\arm\armv7</Filter>
+    </gas_preprocessor>
+    <gas_preprocessor Include="sp\src\arm\armv7\omxSP_FFTInv_CCSToR_F32_Sfs_s.S">
+      <Filter>sp\src\arm\armv7</Filter>
+    </gas_preprocessor>
+    <None Include="dl.gyp"/>
+  </ItemGroup>
+</Project>

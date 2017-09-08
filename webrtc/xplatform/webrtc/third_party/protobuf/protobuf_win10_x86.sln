@@ -1,0 +1,91 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "protobuf_full_do_not_use", "protobuf_full_do_not_use_win10_x86.vcxproj", "{37114D17-DFC9-C0E9-18AE-C01C954A1898}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "protobuf_lite", "protobuf_lite_win10_x86.vcxproj", "{2116BCF3-DA08-7E5D-4E28-5FF20A2A7206}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "protoc", "protoc_win10_x86.vcxproj", "{6EB478F0-E56B-F852-7F9C-F8E7426C9BE1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B49022D7-8D2D-E820-9AD9-A640F2F78CA4} = {B49022D7-8D2D-E820-9AD9-A640F2F78CA4}
+		{37114D17-DFC9-C0E9-18AE-C01C954A1898} = {37114D17-DFC9-C0E9-18AE-C01C954A1898}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "protoc_lib", "protoc_lib_win10_x86.vcxproj", "{B49022D7-8D2D-E820-9AD9-A640F2F78CA4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "py_proto", "py_proto_win10_x86.vcxproj", "{DE98D467-94CC-51CA-6A68-C7D539FA239D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Debug|ARM = Debug|ARM
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2116BCF3-DA08-7E5D-4E28-5FF20A2A7206}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2116BCF3-DA08-7E5D-4E28-5FF20A2A7206}.Debug|Win32.Build.0 = Debug|Win32
+		{2116BCF3-DA08-7E5D-4E28-5FF20A2A7206}.Debug|x64.ActiveCfg = Debug|x64
+		{2116BCF3-DA08-7E5D-4E28-5FF20A2A7206}.Debug|x64.Build.0 = Debug|x64
+		{2116BCF3-DA08-7E5D-4E28-5FF20A2A7206}.Debug|ARM.ActiveCfg = Debug|ARM
+		{2116BCF3-DA08-7E5D-4E28-5FF20A2A7206}.Debug|ARM.Build.0 = Debug|ARM
+		{2116BCF3-DA08-7E5D-4E28-5FF20A2A7206}.Release|ARM.ActiveCfg = Release|ARM
+		{2116BCF3-DA08-7E5D-4E28-5FF20A2A7206}.Release|ARM.Build.0 = Release|ARM
+		{2116BCF3-DA08-7E5D-4E28-5FF20A2A7206}.Release|x64.ActiveCfg = Release|x64
+		{2116BCF3-DA08-7E5D-4E28-5FF20A2A7206}.Release|x64.Build.0 = Release|x64
+		{2116BCF3-DA08-7E5D-4E28-5FF20A2A7206}.Release|Win32.ActiveCfg = Release|Win32
+		{2116BCF3-DA08-7E5D-4E28-5FF20A2A7206}.Release|Win32.Build.0 = Release|Win32
+		{37114D17-DFC9-C0E9-18AE-C01C954A1898}.Debug|Win32.ActiveCfg = Debug|Win32
+		{37114D17-DFC9-C0E9-18AE-C01C954A1898}.Debug|Win32.Build.0 = Debug|Win32
+		{37114D17-DFC9-C0E9-18AE-C01C954A1898}.Debug|x64.ActiveCfg = Debug|x64
+		{37114D17-DFC9-C0E9-18AE-C01C954A1898}.Debug|x64.Build.0 = Debug|x64
+		{37114D17-DFC9-C0E9-18AE-C01C954A1898}.Debug|ARM.ActiveCfg = Debug|ARM
+		{37114D17-DFC9-C0E9-18AE-C01C954A1898}.Debug|ARM.Build.0 = Debug|ARM
+		{37114D17-DFC9-C0E9-18AE-C01C954A1898}.Release|ARM.ActiveCfg = Release|ARM
+		{37114D17-DFC9-C0E9-18AE-C01C954A1898}.Release|ARM.Build.0 = Release|ARM
+		{37114D17-DFC9-C0E9-18AE-C01C954A1898}.Release|x64.ActiveCfg = Release|x64
+		{37114D17-DFC9-C0E9-18AE-C01C954A1898}.Release|x64.Build.0 = Release|x64
+		{37114D17-DFC9-C0E9-18AE-C01C954A1898}.Release|Win32.ActiveCfg = Release|Win32
+		{37114D17-DFC9-C0E9-18AE-C01C954A1898}.Release|Win32.Build.0 = Release|Win32
+		{6EB478F0-E56B-F852-7F9C-F8E7426C9BE1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6EB478F0-E56B-F852-7F9C-F8E7426C9BE1}.Debug|Win32.Build.0 = Debug|Win32
+		{6EB478F0-E56B-F852-7F9C-F8E7426C9BE1}.Debug|x64.ActiveCfg = Debug|x64
+		{6EB478F0-E56B-F852-7F9C-F8E7426C9BE1}.Debug|x64.Build.0 = Debug|x64
+		{6EB478F0-E56B-F852-7F9C-F8E7426C9BE1}.Debug|ARM.ActiveCfg = Debug|ARM
+		{6EB478F0-E56B-F852-7F9C-F8E7426C9BE1}.Debug|ARM.Build.0 = Debug|ARM
+		{6EB478F0-E56B-F852-7F9C-F8E7426C9BE1}.Release|ARM.ActiveCfg = Release|ARM
+		{6EB478F0-E56B-F852-7F9C-F8E7426C9BE1}.Release|ARM.Build.0 = Release|ARM
+		{6EB478F0-E56B-F852-7F9C-F8E7426C9BE1}.Release|x64.ActiveCfg = Release|x64
+		{6EB478F0-E56B-F852-7F9C-F8E7426C9BE1}.Release|x64.Build.0 = Release|x64
+		{6EB478F0-E56B-F852-7F9C-F8E7426C9BE1}.Release|Win32.ActiveCfg = Release|Win32
+		{6EB478F0-E56B-F852-7F9C-F8E7426C9BE1}.Release|Win32.Build.0 = Release|Win32
+		{B49022D7-8D2D-E820-9AD9-A640F2F78CA4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B49022D7-8D2D-E820-9AD9-A640F2F78CA4}.Debug|Win32.Build.0 = Debug|Win32
+		{B49022D7-8D2D-E820-9AD9-A640F2F78CA4}.Debug|x64.ActiveCfg = Debug|x64
+		{B49022D7-8D2D-E820-9AD9-A640F2F78CA4}.Debug|x64.Build.0 = Debug|x64
+		{B49022D7-8D2D-E820-9AD9-A640F2F78CA4}.Debug|ARM.ActiveCfg = Debug|ARM
+		{B49022D7-8D2D-E820-9AD9-A640F2F78CA4}.Debug|ARM.Build.0 = Debug|ARM
+		{B49022D7-8D2D-E820-9AD9-A640F2F78CA4}.Release|ARM.ActiveCfg = Release|ARM
+		{B49022D7-8D2D-E820-9AD9-A640F2F78CA4}.Release|ARM.Build.0 = Release|ARM
+		{B49022D7-8D2D-E820-9AD9-A640F2F78CA4}.Release|x64.ActiveCfg = Release|x64
+		{B49022D7-8D2D-E820-9AD9-A640F2F78CA4}.Release|x64.Build.0 = Release|x64
+		{B49022D7-8D2D-E820-9AD9-A640F2F78CA4}.Release|Win32.ActiveCfg = Release|Win32
+		{B49022D7-8D2D-E820-9AD9-A640F2F78CA4}.Release|Win32.Build.0 = Release|Win32
+		{DE98D467-94CC-51CA-6A68-C7D539FA239D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE98D467-94CC-51CA-6A68-C7D539FA239D}.Debug|Win32.Build.0 = Debug|Win32
+		{DE98D467-94CC-51CA-6A68-C7D539FA239D}.Debug|x64.ActiveCfg = Debug|x64
+		{DE98D467-94CC-51CA-6A68-C7D539FA239D}.Debug|x64.Build.0 = Debug|x64
+		{DE98D467-94CC-51CA-6A68-C7D539FA239D}.Debug|ARM.ActiveCfg = Debug|ARM
+		{DE98D467-94CC-51CA-6A68-C7D539FA239D}.Debug|ARM.Build.0 = Debug|ARM
+		{DE98D467-94CC-51CA-6A68-C7D539FA239D}.Release|ARM.ActiveCfg = Release|ARM
+		{DE98D467-94CC-51CA-6A68-C7D539FA239D}.Release|ARM.Build.0 = Release|ARM
+		{DE98D467-94CC-51CA-6A68-C7D539FA239D}.Release|x64.ActiveCfg = Release|x64
+		{DE98D467-94CC-51CA-6A68-C7D539FA239D}.Release|x64.Build.0 = Release|x64
+		{DE98D467-94CC-51CA-6A68-C7D539FA239D}.Release|Win32.ActiveCfg = Release|Win32
+		{DE98D467-94CC-51CA-6A68-C7D539FA239D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

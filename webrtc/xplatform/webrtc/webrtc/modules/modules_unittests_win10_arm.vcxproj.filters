@@ -1,0 +1,2352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\acm2">
+      <UniqueIdentifier>{D0A08EF1-A249-2724-4419-AFAD9A8FE143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\acm2">
+      <UniqueIdentifier>{D0A08EF1-A249-2724-4419-AFAD9A8FE143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\acm2">
+      <UniqueIdentifier>{D0A08EF1-A249-2724-4419-AFAD9A8FE143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\acm2">
+      <UniqueIdentifier>{D0A08EF1-A249-2724-4419-AFAD9A8FE143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\acm2">
+      <UniqueIdentifier>{D0A08EF1-A249-2724-4419-AFAD9A8FE143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\acm2">
+      <UniqueIdentifier>{D0A08EF1-A249-2724-4419-AFAD9A8FE143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\cng">
+      <UniqueIdentifier>{8A748AD0-41A1-A5EA-8DB2-64077D0548CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\cng">
+      <UniqueIdentifier>{8A748AD0-41A1-A5EA-8DB2-64077D0548CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\ilbc">
+      <UniqueIdentifier>{C8406146-1446-5A1D-6881-71582732C67C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac">
+      <UniqueIdentifier>{FD184FF6-D485-18A3-A8D2-0235BDB55D53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac\fix">
+      <UniqueIdentifier>{4032D18C-5201-C199-D384-195AE6002183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac\fix\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac">
+      <UniqueIdentifier>{FD184FF6-D485-18A3-A8D2-0235BDB55D53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac\fix">
+      <UniqueIdentifier>{4032D18C-5201-C199-D384-195AE6002183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac\fix\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac">
+      <UniqueIdentifier>{FD184FF6-D485-18A3-A8D2-0235BDB55D53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac\fix">
+      <UniqueIdentifier>{4032D18C-5201-C199-D384-195AE6002183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac\fix\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac">
+      <UniqueIdentifier>{FD184FF6-D485-18A3-A8D2-0235BDB55D53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac\fix">
+      <UniqueIdentifier>{4032D18C-5201-C199-D384-195AE6002183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac\fix\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac">
+      <UniqueIdentifier>{FD184FF6-D485-18A3-A8D2-0235BDB55D53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac\main">
+      <UniqueIdentifier>{4ECC9921-7D4B-15DC-E268-546157B2659F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac\main\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac">
+      <UniqueIdentifier>{FD184FF6-D485-18A3-A8D2-0235BDB55D53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac\main">
+      <UniqueIdentifier>{4ECC9921-7D4B-15DC-E268-546157B2659F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac\main\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\isac">
+      <UniqueIdentifier>{FD184FF6-D485-18A3-A8D2-0235BDB55D53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\opus">
+      <UniqueIdentifier>{FA626937-8E4F-A01C-D5A5-25B60B4794F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\opus">
+      <UniqueIdentifier>{FA626937-8E4F-A01C-D5A5-25B60B4794F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\codecs\red">
+      <UniqueIdentifier>{1B8BBCB4-7636-C68B-BDBA-176A1135CFC4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding">
+      <UniqueIdentifier>{4FC456D3-9A0D-A421-757E-1167E51D693D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq">
+      <UniqueIdentifier>{63043B34-4CE1-686C-6C60-185032605FF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_coding\neteq\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_conference_mixer">
+      <UniqueIdentifier>{9A801B88-B3B3-191B-6BDF-059CDB25EE9F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_conference_mixer\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_device">
+      <UniqueIdentifier>{AE092FA9-C6A1-FB10-E177-2DF0051DD5A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_mixer">
+      <UniqueIdentifier>{565F61EF-5613-D7FC-4CAB-973431B8BBC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_mixer\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\aec">
+      <UniqueIdentifier>{7D3E1567-54C9-1E23-6A83-AF2939339B6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\aec">
+      <UniqueIdentifier>{7D3E1567-54C9-1E23-6A83-AF2939339B6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\agc">
+      <UniqueIdentifier>{CB87BD36-83E1-7668-ABF6-2BE851C74FC8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\agc">
+      <UniqueIdentifier>{CB87BD36-83E1-7668-ABF6-2BE851C74FC8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\agc">
+      <UniqueIdentifier>{CB87BD36-83E1-7668-ABF6-2BE851C74FC8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\beamformer">
+      <UniqueIdentifier>{5039BB66-A89E-4A20-050E-D6FEE19B36D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\beamformer">
+      <UniqueIdentifier>{5039BB66-A89E-4A20-050E-D6FEE19B36D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\beamformer">
+      <UniqueIdentifier>{5039BB66-A89E-4A20-050E-D6FEE19B36D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\beamformer">
+      <UniqueIdentifier>{5039BB66-A89E-4A20-050E-D6FEE19B36D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\beamformer">
+      <UniqueIdentifier>{5039BB66-A89E-4A20-050E-D6FEE19B36D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\beamformer">
+      <UniqueIdentifier>{5039BB66-A89E-4A20-050E-D6FEE19B36D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\transient">
+      <UniqueIdentifier>{144A6D3E-6C6B-851F-8D9B-34CB6E487EB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\transient">
+      <UniqueIdentifier>{144A6D3E-6C6B-851F-8D9B-34CB6E487EB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\transient">
+      <UniqueIdentifier>{144A6D3E-6C6B-851F-8D9B-34CB6E487EB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\transient">
+      <UniqueIdentifier>{144A6D3E-6C6B-851F-8D9B-34CB6E487EB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\transient">
+      <UniqueIdentifier>{144A6D3E-6C6B-851F-8D9B-34CB6E487EB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\transient">
+      <UniqueIdentifier>{144A6D3E-6C6B-851F-8D9B-34CB6E487EB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\transient">
+      <UniqueIdentifier>{144A6D3E-6C6B-851F-8D9B-34CB6E487EB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\transient">
+      <UniqueIdentifier>{144A6D3E-6C6B-851F-8D9B-34CB6E487EB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\transient">
+      <UniqueIdentifier>{144A6D3E-6C6B-851F-8D9B-34CB6E487EB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\utility">
+      <UniqueIdentifier>{46D3A1A1-3410-F9C8-C5F7-6AC884D4AD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\utility">
+      <UniqueIdentifier>{46D3A1A1-3410-F9C8-C5F7-6AC884D4AD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\vad">
+      <UniqueIdentifier>{C27688D7-253B-3537-3FAE-7871C2C97330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\vad">
+      <UniqueIdentifier>{C27688D7-253B-3537-3FAE-7871C2C97330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\vad">
+      <UniqueIdentifier>{C27688D7-253B-3537-3FAE-7871C2C97330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\vad">
+      <UniqueIdentifier>{C27688D7-253B-3537-3FAE-7871C2C97330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\vad">
+      <UniqueIdentifier>{C27688D7-253B-3537-3FAE-7871C2C97330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\vad">
+      <UniqueIdentifier>{C27688D7-253B-3537-3FAE-7871C2C97330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\vad">
+      <UniqueIdentifier>{C27688D7-253B-3537-3FAE-7871C2C97330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing">
+      <UniqueIdentifier>{56B88925-734A-08EA-8306-74393ACBB4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio_processing\vad">
+      <UniqueIdentifier>{C27688D7-253B-3537-3FAE-7871C2C97330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bitrate_controller">
+      <UniqueIdentifier>{7D929C95-1720-104A-DBF8-7965FD9E1C8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bitrate_controller">
+      <UniqueIdentifier>{7D929C95-1720-104A-DBF8-7965FD9E1C8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="congestion_controller">
+      <UniqueIdentifier>{04D890C9-A2FD-ABF0-A2A2-F97AB9F66E79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="congestion_controller">
+      <UniqueIdentifier>{04D890C9-A2FD-ABF0-A2A2-F97AB9F66E79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="congestion_controller">
+      <UniqueIdentifier>{04D890C9-A2FD-ABF0-A2A2-F97AB9F66E79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="congestion_controller">
+      <UniqueIdentifier>{04D890C9-A2FD-ABF0-A2A2-F97AB9F66E79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="congestion_controller">
+      <UniqueIdentifier>{04D890C9-A2FD-ABF0-A2A2-F97AB9F66E79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="media_file">
+      <UniqueIdentifier>{51A039A4-9337-9A03-4ABE-75B933CF8988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pacing">
+      <UniqueIdentifier>{45A993B5-2062-CAFA-B666-A3F26408DE77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pacing">
+      <UniqueIdentifier>{45A993B5-2062-CAFA-B666-A3F26408DE77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pacing">
+      <UniqueIdentifier>{45A993B5-2062-CAFA-B666-A3F26408DE77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator\include">
+      <UniqueIdentifier>{57CA55B8-BCC5-4000-CE3A-58972F82E9CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator\include\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator\include">
+      <UniqueIdentifier>{57CA55B8-BCC5-4000-CE3A-58972F82E9CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator\include\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator\test\estimators">
+      <UniqueIdentifier>{978C71E3-39EA-747F-8485-0EC6D9F6508B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source\rtcp_packet">
+      <UniqueIdentifier>{5ABCAEA1-3F59-5DA4-CD9E-559DA0B77EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\test\testAPI">
+      <UniqueIdentifier>{2614B597-0FBC-C5F7-A66D-7ADADC98A2E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\test\testAPI">
+      <UniqueIdentifier>{2614B597-0FBC-C5F7-A66D-7ADADC98A2E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\test\testAPI">
+      <UniqueIdentifier>{2614B597-0FBC-C5F7-A66D-7ADADC98A2E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\test\testAPI">
+      <UniqueIdentifier>{2614B597-0FBC-C5F7-A66D-7ADADC98A2E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp">
+      <UniqueIdentifier>{9CD05236-6361-600F-6DD0-16DCB17A452F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp_rtcp\test\testAPI">
+      <UniqueIdentifier>{2614B597-0FBC-C5F7-A66D-7ADADC98A2E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{46D3A1A1-3410-F9C8-C5F7-6AC884D4AD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{46D3A1A1-3410-F9C8-C5F7-6AC884D4AD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{46D3A1A1-3410-F9C8-C5F7-6AC884D4AD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs\vp8">
+      <UniqueIdentifier>{A0F295BA-D737-445C-13DE-9E9F732861C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs\vp8">
+      <UniqueIdentifier>{A0F295BA-D737-445C-13DE-9E9F732861C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs\vp8">
+      <UniqueIdentifier>{A0F295BA-D737-445C-13DE-9E9F732861C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs\vp8">
+      <UniqueIdentifier>{A0F295BA-D737-445C-13DE-9E9F732861C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs\vp8">
+      <UniqueIdentifier>{A0F295BA-D737-445C-13DE-9E9F732861C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\include">
+      <UniqueIdentifier>{57CA55B8-BCC5-4000-CE3A-58972F82E9CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\include\mock">
+      <UniqueIdentifier>{7C4729C5-C564-467B-5ED9-492FD611B9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\utility">
+      <UniqueIdentifier>{46D3A1A1-3410-F9C8-C5F7-6AC884D4AD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\utility">
+      <UniqueIdentifier>{46D3A1A1-3410-F9C8-C5F7-6AC884D4AD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\utility">
+      <UniqueIdentifier>{46D3A1A1-3410-F9C8-C5F7-6AC884D4AD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\utility">
+      <UniqueIdentifier>{46D3A1A1-3410-F9C8-C5F7-6AC884D4AD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing">
+      <UniqueIdentifier>{CCB2E0A5-1F62-247F-5E6E-EEA3CB3C174E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_processing\test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding">
+      <UniqueIdentifier>{1D88A297-44EE-A521-DC1A-E408035B4BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs">
+      <UniqueIdentifier>{DC75C0D7-DB48-A303-557E-D64CDD91FAD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video_coding\codecs\vp9">
+      <UniqueIdentifier>{4336B85A-D914-8242-DD15-0932322B8F62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator">
+      <UniqueIdentifier>{3DB390FF-BC4A-DF77-CA3F-0B9EC8BF5CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remote_bitrate_estimator\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\win">
+      <UniqueIdentifier>{47FC5EC4-15EB-E92F-89D7-AFE51CF838A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\win\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\win">
+      <UniqueIdentifier>{47FC5EC4-15EB-E92F-89D7-AFE51CF838A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\win\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture">
+      <UniqueIdentifier>{F642431A-858F-0B42-8E73-6CAF27D08123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\win">
+      <UniqueIdentifier>{47FC5EC4-15EB-E92F-89D7-AFE51CF838A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="desktop_capture\win\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="audio_coding\acm2\acm_receiver_unittest_oldapi.cc">
+      <Filter>audio_coding\acm2</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\acm2\audio_coding_module_unittest_oldapi.cc">
+      <Filter>audio_coding\acm2</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\acm2\call_statistics_unittest.cc">
+      <Filter>audio_coding\acm2</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\acm2\codec_manager_unittest.cc">
+      <Filter>audio_coding\acm2</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\acm2\initial_delay_manager_unittest.cc">
+      <Filter>audio_coding\acm2</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\acm2\rent_a_codec_unittest.cc">
+      <Filter>audio_coding\acm2</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\audio_decoder_factory_unittest.cc">
+      <Filter>audio_coding\codecs</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\cng\audio_encoder_cng_unittest.cc">
+      <Filter>audio_coding\codecs\cng</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\cng\cng_unittest.cc">
+      <Filter>audio_coding\codecs\cng</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\ilbc\ilbc_unittest.cc">
+      <Filter>audio_coding\codecs\ilbc</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\isac\fix\source\filterbanks_unittest.cc">
+      <Filter>audio_coding\codecs\isac\fix\source</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\isac\fix\source\filters_unittest.cc">
+      <Filter>audio_coding\codecs\isac\fix\source</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\isac\fix\source\lpc_masking_model_unittest.cc">
+      <Filter>audio_coding\codecs\isac\fix\source</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\isac\fix\source\transform_unittest.cc">
+      <Filter>audio_coding\codecs\isac\fix\source</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\isac\main\source\audio_encoder_isac_unittest.cc">
+      <Filter>audio_coding\codecs\isac\main\source</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\isac\main\source\isac_unittest.cc">
+      <Filter>audio_coding\codecs\isac\main\source</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\isac\unittest.cc">
+      <Filter>audio_coding\codecs\isac</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\mock\mock_audio_encoder.cc">
+      <Filter>audio_coding\codecs\mock</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\opus\audio_encoder_opus_unittest.cc">
+      <Filter>audio_coding\codecs\opus</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\opus\opus_unittest.cc">
+      <Filter>audio_coding\codecs\opus</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\codecs\red\audio_encoder_copy_red_unittest.cc">
+      <Filter>audio_coding\codecs\red</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\audio_classifier_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\audio_multi_vector_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\audio_vector_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\background_noise_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\buffer_level_filter_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\comfort_noise_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\decision_logic_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\decoder_database_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\delay_manager_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\delay_peak_detector_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\dsp_helper_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\dtmf_buffer_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\dtmf_tone_generator_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\expand_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\merge_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClInclude Include="audio_coding\neteq\mock\mock_audio_decoder.h">
+      <Filter>audio_coding\neteq\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_audio_vector.h">
+      <Filter>audio_coding\neteq\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_buffer_level_filter.h">
+      <Filter>audio_coding\neteq\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_decoder_database.h">
+      <Filter>audio_coding\neteq\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_delay_manager.h">
+      <Filter>audio_coding\neteq\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_delay_peak_detector.h">
+      <Filter>audio_coding\neteq\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_dtmf_buffer.h">
+      <Filter>audio_coding\neteq\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_dtmf_tone_generator.h">
+      <Filter>audio_coding\neteq\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_expand.h">
+      <Filter>audio_coding\neteq\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_external_decoder_pcm16b.h">
+      <Filter>audio_coding\neteq\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_packet_buffer.h">
+      <Filter>audio_coding\neteq\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_coding\neteq\mock\mock_payload_splitter.h">
+      <Filter>audio_coding\neteq\mock</Filter>
+    </ClInclude>
+    <ClCompile Include="audio_coding\neteq\nack_tracker_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\neteq_external_decoder_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\neteq_impl_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\neteq_network_stats_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\neteq_stereo_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\neteq_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\normal_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\packet_buffer_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\payload_splitter_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\post_decode_vad_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\random_vector_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\sync_buffer_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\tick_timer_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\time_stretch_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\timestamp_scaler_unittest.cc">
+      <Filter>audio_coding\neteq</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\tools\input_audio_file_unittest.cc">
+      <Filter>audio_coding\neteq\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_coding\neteq\tools\packet_unittest.cc">
+      <Filter>audio_coding\neteq\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_conference_mixer\test\audio_conference_mixer_unittest.cc">
+      <Filter>audio_conference_mixer\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_device\fine_audio_buffer_unittest.cc">
+      <Filter>audio_device</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_mixer\test\audio_mixer_unittest.cc">
+      <Filter>audio_mixer\test</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\aec\echo_cancellation_unittest.cc">
+      <Filter>audio_processing\aec</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\aec\system_delay_unittest.cc">
+      <Filter>audio_processing\aec</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\agc\agc_manager_direct_unittest.cc">
+      <Filter>audio_processing\agc</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\agc\loudness_histogram_unittest.cc">
+      <Filter>audio_processing\agc</Filter>
+    </ClCompile>
+    <ClInclude Include="audio_processing\agc\mock_agc.h">
+      <Filter>audio_processing\agc</Filter>
+    </ClInclude>
+    <ClCompile Include="audio_processing\audio_buffer_unittest.cc">
+      <Filter>audio_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\beamformer\array_util_unittest.cc">
+      <Filter>audio_processing\beamformer</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\beamformer\complex_matrix_unittest.cc">
+      <Filter>audio_processing\beamformer</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\beamformer\covariance_matrix_generator_unittest.cc">
+      <Filter>audio_processing\beamformer</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\beamformer\matrix_unittest.cc">
+      <Filter>audio_processing\beamformer</Filter>
+    </ClCompile>
+    <ClInclude Include="audio_processing\beamformer\mock_nonlinear_beamformer.h">
+      <Filter>audio_processing\beamformer</Filter>
+    </ClInclude>
+    <ClCompile Include="audio_processing\beamformer\nonlinear_beamformer_unittest.cc">
+      <Filter>audio_processing\beamformer</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\echo_cancellation_impl_unittest.cc">
+      <Filter>audio_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\splitting_filter_unittest.cc">
+      <Filter>audio_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\dyadic_decimator_unittest.cc">
+      <Filter>audio_processing\transient</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\file_utils.cc">
+      <Filter>audio_processing\transient</Filter>
+    </ClCompile>
+    <ClInclude Include="audio_processing\transient\file_utils.h">
+      <Filter>audio_processing\transient</Filter>
+    </ClInclude>
+    <ClCompile Include="audio_processing\transient\file_utils_unittest.cc">
+      <Filter>audio_processing\transient</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\moving_moments_unittest.cc">
+      <Filter>audio_processing\transient</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\transient_detector_unittest.cc">
+      <Filter>audio_processing\transient</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\transient_suppressor_unittest.cc">
+      <Filter>audio_processing\transient</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\wpd_node_unittest.cc">
+      <Filter>audio_processing\transient</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\transient\wpd_tree_unittest.cc">
+      <Filter>audio_processing\transient</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\utility\block_mean_calculator_unittest.cc">
+      <Filter>audio_processing\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\utility\delay_estimator_unittest.cc">
+      <Filter>audio_processing\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\gmm_unittest.cc">
+      <Filter>audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\pitch_based_vad_unittest.cc">
+      <Filter>audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\pitch_internal_unittest.cc">
+      <Filter>audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\pole_zero_filter_unittest.cc">
+      <Filter>audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\standalone_vad_unittest.cc">
+      <Filter>audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\vad_audio_proc_unittest.cc">
+      <Filter>audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\vad_circular_buffer_unittest.cc">
+      <Filter>audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_processing\vad\voice_activity_detector_unittest.cc">
+      <Filter>audio_processing\vad</Filter>
+    </ClCompile>
+    <ClCompile Include="bitrate_controller\bitrate_controller_unittest.cc">
+      <Filter>bitrate_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="bitrate_controller\send_side_bandwidth_estimation_unittest.cc">
+      <Filter>bitrate_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="congestion_controller\congestion_controller_unittest.cc">
+      <Filter>congestion_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="congestion_controller\delay_based_bwe_unittest.cc">
+      <Filter>congestion_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="congestion_controller\delay_based_bwe_unittest_helper.cc">
+      <Filter>congestion_controller</Filter>
+    </ClCompile>
+    <ClInclude Include="congestion_controller\delay_based_bwe_unittest_helper.h">
+      <Filter>congestion_controller</Filter>
+    </ClInclude>
+    <ClCompile Include="congestion_controller\probe_bitrate_estimator_unittest.cc">
+      <Filter>congestion_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="media_file\media_file_unittest.cc">
+      <Filter>media_file</Filter>
+    </ClCompile>
+    <ClCompile Include="module_common_types_unittest.cc"/>
+    <ClCompile Include="pacing\bitrate_prober_unittest.cc">
+      <Filter>pacing</Filter>
+    </ClCompile>
+    <ClCompile Include="pacing\paced_sender_unittest.cc">
+      <Filter>pacing</Filter>
+    </ClCompile>
+    <ClCompile Include="pacing\packet_router_unittest.cc">
+      <Filter>pacing</Filter>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\bwe_simulations.cc">
+      <Filter>remote_bitrate_estimator</Filter>
+    </ClCompile>
+    <ClInclude Include="remote_bitrate_estimator\include\mock\mock_remote_bitrate_estimator.h">
+      <Filter>remote_bitrate_estimator\include\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="remote_bitrate_estimator\include\mock\mock_remote_bitrate_observer.h">
+      <Filter>remote_bitrate_estimator\include\mock</Filter>
+    </ClInclude>
+    <ClCompile Include="remote_bitrate_estimator\inter_arrival_unittest.cc">
+      <Filter>remote_bitrate_estimator</Filter>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\remote_bitrate_estimator_unittest_helper.cc">
+      <Filter>remote_bitrate_estimator</Filter>
+    </ClCompile>
+    <ClInclude Include="remote_bitrate_estimator\remote_bitrate_estimator_unittest_helper.h">
+      <Filter>remote_bitrate_estimator</Filter>
+    </ClInclude>
+    <ClCompile Include="remote_bitrate_estimator\remote_estimator_proxy_unittest.cc">
+      <Filter>remote_bitrate_estimator</Filter>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\send_time_history_unittest.cc">
+      <Filter>remote_bitrate_estimator</Filter>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\test\bwe_test_framework_unittest.cc">
+      <Filter>remote_bitrate_estimator\test</Filter>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\test\bwe_unittest.cc">
+      <Filter>remote_bitrate_estimator\test</Filter>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\test\estimators\nada_unittest.cc">
+      <Filter>remote_bitrate_estimator\test\estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\test\metric_recorder_unittest.cc">
+      <Filter>remote_bitrate_estimator\test</Filter>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\transport_feedback_adapter_unittest.cc">
+      <Filter>remote_bitrate_estimator</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\byte_io_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\fec_receiver_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\fec_test_helper.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClInclude Include="rtp_rtcp\source\fec_test_helper.h">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClInclude>
+    <ClInclude Include="rtp_rtcp\source\mock\mock_rtp_payload_strategy.h">
+      <Filter>rtp_rtcp\source\mock</Filter>
+    </ClInclude>
+    <ClCompile Include="rtp_rtcp\source\nack_rtx_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\packet_loss_stats_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\playout_delay_oracle_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\producer_fec_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\receive_statistics_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\remote_ntp_time_estimator_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\app_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\bye_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\common_header_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\compound_packet_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\dlrr_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\extended_jitter_report_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\extended_reports_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\fir_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\nack_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\pli_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\rapid_resync_request_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\receiver_report_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\remb_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\report_block_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\rpsi_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\rrtr_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\sdes_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\sender_report_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\sli_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\tmmbn_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\tmmbr_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\transport_feedback_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet\voip_metric_unittest.cc">
+      <Filter>rtp_rtcp\source\rtcp_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_packet_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_receiver_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_sender_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtcp_utility_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_fec_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_format_h264_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_format_vp8_test_helper.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClInclude Include="rtp_rtcp\source\rtp_format_vp8_test_helper.h">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClInclude>
+    <ClCompile Include="rtp_rtcp\source\rtp_format_vp8_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_format_vp9_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_header_extension_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_packet_history_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_packet_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_payload_registry_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_rtcp_impl_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\rtp_sender_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\time_util_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\source\vp8_partition_aggregator_unittest.cc">
+      <Filter>rtp_rtcp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\test\testAPI\test_api.cc">
+      <Filter>rtp_rtcp\test\testAPI</Filter>
+    </ClCompile>
+    <ClInclude Include="rtp_rtcp\test\testAPI\test_api.h">
+      <Filter>rtp_rtcp\test\testAPI</Filter>
+    </ClInclude>
+    <ClCompile Include="rtp_rtcp\test\testAPI\test_api_audio.cc">
+      <Filter>rtp_rtcp\test\testAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\test\testAPI\test_api_rtcp.cc">
+      <Filter>rtp_rtcp\test\testAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_rtcp\test\testAPI\test_api_video.cc">
+      <Filter>rtp_rtcp\test\testAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\source\audio_frame_operations_unittest.cc">
+      <Filter>utility\source</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\source\file_player_unittests.cc">
+      <Filter>utility\source</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\source\process_thread_impl_unittest.cc">
+      <Filter>utility\source</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\test\packet_manipulator_unittest.cc">
+      <Filter>video_coding\codecs\test</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\test\stats_unittest.cc">
+      <Filter>video_coding\codecs\test</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\test\videoprocessor_unittest.cc">
+      <Filter>video_coding\codecs\test</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\vp8\default_temporal_layers_unittest.cc">
+      <Filter>video_coding\codecs\vp8</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\vp8\reference_picture_selection_unittest.cc">
+      <Filter>video_coding\codecs\vp8</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\vp8\simulcast_encoder_adapter_unittest.cc">
+      <Filter>video_coding\codecs\vp8</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\codecs\vp8\simulcast_unittest.cc">
+      <Filter>video_coding\codecs\vp8</Filter>
+    </ClCompile>
+    <ClInclude Include="video_coding\codecs\vp8\simulcast_unittest.h">
+      <Filter>video_coding\codecs\vp8</Filter>
+    </ClInclude>
+    <ClCompile Include="video_coding\decoding_state_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\frame_buffer2_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\histogram_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClInclude Include="video_coding\include\mock\mock_vcm_callbacks.h">
+      <Filter>video_coding\include\mock</Filter>
+    </ClInclude>
+    <ClCompile Include="video_coding\jitter_buffer_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\jitter_estimator_tests.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\nack_module_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\percentile_filter_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\protection_bitrate_calculator_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\receiver_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\rtp_frame_reference_finder_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\sequence_number_util_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\session_info_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\test\stream_generator.cc">
+      <Filter>video_coding\test</Filter>
+    </ClCompile>
+    <ClInclude Include="video_coding\test\stream_generator.h">
+      <Filter>video_coding\test</Filter>
+    </ClInclude>
+    <ClCompile Include="video_coding\timing_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\utility\frame_dropper_unittest.cc">
+      <Filter>video_coding\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\utility\h264_bitstream_parser_unittest.cc">
+      <Filter>video_coding\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\utility\ivf_file_writer_unittest.cc">
+      <Filter>video_coding\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\utility\quality_scaler_unittest.cc">
+      <Filter>video_coding\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\video_coding_robustness_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\video_packet_buffer_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\video_receiver_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_coding\video_sender_unittest.cc">
+      <Filter>video_coding</Filter>
+    </ClCompile>
+    <ClCompile Include="video_processing\test\denoiser_test.cc">
+      <Filter>video_processing\test</Filter>
+    </ClCompile>
+    <ClCompile Include="video_processing\test\video_processing_unittest.cc">
+      <Filter>video_processing\test</Filter>
+    </ClCompile>
+    <ClInclude Include="video_processing\test\video_processing_unittest.h">
+      <Filter>video_processing\test</Filter>
+    </ClInclude>
+    <ClCompile Include="video_coding\codecs\vp9\vp9_screenshare_layers_unittest.cc">
+      <Filter>video_coding\codecs\vp9</Filter>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\screen_capturer_differ_wrapper_unittest.cc">
+      <Filter>desktop_capture</Filter>
+    </ClCompile>
+    <ClInclude Include="desktop_capture\fake_desktop_capturer.h">
+      <Filter>desktop_capture</Filter>
+    </ClInclude>
+    <ClCompile Include="desktop_capture\fake_screen_capturer.cc">
+      <Filter>desktop_capture</Filter>
+    </ClCompile>
+    <ClInclude Include="desktop_capture\fake_screen_capturer.h">
+      <Filter>desktop_capture</Filter>
+    </ClInclude>
+    <ClCompile Include="desktop_capture\desktop_frame_generator.cc">
+      <Filter>desktop_capture</Filter>
+    </ClCompile>
+    <ClInclude Include="desktop_capture\desktop_frame_generator.h">
+      <Filter>desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="desktop_capture\screen_drawer.h">
+      <Filter>desktop_capture</Filter>
+    </ClInclude>
+    <ClCompile Include="desktop_capture\screen_drawer_unittest.cc">
+      <Filter>desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\screen_drawer_win.cc">
+      <Filter>desktop_capture</Filter>
+    </ClCompile>
+    <None Include="modules.gyp"/>
+    <ClCompile Include="remote_bitrate_estimator\overuse_detector_unittest.cc">
+      <Filter>remote_bitrate_estimator\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\remote_bitrate_estimator_abs_send_time_unittest.cc">
+      <Filter>remote_bitrate_estimator\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="remote_bitrate_estimator\remote_bitrate_estimator_single_stream_unittest.cc">
+      <Filter>remote_bitrate_estimator\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\desktop_region_unittest.cc">
+      <Filter>desktop_capture\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\differ_block_unittest.cc">
+      <Filter>desktop_capture\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\differ_unittest.cc">
+      <Filter>desktop_capture\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\desktop_and_cursor_composer_unittest.cc">
+      <Filter>desktop_capture\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\mouse_cursor_monitor_unittest.cc">
+      <Filter>desktop_capture\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\screen_capturer_helper_unittest.cc">
+      <Filter>desktop_capture\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\screen_capturer_mac_unittest.cc">
+      <Filter>desktop_capture\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="desktop_capture\screen_capturer_mock_objects.h">
+      <Filter>desktop_capture\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="desktop_capture\screen_capturer_unittest.cc">
+      <Filter>desktop_capture\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\screen_drawer_linux.cc">
+      <Filter>desktop_capture\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\screen_drawer_mac.cc">
+      <Filter>desktop_capture\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\window_capturer_unittest.cc">
+      <Filter>desktop_capture\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="desktop_capture\win\cursor_unittest.cc">
+      <Filter>desktop_capture\win\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="desktop_capture\win\cursor_unittest_resources.h">
+      <Filter>desktop_capture\win\_excluded_files</Filter>
+    </ClInclude>
+    <ResourceCompile Include="desktop_capture\win\cursor_unittest_resources.rc">
+      <Filter>desktop_capture\win\_excluded_files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

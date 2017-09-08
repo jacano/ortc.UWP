@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="media_file">
+      <UniqueIdentifier>{51A039A4-9337-9A03-4ABE-75B933CF8988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="media_file">
+      <UniqueIdentifier>{51A039A4-9337-9A03-4ABE-75B933CF8988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="media_file">
+      <UniqueIdentifier>{51A039A4-9337-9A03-4ABE-75B933CF8988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="media_file">
+      <UniqueIdentifier>{51A039A4-9337-9A03-4ABE-75B933CF8988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="media_file">
+      <UniqueIdentifier>{51A039A4-9337-9A03-4ABE-75B933CF8988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="media_file">
+      <UniqueIdentifier>{51A039A4-9337-9A03-4ABE-75B933CF8988}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="media_file\media_file.h">
+      <Filter>media_file</Filter>
+    </ClInclude>
+    <ClInclude Include="media_file\media_file_defines.h">
+      <Filter>media_file</Filter>
+    </ClInclude>
+    <ClCompile Include="media_file\media_file_impl.cc">
+      <Filter>media_file</Filter>
+    </ClCompile>
+    <ClInclude Include="media_file\media_file_impl.h">
+      <Filter>media_file</Filter>
+    </ClInclude>
+    <ClCompile Include="media_file\media_file_utility.cc">
+      <Filter>media_file</Filter>
+    </ClCompile>
+    <ClInclude Include="media_file\media_file_utility.h">
+      <Filter>media_file</Filter>
+    </ClInclude>
+    <None Include="modules.gyp"/>
+  </ItemGroup>
+</Project>

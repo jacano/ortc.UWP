@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{FADDBC92-692B-AF0F-D617-4F5285071347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{FADDBC92-692B-AF0F-D617-4F5285071347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{FADDBC92-692B-AF0F-D617-4F5285071347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{FADDBC92-692B-AF0F-D617-4F5285071347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{FADDBC92-692B-AF0F-D617-4F5285071347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H264Encoder">
+      <UniqueIdentifier>{0BE4F9AE-F512-414E-9514-45A16C05568D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H264Encoder">
+      <UniqueIdentifier>{0BE4F9AE-F512-414E-9514-45A16C05568D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H264Encoder">
+      <UniqueIdentifier>{0BE4F9AE-F512-414E-9514-45A16C05568D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H264Encoder">
+      <UniqueIdentifier>{0BE4F9AE-F512-414E-9514-45A16C05568D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H264Encoder">
+      <UniqueIdentifier>{0BE4F9AE-F512-414E-9514-45A16C05568D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H264Encoder">
+      <UniqueIdentifier>{0BE4F9AE-F512-414E-9514-45A16C05568D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H264Encoder">
+      <UniqueIdentifier>{0BE4F9AE-F512-414E-9514-45A16C05568D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H264Decoder">
+      <UniqueIdentifier>{B4B6560B-F6E7-D30C-015A-E9BBAD7AFD79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H264Decoder">
+      <UniqueIdentifier>{B4B6560B-F6E7-D30C-015A-E9BBAD7AFD79}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="h264_winrt_factory.cc"/>
+    <ClInclude Include="h264_winrt_factory.h"/>
+    <ClInclude Include="Utils\Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Async.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CritSec.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\OpQueue.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\SampleAttributeQueue.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="H264Encoder\H264Encoder.h">
+      <Filter>H264Encoder</Filter>
+    </ClInclude>
+    <ClCompile Include="H264Encoder\H264Encoder.cc">
+      <Filter>H264Encoder</Filter>
+    </ClCompile>
+    <ClInclude Include="H264Encoder\H264MediaSink.h">
+      <Filter>H264Encoder</Filter>
+    </ClInclude>
+    <ClCompile Include="H264Encoder\H264MediaSink.cc">
+      <Filter>H264Encoder</Filter>
+    </ClCompile>
+    <ClInclude Include="H264Encoder\H264StreamSink.h">
+      <Filter>H264Encoder</Filter>
+    </ClInclude>
+    <ClCompile Include="H264Encoder\H264StreamSink.cc">
+      <Filter>H264Encoder</Filter>
+    </ClCompile>
+    <ClInclude Include="H264Encoder\IH264EncodingCallback.h">
+      <Filter>H264Encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="H264Decoder\H264Decoder.h">
+      <Filter>H264Decoder</Filter>
+    </ClInclude>
+    <ClCompile Include="H264Decoder\H264Decoder.cc">
+      <Filter>H264Decoder</Filter>
+    </ClCompile>
+    <None Include="h264_winrt.gyp"/>
+  </ItemGroup>
+</Project>

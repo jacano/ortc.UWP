@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libjpeg", "libjpeg_win10_x86.vcxproj", "{0309311E-A51B-57B8-A527-4EE433DBE95B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Debug|ARM = Debug|ARM
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0309311E-A51B-57B8-A527-4EE433DBE95B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0309311E-A51B-57B8-A527-4EE433DBE95B}.Debug|Win32.Build.0 = Debug|Win32
+		{0309311E-A51B-57B8-A527-4EE433DBE95B}.Debug|x64.ActiveCfg = Debug|x64
+		{0309311E-A51B-57B8-A527-4EE433DBE95B}.Debug|x64.Build.0 = Debug|x64
+		{0309311E-A51B-57B8-A527-4EE433DBE95B}.Debug|ARM.ActiveCfg = Debug|ARM
+		{0309311E-A51B-57B8-A527-4EE433DBE95B}.Debug|ARM.Build.0 = Debug|ARM
+		{0309311E-A51B-57B8-A527-4EE433DBE95B}.Release|ARM.ActiveCfg = Release|ARM
+		{0309311E-A51B-57B8-A527-4EE433DBE95B}.Release|ARM.Build.0 = Release|ARM
+		{0309311E-A51B-57B8-A527-4EE433DBE95B}.Release|x64.ActiveCfg = Release|x64
+		{0309311E-A51B-57B8-A527-4EE433DBE95B}.Release|x64.Build.0 = Release|x64
+		{0309311E-A51B-57B8-A527-4EE433DBE95B}.Release|Win32.ActiveCfg = Release|Win32
+		{0309311E-A51B-57B8-A527-4EE433DBE95B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

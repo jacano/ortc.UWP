@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{5763B17F-46DA-9ED7-179F-9C9F273B791C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="datachannel_unittest.cc"/>
+    <ClCompile Include="dtmfsender_unittest.cc"/>
+    <ClCompile Include="fakemetricsobserver.cc"/>
+    <ClInclude Include="fakemetricsobserver.h"/>
+    <ClCompile Include="jsepsessiondescription_unittest.cc"/>
+    <ClCompile Include="localaudiosource_unittest.cc"/>
+    <ClCompile Include="mediaconstraintsinterface_unittest.cc"/>
+    <ClCompile Include="mediastream_unittest.cc"/>
+    <ClCompile Include="peerconnection_unittest.cc"/>
+    <ClCompile Include="peerconnectionendtoend_unittest.cc"/>
+    <ClCompile Include="peerconnectionfactory_unittest.cc"/>
+    <ClCompile Include="peerconnectioninterface_unittest.cc"/>
+    <ClCompile Include="proxy_unittest.cc"/>
+    <ClCompile Include="rtpsenderreceiver_unittest.cc"/>
+    <ClCompile Include="statscollector_unittest.cc"/>
+    <ClCompile Include="test\fakeaudiocapturemodule.cc">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClInclude Include="test\fakeaudiocapturemodule.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClCompile Include="test\fakeaudiocapturemodule_unittest.cc">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClInclude Include="test\fakeconstraints.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\fakedatachannelprovider.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\fakeperiodicvideocapturer.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\fakertccertificategenerator.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\fakevideotrackrenderer.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\mock_datachannel.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\mock_peerconnection.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\mock_webrtcsession.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\mockpeerconnectionobservers.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\peerconnectiontestwrapper.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClCompile Include="test\peerconnectiontestwrapper.cc">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClInclude Include="test\testsdpstrings.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClCompile Include="videocapturertracksource_unittest.cc"/>
+    <ClCompile Include="videotrack_unittest.cc"/>
+    <ClCompile Include="webrtcsdp_unittest.cc"/>
+    <ClCompile Include="webrtcsession_unittest.cc"/>
+    <None Include="api_tests.gyp"/>
+  </ItemGroup>
+</Project>

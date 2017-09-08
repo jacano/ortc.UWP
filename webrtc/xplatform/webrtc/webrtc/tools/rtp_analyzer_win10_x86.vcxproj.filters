@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="py_event_log_analyzer">
+      <UniqueIdentifier>{021DC7E9-8EF1-0598-F3CB-2F680112B720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="py_event_log_analyzer">
+      <UniqueIdentifier>{021DC7E9-8EF1-0598-F3CB-2F680112B720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="py_event_log_analyzer">
+      <UniqueIdentifier>{021DC7E9-8EF1-0598-F3CB-2F680112B720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="py_event_log_analyzer">
+      <UniqueIdentifier>{021DC7E9-8EF1-0598-F3CB-2F680112B720}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tools.gyp"/>
+    <None Include="py_event_log_analyzer\misc.py">
+      <Filter>py_event_log_analyzer</Filter>
+    </None>
+    <None Include="py_event_log_analyzer\pb_parse.py">
+      <Filter>py_event_log_analyzer</Filter>
+    </None>
+    <None Include="py_event_log_analyzer\rtp_analyzer.py">
+      <Filter>py_event_log_analyzer</Filter>
+    </None>
+    <None Include="py_event_log_analyzer\rtp_analyzer.sh">
+      <Filter>py_event_log_analyzer</Filter>
+    </None>
+  </ItemGroup>
+</Project>
