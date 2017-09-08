@@ -145,6 +145,24 @@ IF NOT EXIST %destinationPath% (
 	IF ERRORLEVEL 1 CALL:error 1 "Could not make a directory %destinationPath%libs"
 )
 
+SET baseORTClib=..\ortc\windows\projects\msvc\Build\Output\x86\Debug
+
+COPY %baseORTClib%\cryptopp\cryptopp.lib %libsSourcePath%
+COPY %baseORTClib%\cryptopp\cryptopp.pdb %libsSourcePath%
+
+COPY %baseORTClib%\idnkit\idnkit.lib %libsSourcePath%
+COPY %baseORTClib%\idnkit\idnkit.pdb %libsSourcePath%
+
+COPY %baseORTClib%\udns\udns.lib %libsSourcePath%
+COPY %baseORTClib%\udns\udns.pdb %libsSourcePath%
+
+COPY %baseORTClib%\zsLib\zsLib.lib %libsSourcePath%
+COPY %baseORTClib%\zsLib\zsLib.pdb %libsSourcePath%
+
+COPY %baseORTClib%\zsLib.Eventing\zsLib.Eventing.lib %libsSourcePath%
+COPY %baseORTClib%\zsLib.Eventing\zsLib.Eventing.pdb %libsSourcePath%
+
+
 SET webRtcLibs=
 
 FOR /f %%A IN ('forfiles -p %libsSourcePath% /s /m *.lib /c "CMD /c ECHO @relpath"') DO ( SET temp=%%~A && IF "!temp!"=="!temp:protobuf_full_do_not_use=!" SET webRtcLibs=!webRtcLibs! %%~A )
@@ -159,7 +177,6 @@ IF EXIST *.dll (
 )
 
 CALL:print %debug% "Moving pdbs from %libsSourcePath% to %destinationPath%"
-
 FOR /f %%A IN ('forfiles -p %libsSourcePath% /s /m *.pdb /c "CMD /c ECHO @relpath"') DO ( SET temp=%%~A && IF "!temp!"=="!temp:protobuf_full_do_not_use=!" MOVE %%~A %destinationPath% >NUL )
 
 

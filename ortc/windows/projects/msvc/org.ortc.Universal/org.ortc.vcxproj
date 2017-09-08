@@ -105,6 +105,9 @@
     <ClInclude Include="..\..\..\org\ortc\WebRtcMediaStream.h" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\xplatform\ortclib-cpp\projects\msvs\ortclib.Universal\ortclib.vcxproj">
+      <Project>{83e6cc72-ebc5-4c0c-b6a6-2d67a3c1e8a9}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\..\xplatform\ortclib-services-cpp\projects\msvs\ortclib.services.Universal\ortclib.services.vcxproj">
       <Project>{cc03fba3-9028-47ad-b931-13b12db368f8}</Project>
     </ProjectReference>
