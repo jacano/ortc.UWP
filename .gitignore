@@ -2,3 +2,5 @@
 build_win10_x86/
 WEBRTC_BUILD/
 ortc/windows/projects/msvc/Build/
+webrtc/xplatform/chromium-pruned/build/
+webrtc/xplatform/webrtc/build/
