@@ -1,3 +1,4 @@
 .vs/
 build_win10_x86/
 WEBRTC_BUILD/
+ortc/windows/projects/msvc/Build/
