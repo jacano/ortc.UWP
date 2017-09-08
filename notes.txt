@@ -1,0 +1,1 @@
+bin\buildWebRTC.bat  "D:\dev\ortclib-sdk\webrtc\xplatform\webrtc\webrtcLib.sln" Debug x86 webrtc
