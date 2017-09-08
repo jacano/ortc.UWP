@@ -145,7 +145,7 @@ IF NOT EXIST %destinationPath% (
 	IF ERRORLEVEL 1 CALL:error 1 "Could not make a directory %destinationPath%libs"
 )
 
-SET baseORTClib=..\webrtc\xplatform\webrtc\build\Output\x86\Debug
+SET baseORTClib=%libsSourcePath%\..\..\build\Output\x86\Debug
 
 COPY %baseORTClib%\cryptopp\cryptopp.lib %libsSourcePath%
 COPY %baseORTClib%\cryptopp\cryptopp.pdb %libsSourcePath%
